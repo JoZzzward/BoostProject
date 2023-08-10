@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.RabbitMqService\bin\MainAPiPlusAuth\net7.0\BoostProject.Services.RabbitMqService.deps.json
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.RabbitMqService\bin\MainAPiPlusAuth\net7.0\BoostProject.Services.RabbitMqService.dll
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.RabbitMqService\bin\MainAPiPlusAuth\net7.0\BoostProject.Services.RabbitMqService.pdb
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.RabbitMqService\bin\MainAPiPlusAuth\net7.0\BoostProject.Settings.dll
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.RabbitMqService\bin\MainAPiPlusAuth\net7.0\BoostProject.Settings.pdb
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.RabbitMqService\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.RabbitMqService.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.RabbitMqService\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.RabbitMqService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.RabbitMqService\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.RabbitMqService.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.RabbitMqService\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.RabbitMqService.AssemblyInfo.cs
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.RabbitMqService\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.RabbitMqService.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.RabbitMqService\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.RabbitMqService.csproj.CopyComplete
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.RabbitMqService\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.RabbitMqService.dll
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.RabbitMqService\obj\MainAPiPlusAuth\net7.0\refint\BoostProject.Services.RabbitMqService.dll
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.RabbitMqService\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.RabbitMqService.pdb
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.RabbitMqService\obj\MainAPiPlusAuth\net7.0\ref\BoostProject.Services.RabbitMqService.dll

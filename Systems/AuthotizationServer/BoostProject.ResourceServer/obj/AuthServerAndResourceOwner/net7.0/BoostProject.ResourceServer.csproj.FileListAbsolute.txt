@@ -1,0 +1,6 @@
+C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.ResourceServer\obj\AuthServerAndResourceOwner\net7.0\BoostProject.ResourceServer.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.ResourceServer\obj\AuthServerAndResourceOwner\net7.0\BoostProject.ResourceServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.ResourceServer\obj\AuthServerAndResourceOwner\net7.0\BoostProject.ResourceServer.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.ResourceServer\obj\AuthServerAndResourceOwner\net7.0\BoostProject.ResourceServer.AssemblyInfo.cs
+C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.ResourceServer\obj\AuthServerAndResourceOwner\net7.0\BoostProject.ResourceServer.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.ResourceServer\obj\AuthServerAndResourceOwner\net7.0\BoostProject.ResourceServer.MvcApplicationPartsAssemblyInfo.cache

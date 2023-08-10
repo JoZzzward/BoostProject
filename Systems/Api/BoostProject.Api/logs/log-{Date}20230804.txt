@@ -1,0 +1,1719 @@
+[13:47:25:351 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[13:47:26:364 INF ()] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[13:47:26:465 INF ()] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[13:47:26:488 INF ()] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[13:47:26:507 INF ()] No migrations were applied. The database is already up to date.
+[13:47:26:525 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13:47:29:217 INF (8d58e8bd-1105-4ab4-91e2-d65d9b24d775)] Request starting HTTP/2 GET https://localhost:7000/ - -
+[13:47:29:881 INF (8d58e8bd-1105-4ab4-91e2-d65d9b24d775)] Request finished HTTP/2 GET https://localhost:7000/ - - - 301 0 - 665.8344ms
+[13:47:30:012 INF (57dec930-b1c4-4c4d-b60e-6344f116f34e)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[13:47:30:143 INF (57dec930-b1c4-4c4d-b60e-6344f116f34e)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 131.2193ms
+[13:47:30:187 INF (41aeec06-7b77-4aee-b790-6854fa4e8f84)] Request starting HTTP/2 GET https://localhost:7000/swagger-ui.css - -
+[13:47:30:188 INF (31f3dba2-534a-4fcb-b11a-782ec33cf42d)] Request starting HTTP/2 GET https://localhost:7000/swagger-ui-standalone-preset.js - -
+[13:47:30:188 INF (013eda78-b8a2-48e5-b382-dda5e4d878fa)] Request starting HTTP/2 GET https://localhost:7000/swagger-ui-bundle.js - -
+[13:47:30:223 INF (602fe180-00a4-441f-8368-e9e5fac56afa)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[13:47:30:259 INF (602fe180-00a4-441f-8368-e9e5fac56afa)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 36.5350ms
+[13:47:30:271 INF (41aeec06-7b77-4aee-b790-6854fa4e8f84)] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[13:47:30:271 INF (31f3dba2-534a-4fcb-b11a-782ec33cf42d)] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[13:47:30:283 INF (013eda78-b8a2-48e5-b382-dda5e4d878fa)] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[13:47:30:284 INF (41aeec06-7b77-4aee-b790-6854fa4e8f84)] Request finished HTTP/2 GET https://localhost:7000/swagger-ui.css - - - 200 144929 text/css 97.0271ms
+[13:47:30:284 INF (31f3dba2-534a-4fcb-b11a-782ec33cf42d)] Request finished HTTP/2 GET https://localhost:7000/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 96.1368ms
+[13:47:30:286 INF (013eda78-b8a2-48e5-b382-dda5e4d878fa)] Request finished HTTP/2 GET https://localhost:7000/swagger-ui-bundle.js - - - 200 1061536 text/javascript 97.3126ms
+[13:47:30:585 INF (d55df8f9-11c6-4a59-a980-8b0369212655)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[13:47:30:666 INF (223b1a62-064a-42c1-8870-02aa18042285)] Request starting HTTP/2 GET https://localhost:7000/favicon-32x32.png - -
+[13:47:30:669 INF (223b1a62-064a-42c1-8870-02aa18042285)] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+[13:47:30:673 INF (223b1a62-064a-42c1-8870-02aa18042285)] Request finished HTTP/2 GET https://localhost:7000/favicon-32x32.png - - - 200 628 image/png 6.0846ms
+[13:47:31:309 INF (d55df8f9-11c6-4a59-a980-8b0369212655)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 723.9425ms
+[13:48:16:741 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[13:48:17:527 INF ()] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[13:48:17:608 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[13:48:17:637 INF ()] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[13:48:17:657 INF ()] No migrations were applied. The database is already up to date.
+[13:48:17:674 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13:48:24:496 INF (985e6ceb-14da-4dc2-bf22-8d11d2f130b3)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[13:48:25:277 INF (985e6ceb-14da-4dc2-bf22-8d11d2f130b3)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 784.6815ms
+[13:48:25:406 INF (67ae3a2f-363c-4b3c-8eb4-2ce79aa65655)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[13:48:25:473 INF (552f3386-5ce0-4a40-8db0-7deb5b9c218d)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[13:48:25:491 INF (552f3386-5ce0-4a40-8db0-7deb5b9c218d)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 17.0963ms
+[13:48:25:670 INF (67ae3a2f-363c-4b3c-8eb4-2ce79aa65655)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 263.4231ms
+[13:48:26:015 INF (7d60dff2-1016-4338-aea1-7a8ac36a1051)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[13:48:26:750 INF (7d60dff2-1016-4338-aea1-7a8ac36a1051)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 735.8124ms
+[13:50:08:707 INF (5b6922a3-37d9-44aa-b9b9-ddb2dd12f6af)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[13:50:08:735 INF (5b6922a3-37d9-44aa-b9b9-ddb2dd12f6af)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 28.1659ms
+[13:50:08:763 INF (e1e24562-260d-4eff-a018-cd180332d7bc)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[13:50:08:769 INF (e1e24562-260d-4eff-a018-cd180332d7bc)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 6.3764ms
+[13:50:08:775 INF (59213e3a-8a9a-4911-ae89-5949b036a1b5)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[13:50:08:828 INF (59213e3a-8a9a-4911-ae89-5949b036a1b5)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.7714ms
+[13:50:08:875 INF (4025e81b-781a-4dc8-93ee-930f0b0feff0)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[13:50:08:936 INF (4025e81b-781a-4dc8-93ee-930f0b0feff0)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 59.9906ms
+[13:53:14:602 INF (1ccafee2-cb4b-4c3d-b561-b3723c131638)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[13:53:14:623 INF (1ccafee2-cb4b-4c3d-b561-b3723c131638)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 21.2241ms
+[13:53:14:640 INF (7e4772fd-33c7-493b-a131-612467f1cecc)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[13:53:14:640 INF (79760f57-e705-4efe-86d4-85fb53742991)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[13:53:14:645 INF (79760f57-e705-4efe-86d4-85fb53742991)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 5.4753ms
+[13:53:14:710 INF (7e4772fd-33c7-493b-a131-612467f1cecc)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 70.5741ms
+[13:53:14:754 INF (aa0ee8d8-2769-4b06-a753-4c36f2eb1bb5)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[13:53:14:805 INF (aa0ee8d8-2769-4b06-a753-4c36f2eb1bb5)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 50.9059ms
+[13:53:57:438 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[13:54:29:715 INF ()] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[13:54:29:775 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[13:54:29:800 INF ()] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[13:54:29:823 INF ()] No migrations were applied. The database is already up to date.
+[13:54:29:844 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13:54:30:706 INF (9bef0e44-19bb-4683-868d-07fb2c8d53e0)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[13:54:31:066 INF (9bef0e44-19bb-4683-868d-07fb2c8d53e0)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 362.3837ms
+[13:54:31:080 INF (29624315-3e55-4bfc-9043-49aa7060fc1c)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[13:54:31:094 INF (29624315-3e55-4bfc-9043-49aa7060fc1c)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 13.2448ms
+[13:54:31:104 INF (30cdfd1d-956a-4c61-9b22-237a30038e67)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[13:54:31:183 INF (30cdfd1d-956a-4c61-9b22-237a30038e67)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.4998ms
+[13:54:31:288 INF (db93948d-0932-4c0d-9436-54596fab6c6d)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:08:00:507 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[14:08:01:468 INF ()] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[14:08:01:586 INF ()] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[14:08:02:442 INF ()] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[14:08:02:566 INF ()] No migrations were applied. The database is already up to date.
+[14:08:02:625 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14:08:03:878 INF (da86e047-ccf0-448c-84c2-e82dadc5eafa)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:08:15:844 INF (da86e047-ccf0-448c-84c2-e82dadc5eafa)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 11970.1047ms
+[14:08:16:070 INF (9a1cc74c-3d0d-4700-9c70-1ad4d88e1b22)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:08:16:070 INF (b678dd8d-7b79-42e4-8b3c-f9dc35c9b560)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:08:17:241 INF (9a1cc74c-3d0d-4700-9c70-1ad4d88e1b22)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 1173.8217ms
+[14:08:17:310 INF (b678dd8d-7b79-42e4-8b3c-f9dc35c9b560)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1242.7202ms
+[14:08:17:417 INF (96348090-5113-487e-b0ee-dc85e32ade0b)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:08:54:828 INF (96348090-5113-487e-b0ee-dc85e32ade0b)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 37411.2565ms
+[14:09:10:941 INF (048f1f53-33dc-44d6-a2f8-fcd197b68ebc)] Request starting HTTP/1.1 POST https://localhost:7000/api/v1/accounts/login application/json;+charset=utf-8 -
+[14:09:10:958 INF (048f1f53-33dc-44d6-a2f8-fcd197b68ebc)] Executing endpoint 'BoostProject.Api.Controllers.Accounts.AccountsController.Login (BoostProject.Api)'
+[14:09:10:989 INF (048f1f53-33dc-44d6-a2f8-fcd197b68ebc)] Route matched with {action = "Login", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BoostProject.Services.UserAccountService.Models.LoginUserAccountResponse]] Login(BoostProject.Api.Controllers.Accounts.LoginUserAccountRequest) on controller BoostProject.Api.Controllers.Accounts.AccountsController (BoostProject.Api).
+[14:09:11:679 INF (048f1f53-33dc-44d6-a2f8-fcd197b68ebc)] --> User (Email: jozzzwardtm@mail.ru) trying to sign in.
+[14:09:12:204 INF (048f1f53-33dc-44d6-a2f8-fcd197b68ebc)] Executed DbCommand (20ms) [Parameters=[@__normalizedEmail_0='JOZZZWARDTM@MAIL.RU'], CommandType='"Text"', CommandTimeout='600']
+SELECT u."Id", u."AccessFailedCount", u."ConcurrencyStamp", u."CreationDateTime", u."Email", u."EmailConfirmed", u."FirstName", u."ImageUri", u."LastName", u."LockoutEnabled", u."LockoutEnd", u."ModificationDateTime", u."NormalizedEmail", u."NormalizedUserName", u."PasswordHash", u."PhoneNumber", u."PhoneNumberConfirmed", u."SecondName", u."SecurityStamp", u."TwoFactorEnabled", u."UserName"
+FROM "Users" AS u
+WHERE u."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[14:09:12:426 INF (048f1f53-33dc-44d6-a2f8-fcd197b68ebc)] Executed DbCommand (7ms) [Parameters=[@__user_Id_0='b4663f58-0ef0-43f3-a3b8-ef002d81b172'], CommandType='"Text"', CommandTimeout='600']
+SELECT u."Id", u."ClaimType", u."ClaimValue", u."UserId"
+FROM "UsersClaims" AS u
+WHERE u."UserId" = @__user_Id_0
+[14:09:12:461 INF (048f1f53-33dc-44d6-a2f8-fcd197b68ebc)] Executed DbCommand (4ms) [Parameters=[@__userId_0='b4663f58-0ef0-43f3-a3b8-ef002d81b172'], CommandType='"Text"', CommandTimeout='600']
+SELECT u0."Name"
+FROM "UsersRoleOwners" AS u
+INNER JOIN "UserRoles" AS u0 ON u."RoleId" = u0."Id"
+WHERE u."UserId" = @__userId_0
+[14:09:12:477 INF (048f1f53-33dc-44d6-a2f8-fcd197b68ebc)] AuthenticationScheme: Identity.Application signed in.
+[14:09:12:486 INF (048f1f53-33dc-44d6-a2f8-fcd197b68ebc)] --> User (Email: jozzzwardtm@mail.ru) successfully logged in.
+[14:09:12:495 INF (048f1f53-33dc-44d6-a2f8-fcd197b68ebc)] Executing OkObjectResult, writing value of type 'BoostProject.Services.UserAccountService.Models.LoginUserAccountResponse'.
+[14:09:12:515 INF (048f1f53-33dc-44d6-a2f8-fcd197b68ebc)] Executed action BoostProject.Api.Controllers.Accounts.AccountsController.Login (BoostProject.Api) in 1519.3716ms
+[14:09:12:519 INF (048f1f53-33dc-44d6-a2f8-fcd197b68ebc)] Executed endpoint 'BoostProject.Api.Controllers.Accounts.AccountsController.Login (BoostProject.Api)'
+[14:09:12:526 INF (048f1f53-33dc-44d6-a2f8-fcd197b68ebc)] Request finished HTTP/1.1 POST https://localhost:7000/api/v1/accounts/login application/json;+charset=utf-8 - - 200 - application/json;+charset=utf-8 1584.5288ms
+[14:09:14:748 INF (0880fd04-c9d2-40d3-bb1a-4e4e6627b5a5)] Request starting HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=khk2C06Pfvb5tAwbQFhZ2kOCuP-YeOfFOnovMeSb_5Q&state=RnJpIEF1ZyAwNCAyMDIzIDE0OjA4OjU5IEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - -
+[14:09:14:774 INF (0880fd04-c9d2-40d3-bb1a-4e4e6627b5a5)] Sending file. Request path: '/oauth2-redirect.html'. Physical path: 'N/A'
+[14:09:14:783 INF (0880fd04-c9d2-40d3-bb1a-4e4e6627b5a5)] Request finished HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=khk2C06Pfvb5tAwbQFhZ2kOCuP-YeOfFOnovMeSb_5Q&state=RnJpIEF1ZyAwNCAyMDIzIDE0OjA4OjU5IEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - - - 200 - text/html 33.4199ms
+[14:09:14:797 INF (c65668c9-9c25-4f01-9a47-ce77431d3a88)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:09:14:797 INF (5783316f-7ce2-43df-ab38-87f7156b5c83)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:09:14:806 INF (5783316f-7ce2-43df-ab38-87f7156b5c83)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 8.9827ms
+[14:09:14:815 INF (c65668c9-9c25-4f01-9a47-ce77431d3a88)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.4421ms
+[14:09:27:073 INF (b4a4e4c1-9a89-4214-831a-ea1ac6961e7d)] Request starting HTTP/2 GET https://localhost:7000/api/v1/Orders - -
+[14:09:27:257 INF (b4a4e4c1-9a89-4214-831a-ea1ac6961e7d)] Start processing HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[14:09:27:268 INF (b4a4e4c1-9a89-4214-831a-ea1ac6961e7d)] Sending HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[14:09:27:355 INF (b4a4e4c1-9a89-4214-831a-ea1ac6961e7d)] Received HTTP response headers after 83.259ms - 200
+[14:09:27:361 INF (b4a4e4c1-9a89-4214-831a-ea1ac6961e7d)] End processing HTTP request after 105.0365ms - 200
+[14:09:27:375 INF (b4a4e4c1-9a89-4214-831a-ea1ac6961e7d)] The configuration request was successfully sent to "https://localhost:8000/.well-known/openid-configuration": {}.
+[14:09:27:408 INF (b4a4e4c1-9a89-4214-831a-ea1ac6961e7d)] The configuration response returned by "https://localhost:8000/.well-known/openid-configuration" was successfully extracted: {
+  "issuer": "https://localhost:8000/",
+  "authorization_endpoint": "https://localhost:8000/connect/authorize",
+  "token_endpoint": "https://localhost:8000/connect/token",
+  "end_session_endpoint": "https://localhost:8000/connect/logout",
+  "userinfo_endpoint": "https://localhost:8000/connect/userinfo",
+  "jwks_uri": "https://localhost:8000/.well-known/jwks",
+  "grant_types_supported": [
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "code"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "access_for_user_account",
+    "access_for_messages",
+    "access_to_write_messages",
+    "access_to_write_feedbacks",
+    "access_to_write_gameaccounts",
+    "access_for_getting_unverified_game_accounts",
+    "access_for_account_confirmations",
+    "access_for_orders",
+    "email",
+    "profile",
+    "roles",
+    "offline_access"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "sub",
+    "profile",
+    "role",
+    "email"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "plain",
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false,
+  "authorization_response_iss_parameter_supported": true
+}.
+[14:09:27:422 INF (b4a4e4c1-9a89-4214-831a-ea1ac6961e7d)] Start processing HTTP request GET https://localhost:8000/.well-known/jwks
+[14:09:27:425 INF (b4a4e4c1-9a89-4214-831a-ea1ac6961e7d)] Sending HTTP request GET https://localhost:8000/.well-known/jwks
+[14:09:27:451 INF (b4a4e4c1-9a89-4214-831a-ea1ac6961e7d)] Received HTTP response headers after 24.2864ms - 200
+[14:09:27:453 INF (b4a4e4c1-9a89-4214-831a-ea1ac6961e7d)] End processing HTTP request after 30.2177ms - 200
+[14:09:27:455 INF (b4a4e4c1-9a89-4214-831a-ea1ac6961e7d)] The cryptography request was successfully sent to "https://localhost:8000/.well-known/jwks": {}.
+[14:09:27:461 INF (b4a4e4c1-9a89-4214-831a-ea1ac6961e7d)] The cryptography response returned by "https://localhost:8000/.well-known/jwks" was successfully extracted: {
+  "keys": [
+    {
+      "kid": "D111086AFBE5117F314BD91C0C4FCD173DF6888B",
+      "use": "sig",
+      "kty": "RSA",
+      "alg": "RS256",
+      "e": "AQAB",
+      "n": "zQAgM1IA_vUZxO4TiVR7gjF95-cOayQwpX73gaAMFBBAUAOEqLnjZCYNOXFev4xvCTF51thu6V2DkxIFKc6EZpSj3y2YTfjT7R4Z4RMit51mVClij2wJyM1vtJQWc9Pito3-O_Z_-rghslkfd8BJyReRSRoanOO-OnK7fXc2ol8ymVUdNPm1mTOpUCo5i1U1y9rY57cHfcYfrfYdZapTpemyhSpg8qnxpqYWHZSHz8251VB3Ub3O0AMKeKQrn4mFd5q13rvxIx7L47fNoV7QRL2iE7BCjQtBT3ywiF50xHGg5Abf_6tumoVXom2Rnc8U1dON13ODefsuQkPnc6RiAQ",
+      "x5t": "0REIavvlEX8xS9kcDE_NFz32iIs",
+      "x5c": [
+        "MIIC9DCCAdygAwIBAgIIKh9Stw1eUs8wDQYJKoZIhvcNAQELBQAwMDEuMCwGA1UEAxMlT3BlbklkZGljdCBTZXJ2ZXIgU2lnbmluZyBDZXJ0aWZpY2F0ZTAeFw0yMzA3MjgxNjA4MzNaFw0yNTA3MjgxNjA4MzNaMDAxLjAsBgNVBAMTJU9wZW5JZGRpY3QgU2VydmVyIFNpZ25pbmcgQ2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDNACAzUgD+9RnE7hOJVHuCMX3n5w5rJDClfveBoAwUEEBQA4SoueNkJg05cV6/jG8JMXnW2G7pXYOTEgUpzoRmlKPfLZhN+NPtHhnhEyK3nWZUKWKPbAnIzW+0lBZz0+K2jf479n/6uCGyWR93wEnJF5FJGhqc4746crt9dzaiXzKZVR00+bWZM6lQKjmLVTXL2tjntwd9xh+t9h1lqlOl6bKFKmDyqfGmphYdlIfPzbnVUHdRvc7QAwp4pCufiYV3mrXeu/EjHsvjt82hXtBEvaITsEKNC0FPfLCIXnTEcaDkBt//q26ahVeibZGdzxTV043Xc4N5+y5CQ+dzpGIBAgMBAAGjEjAQMA4GA1UdDwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAQEAqp/cKUxkQlCNhHOn/eeOOg6Rq/Ftb2M23c6ljSb9TuhqHBtTDBWwb6is9zNBhXH6xuBCfznponDkZX1G4q8p+FxM1yPPQjx/j2JEx0TVtnzHrghASJ9hLP44ouEalfZsqSpQD0LVUdOOFp3VVAxAdCjgDLSoP6sqGZ1pf32/TOyK05ZBL6xO1VV2ueML4HgpYKp7dky+K8Hs4Tn1HU4hItrO6Uyzvj3KrB13qhz5wWXm9kLIUvgnz/Tzn8x+U53bq6g6Hah0r4Nsfi1FgTDkznbivZ6xd8fzM/baTFa6MfR/AZvZ3qU3M4+WjfmKCYhkHJbK1YRJz3p0QFIq10pGJg=="
+      ]
+    }
+  ]
+}.
+[14:09:27:577 INF (b4a4e4c1-9a89-4214-831a-ea1ac6961e7d)] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=scope and Claim.Value is one of the following values: (access_for_orders)
+[14:09:27:591 INF (b4a4e4c1-9a89-4214-831a-ea1ac6961e7d)] The response was successfully returned as a challenge response: {
+  "error": "insufficient_access",
+  "error_description": "The user represented by the token is not allowed to perform the requested action.",
+  "error_uri": "https://documentation.openiddict.com/errors/ID2095"
+}.
+[14:09:27:593 INF (b4a4e4c1-9a89-4214-831a-ea1ac6961e7d)] AuthenticationScheme: OpenIddict.Validation.AspNetCore was forbidden.
+[14:09:27:595 INF (b4a4e4c1-9a89-4214-831a-ea1ac6961e7d)] Request finished HTTP/2 GET https://localhost:7000/api/v1/Orders - - - 403 0 - 522.6399ms
+[14:25:08:737 INF (071ebcf8-f6a5-4731-a068-7e2e1162b557)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:25:08:778 INF (071ebcf8-f6a5-4731-a068-7e2e1162b557)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 41.3749ms
+[14:25:08:825 INF (068f968e-b918-4196-bfe4-8b8b8356745b)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:25:08:828 INF (068f968e-b918-4196-bfe4-8b8b8356745b)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.5950ms
+[14:25:08:836 INF (de87470a-73a4-4773-932a-a7df68e0c017)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:25:08:882 INF (de87470a-73a4-4773-932a-a7df68e0c017)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.7038ms
+[14:25:09:013 INF (aa1bd8fa-5e87-4d34-852f-5f0982ef77d9)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:25:09:079 INF (aa1bd8fa-5e87-4d34-852f-5f0982ef77d9)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 66.7355ms
+[14:32:11:773 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[14:32:12:538 INF ()] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[14:32:12:609 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[14:32:12:639 INF ()] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[14:32:12:661 INF ()] No migrations were applied. The database is already up to date.
+[14:32:12:682 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14:32:19:970 INF (f19541fa-f09b-4ec0-9a58-c12045217175)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:32:20:937 INF (f19541fa-f09b-4ec0-9a58-c12045217175)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 971.7815ms
+[14:32:21:242 INF (eb9097f1-bfdf-4170-aac3-d768a194e7d4)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:32:21:242 INF (bb44eaa1-b752-4072-bbae-f0d2149088fe)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:32:21:261 INF (eb9097f1-bfdf-4170-aac3-d768a194e7d4)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 18.7038ms
+[14:32:21:330 INF (bb44eaa1-b752-4072-bbae-f0d2149088fe)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 87.9822ms
+[14:32:21:901 INF (36ee9ed0-ccbe-43f7-8363-d53a505efc1e)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:32:22:418 INF (36ee9ed0-ccbe-43f7-8363-d53a505efc1e)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 517.9037ms
+[14:32:37:235 INF (6b118028-3eaa-4b1b-81ec-44542d5e292c)] Request starting HTTP/1.1 POST https://localhost:7000/api/v1/accounts/login application/json;+charset=utf-8 -
+[14:32:37:249 INF (6b118028-3eaa-4b1b-81ec-44542d5e292c)] Executing endpoint 'BoostProject.Api.Controllers.Accounts.AccountsController.Login (BoostProject.Api)'
+[14:32:37:279 INF (6b118028-3eaa-4b1b-81ec-44542d5e292c)] Route matched with {action = "Login", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BoostProject.Services.UserAccountService.Models.LoginUserAccountResponse]] Login(BoostProject.Api.Controllers.Accounts.LoginUserAccountRequest) on controller BoostProject.Api.Controllers.Accounts.AccountsController (BoostProject.Api).
+[14:32:37:949 INF (6b118028-3eaa-4b1b-81ec-44542d5e292c)] --> User (Email: jozzzwardtm@mail.ru) trying to sign in.
+[14:32:38:451 INF (6b118028-3eaa-4b1b-81ec-44542d5e292c)] Executed DbCommand (18ms) [Parameters=[@__normalizedEmail_0='JOZZZWARDTM@MAIL.RU'], CommandType='"Text"', CommandTimeout='600']
+SELECT u."Id", u."AccessFailedCount", u."ConcurrencyStamp", u."CreationDateTime", u."Email", u."EmailConfirmed", u."FirstName", u."ImageUri", u."LastName", u."LockoutEnabled", u."LockoutEnd", u."ModificationDateTime", u."NormalizedEmail", u."NormalizedUserName", u."PasswordHash", u."PhoneNumber", u."PhoneNumberConfirmed", u."SecondName", u."SecurityStamp", u."TwoFactorEnabled", u."UserName"
+FROM "Users" AS u
+WHERE u."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[14:32:38:697 INF (6b118028-3eaa-4b1b-81ec-44542d5e292c)] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='b4663f58-0ef0-43f3-a3b8-ef002d81b172'], CommandType='"Text"', CommandTimeout='600']
+SELECT u."Id", u."ClaimType", u."ClaimValue", u."UserId"
+FROM "UsersClaims" AS u
+WHERE u."UserId" = @__user_Id_0
+[14:32:38:731 INF (6b118028-3eaa-4b1b-81ec-44542d5e292c)] Executed DbCommand (4ms) [Parameters=[@__userId_0='b4663f58-0ef0-43f3-a3b8-ef002d81b172'], CommandType='"Text"', CommandTimeout='600']
+SELECT u0."Name"
+FROM "UsersRoleOwners" AS u
+INNER JOIN "UserRoles" AS u0 ON u."RoleId" = u0."Id"
+WHERE u."UserId" = @__userId_0
+[14:32:38:747 INF (6b118028-3eaa-4b1b-81ec-44542d5e292c)] AuthenticationScheme: Identity.Application signed in.
+[14:32:38:754 INF (6b118028-3eaa-4b1b-81ec-44542d5e292c)] --> User (Email: jozzzwardtm@mail.ru) successfully logged in.
+[14:32:38:764 INF (6b118028-3eaa-4b1b-81ec-44542d5e292c)] Executing OkObjectResult, writing value of type 'BoostProject.Services.UserAccountService.Models.LoginUserAccountResponse'.
+[14:32:38:785 INF (6b118028-3eaa-4b1b-81ec-44542d5e292c)] Executed action BoostProject.Api.Controllers.Accounts.AccountsController.Login (BoostProject.Api) in 1500.9421ms
+[14:32:38:790 INF (6b118028-3eaa-4b1b-81ec-44542d5e292c)] Executed endpoint 'BoostProject.Api.Controllers.Accounts.AccountsController.Login (BoostProject.Api)'
+[14:32:38:799 INF (6b118028-3eaa-4b1b-81ec-44542d5e292c)] Request finished HTTP/1.1 POST https://localhost:7000/api/v1/accounts/login application/json;+charset=utf-8 - - 200 - application/json;+charset=utf-8 1564.5242ms
+[14:32:44:793 INF (66ced130-3cbe-4826-8681-085cb9ee3caa)] Request starting HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=FhnbM8Teu4aV0TIQsAYMCf-WP2hjXin8GYCKAaegL6s&state=RnJpIEF1ZyAwNCAyMDIzIDE0OjMyOjI4IEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - -
+[14:32:44:822 INF (66ced130-3cbe-4826-8681-085cb9ee3caa)] Sending file. Request path: '/oauth2-redirect.html'. Physical path: 'N/A'
+[14:32:44:828 INF (66ced130-3cbe-4826-8681-085cb9ee3caa)] Request finished HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=FhnbM8Teu4aV0TIQsAYMCf-WP2hjXin8GYCKAaegL6s&state=RnJpIEF1ZyAwNCAyMDIzIDE0OjMyOjI4IEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - - - 200 - text/html 34.6870ms
+[14:32:44:844 INF (8fae9b6a-58d0-427c-8e42-7565f5f5376a)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:32:44:844 INF (a298f5ea-6393-4245-bb3c-32d2bc240d0f)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:32:44:847 INF (8fae9b6a-58d0-427c-8e42-7565f5f5376a)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.4568ms
+[14:32:44:861 INF (a298f5ea-6393-4245-bb3c-32d2bc240d0f)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.4392ms
+[14:32:54:377 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] Request starting HTTP/2 GET https://localhost:7000/api/v1/Feedbacks - -
+[14:32:54:443 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] Start processing HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[14:32:54:454 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] Sending HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[14:32:54:534 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] Received HTTP response headers after 75.2668ms - 200
+[14:32:54:539 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] End processing HTTP request after 97.3096ms - 200
+[14:32:54:547 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] The configuration request was successfully sent to "https://localhost:8000/.well-known/openid-configuration": {}.
+[14:32:54:579 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] The configuration response returned by "https://localhost:8000/.well-known/openid-configuration" was successfully extracted: {
+  "issuer": "https://localhost:8000/",
+  "authorization_endpoint": "https://localhost:8000/connect/authorize",
+  "token_endpoint": "https://localhost:8000/connect/token",
+  "end_session_endpoint": "https://localhost:8000/connect/logout",
+  "userinfo_endpoint": "https://localhost:8000/connect/userinfo",
+  "jwks_uri": "https://localhost:8000/.well-known/jwks",
+  "grant_types_supported": [
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "code"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "access_for_user_account",
+    "access_for_messages",
+    "access_to_write_messages",
+    "access_to_write_feedbacks",
+    "access_to_write_gameaccounts",
+    "access_for_getting_unverified_game_accounts",
+    "access_for_account_confirmations",
+    "access_for_orders",
+    "email",
+    "profile",
+    "roles",
+    "offline_access"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "sub",
+    "profile",
+    "role",
+    "email"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "plain",
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false,
+  "authorization_response_iss_parameter_supported": true
+}.
+[14:32:54:593 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] Start processing HTTP request GET https://localhost:8000/.well-known/jwks
+[14:32:54:596 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] Sending HTTP request GET https://localhost:8000/.well-known/jwks
+[14:32:54:623 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] Received HTTP response headers after 25.193ms - 200
+[14:32:54:625 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] End processing HTTP request after 31.6429ms - 200
+[14:32:54:627 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] The cryptography request was successfully sent to "https://localhost:8000/.well-known/jwks": {}.
+[14:32:54:633 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] The cryptography response returned by "https://localhost:8000/.well-known/jwks" was successfully extracted: {
+  "keys": [
+    {
+      "kid": "D111086AFBE5117F314BD91C0C4FCD173DF6888B",
+      "use": "sig",
+      "kty": "RSA",
+      "alg": "RS256",
+      "e": "AQAB",
+      "n": "zQAgM1IA_vUZxO4TiVR7gjF95-cOayQwpX73gaAMFBBAUAOEqLnjZCYNOXFev4xvCTF51thu6V2DkxIFKc6EZpSj3y2YTfjT7R4Z4RMit51mVClij2wJyM1vtJQWc9Pito3-O_Z_-rghslkfd8BJyReRSRoanOO-OnK7fXc2ol8ymVUdNPm1mTOpUCo5i1U1y9rY57cHfcYfrfYdZapTpemyhSpg8qnxpqYWHZSHz8251VB3Ub3O0AMKeKQrn4mFd5q13rvxIx7L47fNoV7QRL2iE7BCjQtBT3ywiF50xHGg5Abf_6tumoVXom2Rnc8U1dON13ODefsuQkPnc6RiAQ",
+      "x5t": "0REIavvlEX8xS9kcDE_NFz32iIs",
+      "x5c": [
+        "MIIC9DCCAdygAwIBAgIIKh9Stw1eUs8wDQYJKoZIhvcNAQELBQAwMDEuMCwGA1UEAxMlT3BlbklkZGljdCBTZXJ2ZXIgU2lnbmluZyBDZXJ0aWZpY2F0ZTAeFw0yMzA3MjgxNjA4MzNaFw0yNTA3MjgxNjA4MzNaMDAxLjAsBgNVBAMTJU9wZW5JZGRpY3QgU2VydmVyIFNpZ25pbmcgQ2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDNACAzUgD+9RnE7hOJVHuCMX3n5w5rJDClfveBoAwUEEBQA4SoueNkJg05cV6/jG8JMXnW2G7pXYOTEgUpzoRmlKPfLZhN+NPtHhnhEyK3nWZUKWKPbAnIzW+0lBZz0+K2jf479n/6uCGyWR93wEnJF5FJGhqc4746crt9dzaiXzKZVR00+bWZM6lQKjmLVTXL2tjntwd9xh+t9h1lqlOl6bKFKmDyqfGmphYdlIfPzbnVUHdRvc7QAwp4pCufiYV3mrXeu/EjHsvjt82hXtBEvaITsEKNC0FPfLCIXnTEcaDkBt//q26ahVeibZGdzxTV043Xc4N5+y5CQ+dzpGIBAgMBAAGjEjAQMA4GA1UdDwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAQEAqp/cKUxkQlCNhHOn/eeOOg6Rq/Ftb2M23c6ljSb9TuhqHBtTDBWwb6is9zNBhXH6xuBCfznponDkZX1G4q8p+FxM1yPPQjx/j2JEx0TVtnzHrghASJ9hLP44ouEalfZsqSpQD0LVUdOOFp3VVAxAdCjgDLSoP6sqGZ1pf32/TOyK05ZBL6xO1VV2ueML4HgpYKp7dky+K8Hs4Tn1HU4hItrO6Uyzvj3KrB13qhz5wWXm9kLIUvgnz/Tzn8x+U53bq6g6Hah0r4Nsfi1FgTDkznbivZ6xd8fzM/baTFa6MfR/AZvZ3qU3M4+WjfmKCYhkHJbK1YRJz3p0QFIq10pGJg=="
+      ]
+    }
+  ]
+}.
+[14:32:54:726 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] Executing endpoint 'BoostProject.Api.Controllers.Feedbacks.FeedbacksController.GetFeedbacks (BoostProject.Api)'
+[14:32:54:733 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] Route matched with {action = "GetFeedbacks", controller = "Feedbacks"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[BoostProject.Services.FeedbackService.Models.FeedbackResponse]] GetFeedbacks() on controller BoostProject.Api.Controllers.Feedbacks.FeedbacksController (BoostProject.Api).
+[14:32:55:043 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] Returning all feedbacks..
+[14:32:55:046 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] Returning feedbacks from database..
+[14:32:55:111 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT f."Id", f."Content", f."CreationDateTime", f."ModificationDateTime", f."UserId"
+FROM "Feedbacks" AS f
+[14:32:55:114 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] All feedbacks was returned successfully
+[14:32:55:117 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] Executing ObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[BoostProject.Data.Entities.Feedbacks.Feedback, BoostProject.Data.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[BoostProject.Services.FeedbackService.Models.FeedbackResponse, BoostProject.Services.FeedbackService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[14:32:55:123 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] Executed action BoostProject.Api.Controllers.Feedbacks.FeedbacksController.GetFeedbacks (BoostProject.Api) in 387.7863ms
+[14:32:55:126 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] Executed endpoint 'BoostProject.Api.Controllers.Feedbacks.FeedbacksController.GetFeedbacks (BoostProject.Api)'
+[14:32:55:127 INF (5e0e2fae-5f18-4107-b493-171c2eb401d7)] Request finished HTTP/2 GET https://localhost:7000/api/v1/Feedbacks - - - 200 - application/json;+charset=utf-8 750.3269ms
+[14:33:01:544 INF (7793fec2-dde1-4f73-905a-43bd31c9cb32)] Request starting HTTP/2 GET https://localhost:7000/api/v1/Orders - -
+[14:33:01:557 INF (7793fec2-dde1-4f73-905a-43bd31c9cb32)] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=scope and Claim.Value is one of the following values: (access_for_orders)
+[14:33:01:569 INF (7793fec2-dde1-4f73-905a-43bd31c9cb32)] The response was successfully returned as a challenge response: {
+  "error": "insufficient_access",
+  "error_description": "The user represented by the token is not allowed to perform the requested action.",
+  "error_uri": "https://documentation.openiddict.com/errors/ID2095"
+}.
+[14:33:01:571 INF (7793fec2-dde1-4f73-905a-43bd31c9cb32)] AuthenticationScheme: OpenIddict.Validation.AspNetCore was forbidden.
+[14:33:01:573 INF (7793fec2-dde1-4f73-905a-43bd31c9cb32)] Request finished HTTP/2 GET https://localhost:7000/api/v1/Orders - - - 403 0 - 28.8397ms
+[14:33:31:832 INF (eae63332-8e6c-42f6-8632-56d06c8ccada)] Request starting HTTP/2 GET https://localhost:7000/api/v1/GameAccounts/verified - -
+[14:33:31:843 INF (eae63332-8e6c-42f6-8632-56d06c8ccada)] Executing endpoint 'BoostProject.Api.Controllers.GameAccounts.GameAccountsController.GetVerifiedGameAccounts (BoostProject.Api)'
+[14:33:31:847 INF (eae63332-8e6c-42f6-8632-56d06c8ccada)] Route matched with {action = "GetVerifiedGameAccounts", controller = "GameAccounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[BoostProject.Services.GameAccountService.Models.GameAccountResponse]] GetVerifiedGameAccounts() on controller BoostProject.Api.Controllers.GameAccounts.GameAccountsController (BoostProject.Api).
+[14:33:32:074 INF (eae63332-8e6c-42f6-8632-56d06c8ccada)] Returning verified game accounts..
+[14:33:32:078 INF (eae63332-8e6c-42f6-8632-56d06c8ccada)] Returning game accounts from database..
+[14:33:32:105 INF (eae63332-8e6c-42f6-8632-56d06c8ccada)] Executed DbCommand (8ms) [Parameters=[@__isVerified_0='True'], CommandType='"Text"', CommandTimeout='600']
+SELECT g."Id", g."Cost", g."CreationDateTime", g."Discount", g."Game", g."GameHours", g."GameRank", g."IsPrime", g."IsSmurf", g."IsVerified", g."Label", g."ModificationDateTime", g."SellerId"
+FROM "GameAccounts" AS g
+WHERE g."IsVerified" = @__isVerified_0
+[14:33:32:108 INF (eae63332-8e6c-42f6-8632-56d06c8ccada)] All game accounts were returned successfully. Amount: 0
+[14:33:32:111 INF (eae63332-8e6c-42f6-8632-56d06c8ccada)] Executing ObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[BoostProject.Data.Entities.GameAccounts.GameAccount, BoostProject.Data.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[BoostProject.Services.GameAccountService.Models.GameAccountResponse, BoostProject.Services.GameAccountService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[14:33:32:118 INF (eae63332-8e6c-42f6-8632-56d06c8ccada)] Executed action BoostProject.Api.Controllers.GameAccounts.GameAccountsController.GetVerifiedGameAccounts (BoostProject.Api) in 266.3982ms
+[14:33:32:120 INF (eae63332-8e6c-42f6-8632-56d06c8ccada)] Executed endpoint 'BoostProject.Api.Controllers.GameAccounts.GameAccountsController.GetVerifiedGameAccounts (BoostProject.Api)'
+[14:33:32:122 INF (eae63332-8e6c-42f6-8632-56d06c8ccada)] Request finished HTTP/2 GET https://localhost:7000/api/v1/GameAccounts/verified - - - 200 - application/json;+charset=utf-8 289.9256ms
+[14:33:36:844 INF (3d12208e-3ece-4153-9127-15a69ae9515b)] Request starting HTTP/2 GET https://localhost:7000/api/v1/GameAccounts/unverified - -
+[14:33:36:853 INF (3d12208e-3ece-4153-9127-15a69ae9515b)] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=scope and Claim.Value is one of the following values: (access_for_getting_unverified_game_accounts)
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+[14:33:36:856 INF (3d12208e-3ece-4153-9127-15a69ae9515b)] The response was successfully returned as a challenge response: {
+  "error": "insufficient_access",
+  "error_description": "The user represented by the token is not allowed to perform the requested action.",
+  "error_uri": "https://documentation.openiddict.com/errors/ID2095"
+}.
+[14:33:36:858 INF (3d12208e-3ece-4153-9127-15a69ae9515b)] AuthenticationScheme: OpenIddict.Validation.AspNetCore was forbidden.
+[14:33:36:861 INF (3d12208e-3ece-4153-9127-15a69ae9515b)] Request finished HTTP/2 GET https://localhost:7000/api/v1/GameAccounts/unverified - - - 403 0 - 17.2135ms
+[14:35:10:652 INF (37a0aa73-6995-4965-9373-71619cf152a4)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:35:10:671 INF (37a0aa73-6995-4965-9373-71619cf152a4)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 19.2221ms
+[14:35:10:719 INF (28b2ec62-d701-457a-a2fa-ddeaa043311f)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:35:10:723 INF (28b2ec62-d701-457a-a2fa-ddeaa043311f)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 4.0041ms
+[14:35:10:740 INF (dc48be3b-2f67-4f54-bf83-6ec85f849d28)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:35:10:785 INF (dc48be3b-2f67-4f54-bf83-6ec85f849d28)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.4957ms
+[14:35:10:916 INF (43dbabda-07ae-41b7-b31b-0659750c066e)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:35:10:989 INF (43dbabda-07ae-41b7-b31b-0659750c066e)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 72.7798ms
+[14:36:24:808 INF (342eeddd-a110-46eb-bc19-18219669c9ca)] Request starting HTTP/1.1 POST https://localhost:7000/api/v1/accounts/login application/json;+charset=utf-8 -
+[14:36:24:813 INF (342eeddd-a110-46eb-bc19-18219669c9ca)] Executing endpoint 'BoostProject.Api.Controllers.Accounts.AccountsController.Login (BoostProject.Api)'
+[14:36:24:825 INF (342eeddd-a110-46eb-bc19-18219669c9ca)] Route matched with {action = "Login", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BoostProject.Services.UserAccountService.Models.LoginUserAccountResponse]] Login(BoostProject.Api.Controllers.Accounts.LoginUserAccountRequest) on controller BoostProject.Api.Controllers.Accounts.AccountsController (BoostProject.Api).
+[14:36:24:842 INF (342eeddd-a110-46eb-bc19-18219669c9ca)] --> User (Email: jozzzwardtm@mail.ru) trying to sign in.
+[14:36:24:854 INF (342eeddd-a110-46eb-bc19-18219669c9ca)] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='JOZZZWARDTM@MAIL.RU'], CommandType='"Text"', CommandTimeout='600']
+SELECT u."Id", u."AccessFailedCount", u."ConcurrencyStamp", u."CreationDateTime", u."Email", u."EmailConfirmed", u."FirstName", u."ImageUri", u."LastName", u."LockoutEnabled", u."LockoutEnd", u."ModificationDateTime", u."NormalizedEmail", u."NormalizedUserName", u."PasswordHash", u."PhoneNumber", u."PhoneNumberConfirmed", u."SecondName", u."SecurityStamp", u."TwoFactorEnabled", u."UserName"
+FROM "Users" AS u
+WHERE u."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[14:36:24:976 INF (342eeddd-a110-46eb-bc19-18219669c9ca)] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='b4663f58-0ef0-43f3-a3b8-ef002d81b172'], CommandType='"Text"', CommandTimeout='600']
+SELECT u."Id", u."ClaimType", u."ClaimValue", u."UserId"
+FROM "UsersClaims" AS u
+WHERE u."UserId" = @__user_Id_0
+[14:36:24:985 INF (342eeddd-a110-46eb-bc19-18219669c9ca)] Executed DbCommand (2ms) [Parameters=[@__userId_0='b4663f58-0ef0-43f3-a3b8-ef002d81b172'], CommandType='"Text"', CommandTimeout='600']
+SELECT u0."Name"
+FROM "UsersRoleOwners" AS u
+INNER JOIN "UserRoles" AS u0 ON u."RoleId" = u0."Id"
+WHERE u."UserId" = @__userId_0
+[14:36:24:993 INF (342eeddd-a110-46eb-bc19-18219669c9ca)] AuthenticationScheme: Identity.Application signed in.
+[14:36:24:996 INF (342eeddd-a110-46eb-bc19-18219669c9ca)] --> User (Email: jozzzwardtm@mail.ru) successfully logged in.
+[14:36:24:999 INF (342eeddd-a110-46eb-bc19-18219669c9ca)] Executing OkObjectResult, writing value of type 'BoostProject.Services.UserAccountService.Models.LoginUserAccountResponse'.
+[14:36:25:005 INF (342eeddd-a110-46eb-bc19-18219669c9ca)] Executed action BoostProject.Api.Controllers.Accounts.AccountsController.Login (BoostProject.Api) in 175.3839ms
+[14:36:25:008 INF (342eeddd-a110-46eb-bc19-18219669c9ca)] Executed endpoint 'BoostProject.Api.Controllers.Accounts.AccountsController.Login (BoostProject.Api)'
+[14:36:25:012 INF (342eeddd-a110-46eb-bc19-18219669c9ca)] Request finished HTTP/1.1 POST https://localhost:7000/api/v1/accounts/login application/json;+charset=utf-8 - - 200 - application/json;+charset=utf-8 203.7343ms
+[14:36:37:150 INF (52b2979b-4c40-4739-8c39-cca026f0b5e4)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:36:37:168 INF (52b2979b-4c40-4739-8c39-cca026f0b5e4)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 17.7663ms
+[14:36:37:195 INF (d7a40f90-8884-4479-aa07-1c6427261414)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:36:37:195 INF (679c3e1b-b221-41f2-a0c6-03b2e39c37ad)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:36:37:202 INF (679c3e1b-b221-41f2-a0c6-03b2e39c37ad)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 7.2268ms
+[14:36:37:239 INF (d7a40f90-8884-4479-aa07-1c6427261414)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.9494ms
+[14:36:37:426 INF (f0a87b97-ae50-4693-bb26-c3a3c1284fe5)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:36:37:470 INF (f0a87b97-ae50-4693-bb26-c3a3c1284fe5)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 44.4122ms
+[14:36:47:666 INF (f3391777-4ea3-4007-9d5a-3f67fad80d62)] Request starting HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=D-uEca9m7vaOcXqDQZCKUi5uSY7dSM4QVyx3vhghZgo&state=RnJpIEF1ZyAwNCAyMDIzIDE0OjM2OjQwIEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - -
+[14:36:47:676 INF (f3391777-4ea3-4007-9d5a-3f67fad80d62)] Sending file. Request path: '/oauth2-redirect.html'. Physical path: 'N/A'
+[14:36:47:680 INF (f3391777-4ea3-4007-9d5a-3f67fad80d62)] Request finished HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=D-uEca9m7vaOcXqDQZCKUi5uSY7dSM4QVyx3vhghZgo&state=RnJpIEF1ZyAwNCAyMDIzIDE0OjM2OjQwIEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - - - 200 - text/html 14.3207ms
+[14:36:47:707 INF (92e99905-e955-4324-b75e-c57bfc0051ac)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:36:47:708 INF (49f6c02a-fae1-484e-9b92-d4d40ba0394a)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:36:47:712 INF (49f6c02a-fae1-484e-9b92-d4d40ba0394a)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 3.8617ms
+[14:36:47:757 INF (92e99905-e955-4324-b75e-c57bfc0051ac)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.9902ms
+[14:40:52:767 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[14:40:53:469 INF ()] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[14:40:53:610 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[14:40:53:636 INF ()] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[14:40:53:655 INF ()] No migrations were applied. The database is already up to date.
+[14:40:53:674 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14:40:58:138 INF (8be91b3d-62c0-49bf-aaaa-ea35f76a30fa)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:40:58:722 INF (8be91b3d-62c0-49bf-aaaa-ea35f76a30fa)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 585.4328ms
+[14:40:58:725 INF (fb69cc62-8f14-4a66-964a-ba4a73e327f6)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:40:58:743 INF (fb69cc62-8f14-4a66-964a-ba4a73e327f6)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 17.5394ms
+[14:40:58:754 INF (6364bbc7-b3bf-48b4-ae23-a00794890a96)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:40:58:847 INF (6364bbc7-b3bf-48b4-ae23-a00794890a96)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 92.6235ms
+[14:40:59:113 INF (6bed2fc4-9283-4901-93a1-fe79b3525467)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:40:59:502 INF (6bed2fc4-9283-4901-93a1-fe79b3525467)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 388.1932ms
+[14:41:25:260 INF (5fee122d-2ca7-4eb3-ad33-1854711687d2)] Request starting HTTP/1.1 POST https://localhost:7000/api/v1/accounts/login application/json;+charset=utf-8 -
+[14:41:25:282 INF (5fee122d-2ca7-4eb3-ad33-1854711687d2)] Executing endpoint 'BoostProject.Api.Controllers.Accounts.AccountsController.Login (BoostProject.Api)'
+[14:41:25:307 INF (5fee122d-2ca7-4eb3-ad33-1854711687d2)] Route matched with {action = "Login", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BoostProject.Services.UserAccountService.Models.LoginUserAccountResponse]] Login(BoostProject.Api.Controllers.Accounts.LoginUserAccountRequest) on controller BoostProject.Api.Controllers.Accounts.AccountsController (BoostProject.Api).
+[14:41:26:009 INF (5fee122d-2ca7-4eb3-ad33-1854711687d2)] --> User (Email: jozzzwardtm@mail.ru) trying to sign in.
+[14:41:26:503 INF (5fee122d-2ca7-4eb3-ad33-1854711687d2)] Executed DbCommand (21ms) [Parameters=[@__normalizedEmail_0='JOZZZWARDTM@MAIL.RU'], CommandType='"Text"', CommandTimeout='600']
+SELECT u."Id", u."AccessFailedCount", u."ConcurrencyStamp", u."CreationDateTime", u."Email", u."EmailConfirmed", u."FirstName", u."ImageUri", u."LastName", u."LockoutEnabled", u."LockoutEnd", u."ModificationDateTime", u."NormalizedEmail", u."NormalizedUserName", u."PasswordHash", u."PhoneNumber", u."PhoneNumberConfirmed", u."SecondName", u."SecurityStamp", u."TwoFactorEnabled", u."UserName"
+FROM "Users" AS u
+WHERE u."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+[14:41:26:700 INF (5fee122d-2ca7-4eb3-ad33-1854711687d2)] Executed DbCommand (5ms) [Parameters=[@__user_Id_0='b4663f58-0ef0-43f3-a3b8-ef002d81b172'], CommandType='"Text"', CommandTimeout='600']
+SELECT u."Id", u."ClaimType", u."ClaimValue", u."UserId"
+FROM "UsersClaims" AS u
+WHERE u."UserId" = @__user_Id_0
+[14:41:26:731 INF (5fee122d-2ca7-4eb3-ad33-1854711687d2)] Executed DbCommand (3ms) [Parameters=[@__userId_0='b4663f58-0ef0-43f3-a3b8-ef002d81b172'], CommandType='"Text"', CommandTimeout='600']
+SELECT u0."Name"
+FROM "UsersRoleOwners" AS u
+INNER JOIN "UserRoles" AS u0 ON u."RoleId" = u0."Id"
+WHERE u."UserId" = @__userId_0
+[14:41:26:743 INF (5fee122d-2ca7-4eb3-ad33-1854711687d2)] AuthenticationScheme: Identity.Application signed in.
+[14:41:26:751 INF (5fee122d-2ca7-4eb3-ad33-1854711687d2)] --> User (Email: jozzzwardtm@mail.ru) successfully logged in.
+[14:41:26:761 INF (5fee122d-2ca7-4eb3-ad33-1854711687d2)] Executing OkObjectResult, writing value of type 'BoostProject.Services.UserAccountService.Models.LoginUserAccountResponse'.
+[14:41:26:779 INF (5fee122d-2ca7-4eb3-ad33-1854711687d2)] Executed action BoostProject.Api.Controllers.Accounts.AccountsController.Login (BoostProject.Api) in 1464.0433ms
+[14:41:26:782 INF (5fee122d-2ca7-4eb3-ad33-1854711687d2)] Executed endpoint 'BoostProject.Api.Controllers.Accounts.AccountsController.Login (BoostProject.Api)'
+[14:41:26:789 INF (5fee122d-2ca7-4eb3-ad33-1854711687d2)] Request finished HTTP/1.1 POST https://localhost:7000/api/v1/accounts/login application/json;+charset=utf-8 - - 200 - application/json;+charset=utf-8 1529.4969ms
+[14:41:31:217 INF (de3045c0-07b4-46e2-b23f-be7504485d28)] Request starting HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=jkwiftUq6IDrGpqrvPALCPFOLUoTkXeNntaNef4l6_c&state=RnJpIEF1ZyAwNCAyMDIzIDE0OjQxOjE3IEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - -
+[14:41:31:254 INF (de3045c0-07b4-46e2-b23f-be7504485d28)] Sending file. Request path: '/oauth2-redirect.html'. Physical path: 'N/A'
+[14:41:31:259 INF (de3045c0-07b4-46e2-b23f-be7504485d28)] Request finished HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=jkwiftUq6IDrGpqrvPALCPFOLUoTkXeNntaNef4l6_c&state=RnJpIEF1ZyAwNCAyMDIzIDE0OjQxOjE3IEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - - - 200 - text/html 41.2271ms
+[14:41:31:280 INF (7ea5a880-f093-4267-8135-c129437ed819)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:41:31:280 INF (981071d2-1947-4fea-8ae0-f82230a359b4)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:41:31:286 INF (981071d2-1947-4fea-8ae0-f82230a359b4)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 6.8799ms
+[14:41:31:300 INF (7ea5a880-f093-4267-8135-c129437ed819)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.2710ms
+[14:41:37:261 INF (29bba074-f13e-4bde-ae81-0cd33acc647f)] Request starting HTTP/2 GET https://localhost:7000/api/v1/GameAccounts/unverified - -
+[14:41:37:455 INF (29bba074-f13e-4bde-ae81-0cd33acc647f)] Start processing HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[14:41:37:467 INF (29bba074-f13e-4bde-ae81-0cd33acc647f)] Sending HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[14:41:37:554 INF (29bba074-f13e-4bde-ae81-0cd33acc647f)] Received HTTP response headers after 82.887ms - 200
+[14:41:37:562 INF (29bba074-f13e-4bde-ae81-0cd33acc647f)] End processing HTTP request after 108.2624ms - 200
+[14:41:37:572 INF (29bba074-f13e-4bde-ae81-0cd33acc647f)] The configuration request was successfully sent to "https://localhost:8000/.well-known/openid-configuration": {}.
+[14:41:37:605 INF (29bba074-f13e-4bde-ae81-0cd33acc647f)] The configuration response returned by "https://localhost:8000/.well-known/openid-configuration" was successfully extracted: {
+  "issuer": "https://localhost:8000/",
+  "authorization_endpoint": "https://localhost:8000/connect/authorize",
+  "token_endpoint": "https://localhost:8000/connect/token",
+  "end_session_endpoint": "https://localhost:8000/connect/logout",
+  "userinfo_endpoint": "https://localhost:8000/connect/userinfo",
+  "jwks_uri": "https://localhost:8000/.well-known/jwks",
+  "grant_types_supported": [
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "code"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "access_for_user_account",
+    "access_for_messages",
+    "access_to_write_messages",
+    "access_to_write_feedbacks",
+    "access_to_write_gameaccounts",
+    "access_for_getting_unverified_game_accounts",
+    "access_for_account_confirmations",
+    "access_for_orders",
+    "email",
+    "profile",
+    "roles",
+    "offline_access"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "sub",
+    "profile",
+    "role",
+    "email"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "plain",
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false,
+  "authorization_response_iss_parameter_supported": true
+}.
+[14:41:37:620 INF (29bba074-f13e-4bde-ae81-0cd33acc647f)] Start processing HTTP request GET https://localhost:8000/.well-known/jwks
+[14:41:37:623 INF (29bba074-f13e-4bde-ae81-0cd33acc647f)] Sending HTTP request GET https://localhost:8000/.well-known/jwks
+[14:41:37:652 INF (29bba074-f13e-4bde-ae81-0cd33acc647f)] Received HTTP response headers after 27.6497ms - 200
+[14:41:37:654 INF (29bba074-f13e-4bde-ae81-0cd33acc647f)] End processing HTTP request after 33.4526ms - 200
+[14:41:37:658 INF (29bba074-f13e-4bde-ae81-0cd33acc647f)] The cryptography request was successfully sent to "https://localhost:8000/.well-known/jwks": {}.
+[14:41:37:663 INF (29bba074-f13e-4bde-ae81-0cd33acc647f)] The cryptography response returned by "https://localhost:8000/.well-known/jwks" was successfully extracted: {
+  "keys": [
+    {
+      "kid": "D111086AFBE5117F314BD91C0C4FCD173DF6888B",
+      "use": "sig",
+      "kty": "RSA",
+      "alg": "RS256",
+      "e": "AQAB",
+      "n": "zQAgM1IA_vUZxO4TiVR7gjF95-cOayQwpX73gaAMFBBAUAOEqLnjZCYNOXFev4xvCTF51thu6V2DkxIFKc6EZpSj3y2YTfjT7R4Z4RMit51mVClij2wJyM1vtJQWc9Pito3-O_Z_-rghslkfd8BJyReRSRoanOO-OnK7fXc2ol8ymVUdNPm1mTOpUCo5i1U1y9rY57cHfcYfrfYdZapTpemyhSpg8qnxpqYWHZSHz8251VB3Ub3O0AMKeKQrn4mFd5q13rvxIx7L47fNoV7QRL2iE7BCjQtBT3ywiF50xHGg5Abf_6tumoVXom2Rnc8U1dON13ODefsuQkPnc6RiAQ",
+      "x5t": "0REIavvlEX8xS9kcDE_NFz32iIs",
+      "x5c": [
+        "MIIC9DCCAdygAwIBAgIIKh9Stw1eUs8wDQYJKoZIhvcNAQELBQAwMDEuMCwGA1UEAxMlT3BlbklkZGljdCBTZXJ2ZXIgU2lnbmluZyBDZXJ0aWZpY2F0ZTAeFw0yMzA3MjgxNjA4MzNaFw0yNTA3MjgxNjA4MzNaMDAxLjAsBgNVBAMTJU9wZW5JZGRpY3QgU2VydmVyIFNpZ25pbmcgQ2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDNACAzUgD+9RnE7hOJVHuCMX3n5w5rJDClfveBoAwUEEBQA4SoueNkJg05cV6/jG8JMXnW2G7pXYOTEgUpzoRmlKPfLZhN+NPtHhnhEyK3nWZUKWKPbAnIzW+0lBZz0+K2jf479n/6uCGyWR93wEnJF5FJGhqc4746crt9dzaiXzKZVR00+bWZM6lQKjmLVTXL2tjntwd9xh+t9h1lqlOl6bKFKmDyqfGmphYdlIfPzbnVUHdRvc7QAwp4pCufiYV3mrXeu/EjHsvjt82hXtBEvaITsEKNC0FPfLCIXnTEcaDkBt//q26ahVeibZGdzxTV043Xc4N5+y5CQ+dzpGIBAgMBAAGjEjAQMA4GA1UdDwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAQEAqp/cKUxkQlCNhHOn/eeOOg6Rq/Ftb2M23c6ljSb9TuhqHBtTDBWwb6is9zNBhXH6xuBCfznponDkZX1G4q8p+FxM1yPPQjx/j2JEx0TVtnzHrghASJ9hLP44ouEalfZsqSpQD0LVUdOOFp3VVAxAdCjgDLSoP6sqGZ1pf32/TOyK05ZBL6xO1VV2ueML4HgpYKp7dky+K8Hs4Tn1HU4hItrO6Uyzvj3KrB13qhz5wWXm9kLIUvgnz/Tzn8x+U53bq6g6Hah0r4Nsfi1FgTDkznbivZ6xd8fzM/baTFa6MfR/AZvZ3qU3M4+WjfmKCYhkHJbK1YRJz3p0QFIq10pGJg=="
+      ]
+    }
+  ]
+}.
+[14:41:37:771 INF (29bba074-f13e-4bde-ae81-0cd33acc647f)] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=scope and Claim.Value is one of the following values: (access_for_getting_unverified_game_accounts)
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+[14:41:37:782 INF (29bba074-f13e-4bde-ae81-0cd33acc647f)] The response was successfully returned as a challenge response: {
+  "error": "insufficient_access",
+  "error_description": "The user represented by the token is not allowed to perform the requested action.",
+  "error_uri": "https://documentation.openiddict.com/errors/ID2095"
+}.
+[14:41:37:785 INF (29bba074-f13e-4bde-ae81-0cd33acc647f)] AuthenticationScheme: OpenIddict.Validation.AspNetCore was forbidden.
+[14:41:37:787 INF (29bba074-f13e-4bde-ae81-0cd33acc647f)] Request finished HTTP/2 GET https://localhost:7000/api/v1/GameAccounts/unverified - - - 403 0 - 525.7251ms
+[14:43:45:581 INF (5fd4a42a-de94-468c-8439-4e6449917d73)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:43:45:635 INF (5fd4a42a-de94-468c-8439-4e6449917d73)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 54.6181ms
+[14:43:45:654 INF (7031d192-4994-4429-91ad-f1408b1a51e6)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:43:45:654 INF (55e13de6-a3f2-44ad-a2cf-eccf3a28994a)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:43:45:661 INF (55e13de6-a3f2-44ad-a2cf-eccf3a28994a)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 7.0271ms
+[14:43:45:733 INF (7031d192-4994-4429-91ad-f1408b1a51e6)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.5733ms
+[14:43:45:936 INF (69f575da-edc7-41c7-bf2c-d55cf69af8d1)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:43:46:039 INF (69f575da-edc7-41c7-bf2c-d55cf69af8d1)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 102.6838ms
+[14:43:57:111 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[14:43:57:797 INF ()] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[14:43:57:861 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[14:43:57:888 INF ()] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[14:43:57:911 INF ()] No migrations were applied. The database is already up to date.
+[14:43:57:927 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14:44:03:561 INF (20cbc94e-9b02-4e6c-a922-534fbda9dedf)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:44:04:354 INF (20cbc94e-9b02-4e6c-a922-534fbda9dedf)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 796.8384ms
+[14:44:04:385 INF (612c5bea-b2bd-4db5-a3ce-d52843079f89)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:44:04:385 INF (f60e7b86-dd95-44ca-8353-2a1b1dffc4fd)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:44:04:423 INF (f60e7b86-dd95-44ca-8353-2a1b1dffc4fd)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 37.2734ms
+[14:44:04:515 INF (612c5bea-b2bd-4db5-a3ce-d52843079f89)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 129.2802ms
+[14:44:04:885 INF (372889d8-5a3a-4c9e-8dbe-2ee3030c301d)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:44:05:434 INF (372889d8-5a3a-4c9e-8dbe-2ee3030c301d)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 549.8099ms
+[14:44:20:747 INF (ef54d73b-a200-489b-bd22-008d9d14f98f)] Request starting HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=kOcAydmBzq8pAV8BVrbTr1B6-aoW1eGTxeSq30DbsGE&state=RnJpIEF1ZyAwNCAyMDIzIDE0OjQ0OjE2IEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - -
+[14:44:20:781 INF (ef54d73b-a200-489b-bd22-008d9d14f98f)] Sending file. Request path: '/oauth2-redirect.html'. Physical path: 'N/A'
+[14:44:20:786 INF (ef54d73b-a200-489b-bd22-008d9d14f98f)] Request finished HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=kOcAydmBzq8pAV8BVrbTr1B6-aoW1eGTxeSq30DbsGE&state=RnJpIEF1ZyAwNCAyMDIzIDE0OjQ0OjE2IEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - - - 200 - text/html 39.1311ms
+[14:44:20:800 INF (1c673d0c-941c-4384-85a7-b347f0197172)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:44:20:800 INF (bce5ddba-25f8-4e4b-9b4b-d25deee7c98d)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:44:20:802 INF (1c673d0c-941c-4384-85a7-b347f0197172)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.8496ms
+[14:44:20:846 INF (bce5ddba-25f8-4e4b-9b4b-d25deee7c98d)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.1670ms
+[14:44:54:244 INF (68efc381-610d-4bd0-bc36-410446936e4d)] Request starting HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=sI28qk4B4i2jiVrwf2cU6ruzjItetbBlblSlO4V7spY&state=RnJpIEF1ZyAwNCAyMDIzIDE0OjQ0OjUyIEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - -
+[14:44:54:258 INF (68efc381-610d-4bd0-bc36-410446936e4d)] Sending file. Request path: '/oauth2-redirect.html'. Physical path: 'N/A'
+[14:44:54:264 INF (68efc381-610d-4bd0-bc36-410446936e4d)] Request finished HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=sI28qk4B4i2jiVrwf2cU6ruzjItetbBlblSlO4V7spY&state=RnJpIEF1ZyAwNCAyMDIzIDE0OjQ0OjUyIEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - - - 200 - text/html 19.1746ms
+[14:44:54:293 INF (6ddb75ec-7518-411f-ab37-689f553229bc)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:44:54:293 INF (4ce29f66-dc6e-4d30-8c85-0a97dbb4b83e)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:44:54:295 INF (6ddb75ec-7518-411f-ab37-689f553229bc)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.6132ms
+[14:44:54:304 INF (4ce29f66-dc6e-4d30-8c85-0a97dbb4b83e)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.3492ms
+[14:45:12:727 INF (215a5e8c-e3e9-4b34-8277-5965cb7d5a68)] Request starting HTTP/2 GET https://localhost:7000/api/v1/GameAccounts/unverified - -
+[14:45:12:789 INF (215a5e8c-e3e9-4b34-8277-5965cb7d5a68)] Start processing HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[14:45:12:798 INF (215a5e8c-e3e9-4b34-8277-5965cb7d5a68)] Sending HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[14:45:12:881 INF (215a5e8c-e3e9-4b34-8277-5965cb7d5a68)] Received HTTP response headers after 78.0421ms - 200
+[14:45:12:886 INF (215a5e8c-e3e9-4b34-8277-5965cb7d5a68)] End processing HTTP request after 98.3992ms - 200
+[14:45:12:895 INF (215a5e8c-e3e9-4b34-8277-5965cb7d5a68)] The configuration request was successfully sent to "https://localhost:8000/.well-known/openid-configuration": {}.
+[14:45:12:929 INF (215a5e8c-e3e9-4b34-8277-5965cb7d5a68)] The configuration response returned by "https://localhost:8000/.well-known/openid-configuration" was successfully extracted: {
+  "issuer": "https://localhost:8000/",
+  "authorization_endpoint": "https://localhost:8000/connect/authorize",
+  "token_endpoint": "https://localhost:8000/connect/token",
+  "end_session_endpoint": "https://localhost:8000/connect/logout",
+  "userinfo_endpoint": "https://localhost:8000/connect/userinfo",
+  "jwks_uri": "https://localhost:8000/.well-known/jwks",
+  "grant_types_supported": [
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "code"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "access_for_user_account",
+    "access_for_messages",
+    "access_to_write_messages",
+    "access_to_write_feedbacks",
+    "access_to_write_gameaccounts",
+    "access_for_getting_unverified_game_accounts",
+    "access_for_account_confirmations",
+    "access_for_orders",
+    "email",
+    "profile",
+    "roles",
+    "offline_access"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "sub",
+    "profile",
+    "role",
+    "email"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "plain",
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false,
+  "authorization_response_iss_parameter_supported": true
+}.
+[14:45:12:944 INF (215a5e8c-e3e9-4b34-8277-5965cb7d5a68)] Start processing HTTP request GET https://localhost:8000/.well-known/jwks
+[14:45:12:947 INF (215a5e8c-e3e9-4b34-8277-5965cb7d5a68)] Sending HTTP request GET https://localhost:8000/.well-known/jwks
+[14:45:12:972 INF (215a5e8c-e3e9-4b34-8277-5965cb7d5a68)] Received HTTP response headers after 22.8951ms - 200
+[14:45:12:975 INF (215a5e8c-e3e9-4b34-8277-5965cb7d5a68)] End processing HTTP request after 30.5304ms - 200
+[14:45:12:978 INF (215a5e8c-e3e9-4b34-8277-5965cb7d5a68)] The cryptography request was successfully sent to "https://localhost:8000/.well-known/jwks": {}.
+[14:45:12:982 INF (215a5e8c-e3e9-4b34-8277-5965cb7d5a68)] The cryptography response returned by "https://localhost:8000/.well-known/jwks" was successfully extracted: {
+  "keys": [
+    {
+      "kid": "D111086AFBE5117F314BD91C0C4FCD173DF6888B",
+      "use": "sig",
+      "kty": "RSA",
+      "alg": "RS256",
+      "e": "AQAB",
+      "n": "zQAgM1IA_vUZxO4TiVR7gjF95-cOayQwpX73gaAMFBBAUAOEqLnjZCYNOXFev4xvCTF51thu6V2DkxIFKc6EZpSj3y2YTfjT7R4Z4RMit51mVClij2wJyM1vtJQWc9Pito3-O_Z_-rghslkfd8BJyReRSRoanOO-OnK7fXc2ol8ymVUdNPm1mTOpUCo5i1U1y9rY57cHfcYfrfYdZapTpemyhSpg8qnxpqYWHZSHz8251VB3Ub3O0AMKeKQrn4mFd5q13rvxIx7L47fNoV7QRL2iE7BCjQtBT3ywiF50xHGg5Abf_6tumoVXom2Rnc8U1dON13ODefsuQkPnc6RiAQ",
+      "x5t": "0REIavvlEX8xS9kcDE_NFz32iIs",
+      "x5c": [
+        "MIIC9DCCAdygAwIBAgIIKh9Stw1eUs8wDQYJKoZIhvcNAQELBQAwMDEuMCwGA1UEAxMlT3BlbklkZGljdCBTZXJ2ZXIgU2lnbmluZyBDZXJ0aWZpY2F0ZTAeFw0yMzA3MjgxNjA4MzNaFw0yNTA3MjgxNjA4MzNaMDAxLjAsBgNVBAMTJU9wZW5JZGRpY3QgU2VydmVyIFNpZ25pbmcgQ2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDNACAzUgD+9RnE7hOJVHuCMX3n5w5rJDClfveBoAwUEEBQA4SoueNkJg05cV6/jG8JMXnW2G7pXYOTEgUpzoRmlKPfLZhN+NPtHhnhEyK3nWZUKWKPbAnIzW+0lBZz0+K2jf479n/6uCGyWR93wEnJF5FJGhqc4746crt9dzaiXzKZVR00+bWZM6lQKjmLVTXL2tjntwd9xh+t9h1lqlOl6bKFKmDyqfGmphYdlIfPzbnVUHdRvc7QAwp4pCufiYV3mrXeu/EjHsvjt82hXtBEvaITsEKNC0FPfLCIXnTEcaDkBt//q26ahVeibZGdzxTV043Xc4N5+y5CQ+dzpGIBAgMBAAGjEjAQMA4GA1UdDwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAQEAqp/cKUxkQlCNhHOn/eeOOg6Rq/Ftb2M23c6ljSb9TuhqHBtTDBWwb6is9zNBhXH6xuBCfznponDkZX1G4q8p+FxM1yPPQjx/j2JEx0TVtnzHrghASJ9hLP44ouEalfZsqSpQD0LVUdOOFp3VVAxAdCjgDLSoP6sqGZ1pf32/TOyK05ZBL6xO1VV2ueML4HgpYKp7dky+K8Hs4Tn1HU4hItrO6Uyzvj3KrB13qhz5wWXm9kLIUvgnz/Tzn8x+U53bq6g6Hah0r4Nsfi1FgTDkznbivZ6xd8fzM/baTFa6MfR/AZvZ3qU3M4+WjfmKCYhkHJbK1YRJz3p0QFIq10pGJg=="
+      ]
+    }
+  ]
+}.
+[14:45:13:081 INF (215a5e8c-e3e9-4b34-8277-5965cb7d5a68)] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=scope and Claim.Value is one of the following values: (access_for_getting_unverified_game_accounts)
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+[14:45:13:101 INF (215a5e8c-e3e9-4b34-8277-5965cb7d5a68)] The response was successfully returned as a challenge response: {
+  "error": "insufficient_access",
+  "error_description": "The user represented by the token is not allowed to perform the requested action.",
+  "error_uri": "https://documentation.openiddict.com/errors/ID2095"
+}.
+[14:45:13:104 INF (215a5e8c-e3e9-4b34-8277-5965cb7d5a68)] AuthenticationScheme: OpenIddict.Validation.AspNetCore was forbidden.
+[14:45:13:105 INF (215a5e8c-e3e9-4b34-8277-5965cb7d5a68)] Request finished HTTP/2 GET https://localhost:7000/api/v1/GameAccounts/unverified - - - 403 0 - 378.5285ms
+[14:45:20:322 INF (6bc75094-c80f-480d-a4e3-6b5403d537b5)] Request starting HTTP/2 GET https://localhost:7000/api/v1/Orders - -
+[14:45:20:344 INF (6bc75094-c80f-480d-a4e3-6b5403d537b5)] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=scope and Claim.Value is one of the following values: (access_for_orders)
+[14:45:20:349 INF (6bc75094-c80f-480d-a4e3-6b5403d537b5)] The response was successfully returned as a challenge response: {
+  "error": "insufficient_access",
+  "error_description": "The user represented by the token is not allowed to perform the requested action.",
+  "error_uri": "https://documentation.openiddict.com/errors/ID2095"
+}.
+[14:45:20:352 INF (6bc75094-c80f-480d-a4e3-6b5403d537b5)] AuthenticationScheme: OpenIddict.Validation.AspNetCore was forbidden.
+[14:45:20:355 INF (6bc75094-c80f-480d-a4e3-6b5403d537b5)] Request finished HTTP/2 GET https://localhost:7000/api/v1/Orders - - - 403 0 - 33.5096ms
+[14:46:10:883 INF (f5cb401b-6597-429e-8e36-13d5062c93ce)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:46:10:901 INF (f5cb401b-6597-429e-8e36-13d5062c93ce)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 18.0287ms
+[14:46:10:941 INF (09b542fd-d33a-4f1f-921e-1621fcca7c66)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:46:10:941 INF (c14b62a5-97af-4b29-bfc0-f39ce0b0ef0e)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:46:10:947 INF (09b542fd-d33a-4f1f-921e-1621fcca7c66)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 4.5643ms
+[14:46:11:056 INF (c14b62a5-97af-4b29-bfc0-f39ce0b0ef0e)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 115.6603ms
+[14:46:11:211 INF (f053314a-c06b-4df7-a2ee-52b450810ae8)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:46:11:271 INF (f053314a-c06b-4df7-a2ee-52b450810ae8)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 59.9748ms
+[14:51:18:822 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[14:51:19:622 INF ()] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[14:51:19:782 INF ()] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[14:51:19:801 INF ()] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[14:51:19:818 INF ()] No migrations were applied. The database is already up to date.
+[14:51:19:834 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14:51:25:619 INF (190a4961-55b9-4581-8e7d-cba0bbb51dc0)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:51:26:184 INF (190a4961-55b9-4581-8e7d-cba0bbb51dc0)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 568.3115ms
+[14:51:26:262 INF (9e5c57c8-50f9-4fec-a670-5bec23925d96)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:51:26:270 INF (be33fab3-f58b-40f9-9836-7b37ee029044)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:51:26:290 INF (be33fab3-f58b-40f9-9836-7b37ee029044)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 19.9052ms
+[14:51:26:373 INF (9e5c57c8-50f9-4fec-a670-5bec23925d96)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 110.7189ms
+[14:51:26:660 INF (e075f4de-5c71-485f-8f31-dd157cc73692)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:51:27:072 INF (e075f4de-5c71-485f-8f31-dd157cc73692)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 411.5883ms
+[14:51:55:465 INF (350d280f-1d3f-47b7-8f5f-2cb79aedd523)] Request starting HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=DPPc_0cxF6-Ta5oYxkF5U6YPq0ajPIbs6cCt_GKj5F4&state=RnJpIEF1ZyAwNCAyMDIzIDE0OjUxOjUzIEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - -
+[14:51:55:507 INF (350d280f-1d3f-47b7-8f5f-2cb79aedd523)] Sending file. Request path: '/oauth2-redirect.html'. Physical path: 'N/A'
+[14:51:55:519 INF (350d280f-1d3f-47b7-8f5f-2cb79aedd523)] Request finished HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=DPPc_0cxF6-Ta5oYxkF5U6YPq0ajPIbs6cCt_GKj5F4&state=RnJpIEF1ZyAwNCAyMDIzIDE0OjUxOjUzIEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - - - 200 - text/html 51.5733ms
+[14:51:55:535 INF (d7a59776-8312-41b3-8722-3366b7a494b1)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:51:55:535 INF (32c5a96c-c5c3-4425-bb6d-732d8a9c9a63)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:51:55:538 INF (d7a59776-8312-41b3-8722-3366b7a494b1)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 3.3008ms
+[14:51:55:549 INF (32c5a96c-c5c3-4425-bb6d-732d8a9c9a63)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.3088ms
+[14:52:06:658 INF (462ce0a7-a5fd-4f67-9be0-b0450507a7c3)] Request starting HTTP/2 GET https://localhost:7000/api/v1/GameAccounts/unverified - -
+[14:52:06:728 INF (462ce0a7-a5fd-4f67-9be0-b0450507a7c3)] Start processing HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[14:52:06:739 INF (462ce0a7-a5fd-4f67-9be0-b0450507a7c3)] Sending HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[14:52:06:810 INF (462ce0a7-a5fd-4f67-9be0-b0450507a7c3)] Received HTTP response headers after 67.2146ms - 200
+[14:52:06:818 INF (462ce0a7-a5fd-4f67-9be0-b0450507a7c3)] End processing HTTP request after 91.9454ms - 200
+[14:52:06:827 INF (462ce0a7-a5fd-4f67-9be0-b0450507a7c3)] The configuration request was successfully sent to "https://localhost:8000/.well-known/openid-configuration": {}.
+[14:52:06:859 INF (462ce0a7-a5fd-4f67-9be0-b0450507a7c3)] The configuration response returned by "https://localhost:8000/.well-known/openid-configuration" was successfully extracted: {
+  "issuer": "https://localhost:8000/",
+  "authorization_endpoint": "https://localhost:8000/connect/authorize",
+  "token_endpoint": "https://localhost:8000/connect/token",
+  "end_session_endpoint": "https://localhost:8000/connect/logout",
+  "userinfo_endpoint": "https://localhost:8000/connect/userinfo",
+  "jwks_uri": "https://localhost:8000/.well-known/jwks",
+  "grant_types_supported": [
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "code"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "access_for_user_account",
+    "access_for_messages",
+    "access_to_write_messages",
+    "access_to_write_feedbacks",
+    "access_to_write_gameaccounts",
+    "access_for_getting_unverified_game_accounts",
+    "access_for_account_confirmations",
+    "access_for_orders",
+    "email",
+    "profile",
+    "roles",
+    "offline_access"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "sub",
+    "profile",
+    "role",
+    "email"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "plain",
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false,
+  "authorization_response_iss_parameter_supported": true
+}.
+[14:52:06:874 INF (462ce0a7-a5fd-4f67-9be0-b0450507a7c3)] Start processing HTTP request GET https://localhost:8000/.well-known/jwks
+[14:52:06:876 INF (462ce0a7-a5fd-4f67-9be0-b0450507a7c3)] Sending HTTP request GET https://localhost:8000/.well-known/jwks
+[14:52:06:892 INF (462ce0a7-a5fd-4f67-9be0-b0450507a7c3)] Received HTTP response headers after 13.7718ms - 200
+[14:52:06:893 INF (462ce0a7-a5fd-4f67-9be0-b0450507a7c3)] End processing HTTP request after 19.7392ms - 200
+[14:52:06:897 INF (462ce0a7-a5fd-4f67-9be0-b0450507a7c3)] The cryptography request was successfully sent to "https://localhost:8000/.well-known/jwks": {}.
+[14:52:06:904 INF (462ce0a7-a5fd-4f67-9be0-b0450507a7c3)] The cryptography response returned by "https://localhost:8000/.well-known/jwks" was successfully extracted: {
+  "keys": [
+    {
+      "kid": "D111086AFBE5117F314BD91C0C4FCD173DF6888B",
+      "use": "sig",
+      "kty": "RSA",
+      "alg": "RS256",
+      "e": "AQAB",
+      "n": "zQAgM1IA_vUZxO4TiVR7gjF95-cOayQwpX73gaAMFBBAUAOEqLnjZCYNOXFev4xvCTF51thu6V2DkxIFKc6EZpSj3y2YTfjT7R4Z4RMit51mVClij2wJyM1vtJQWc9Pito3-O_Z_-rghslkfd8BJyReRSRoanOO-OnK7fXc2ol8ymVUdNPm1mTOpUCo5i1U1y9rY57cHfcYfrfYdZapTpemyhSpg8qnxpqYWHZSHz8251VB3Ub3O0AMKeKQrn4mFd5q13rvxIx7L47fNoV7QRL2iE7BCjQtBT3ywiF50xHGg5Abf_6tumoVXom2Rnc8U1dON13ODefsuQkPnc6RiAQ",
+      "x5t": "0REIavvlEX8xS9kcDE_NFz32iIs",
+      "x5c": [
+        "MIIC9DCCAdygAwIBAgIIKh9Stw1eUs8wDQYJKoZIhvcNAQELBQAwMDEuMCwGA1UEAxMlT3BlbklkZGljdCBTZXJ2ZXIgU2lnbmluZyBDZXJ0aWZpY2F0ZTAeFw0yMzA3MjgxNjA4MzNaFw0yNTA3MjgxNjA4MzNaMDAxLjAsBgNVBAMTJU9wZW5JZGRpY3QgU2VydmVyIFNpZ25pbmcgQ2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDNACAzUgD+9RnE7hOJVHuCMX3n5w5rJDClfveBoAwUEEBQA4SoueNkJg05cV6/jG8JMXnW2G7pXYOTEgUpzoRmlKPfLZhN+NPtHhnhEyK3nWZUKWKPbAnIzW+0lBZz0+K2jf479n/6uCGyWR93wEnJF5FJGhqc4746crt9dzaiXzKZVR00+bWZM6lQKjmLVTXL2tjntwd9xh+t9h1lqlOl6bKFKmDyqfGmphYdlIfPzbnVUHdRvc7QAwp4pCufiYV3mrXeu/EjHsvjt82hXtBEvaITsEKNC0FPfLCIXnTEcaDkBt//q26ahVeibZGdzxTV043Xc4N5+y5CQ+dzpGIBAgMBAAGjEjAQMA4GA1UdDwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAQEAqp/cKUxkQlCNhHOn/eeOOg6Rq/Ftb2M23c6ljSb9TuhqHBtTDBWwb6is9zNBhXH6xuBCfznponDkZX1G4q8p+FxM1yPPQjx/j2JEx0TVtnzHrghASJ9hLP44ouEalfZsqSpQD0LVUdOOFp3VVAxAdCjgDLSoP6sqGZ1pf32/TOyK05ZBL6xO1VV2ueML4HgpYKp7dky+K8Hs4Tn1HU4hItrO6Uyzvj3KrB13qhz5wWXm9kLIUvgnz/Tzn8x+U53bq6g6Hah0r4Nsfi1FgTDkznbivZ6xd8fzM/baTFa6MfR/AZvZ3qU3M4+WjfmKCYhkHJbK1YRJz3p0QFIq10pGJg=="
+      ]
+    }
+  ]
+}.
+[14:52:07:008 INF (462ce0a7-a5fd-4f67-9be0-b0450507a7c3)] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=scope and Claim.Value is one of the following values: (access_for_getting_unverified_game_accounts)
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+[14:52:07:029 INF (462ce0a7-a5fd-4f67-9be0-b0450507a7c3)] The response was successfully returned as a challenge response: {
+  "error": "insufficient_access",
+  "error_description": "The user represented by the token is not allowed to perform the requested action.",
+  "error_uri": "https://documentation.openiddict.com/errors/ID2095"
+}.
+[14:52:07:032 INF (462ce0a7-a5fd-4f67-9be0-b0450507a7c3)] AuthenticationScheme: OpenIddict.Validation.AspNetCore was forbidden.
+[14:52:07:034 INF (462ce0a7-a5fd-4f67-9be0-b0450507a7c3)] Request finished HTTP/2 GET https://localhost:7000/api/v1/GameAccounts/unverified - - - 403 0 - 375.9559ms
+[14:52:48:618 INF (72aa20ec-4bc6-4224-9da5-b367d762253c)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:52:48:681 INF (72aa20ec-4bc6-4224-9da5-b367d762253c)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 58.8907ms
+[14:52:48:685 INF (867f59f0-bd2d-477e-b5ce-877bf28e3c00)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:52:48:685 INF (52e88845-6289-4cf6-b7a5-f77b7bf638e5)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:52:48:688 INF (867f59f0-bd2d-477e-b5ce-877bf28e3c00)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 3.1434ms
+[14:52:48:749 INF (52e88845-6289-4cf6-b7a5-f77b7bf638e5)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 63.7839ms
+[14:52:48:882 INF (073aafae-e452-4879-a4c7-73eab250efab)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:52:48:977 INF (073aafae-e452-4879-a4c7-73eab250efab)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 94.7630ms
+[14:54:15:166 INF (a20af572-5aa1-4f3a-95a7-5218a580d3ad)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:54:15:190 INF (a20af572-5aa1-4f3a-95a7-5218a580d3ad)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 23.5768ms
+[14:54:15:231 INF (319eb831-07bb-426b-b8e5-68388795f12e)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:54:15:231 INF (dc235151-1e8c-4e7c-a076-8ba8b5149c9a)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:54:15:236 INF (dc235151-1e8c-4e7c-a076-8ba8b5149c9a)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 5.0780ms
+[14:54:15:285 INF (319eb831-07bb-426b-b8e5-68388795f12e)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 53.5021ms
+[14:54:15:526 INF (55178613-8aa0-4567-9db0-ee21741ee75b)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:54:15:584 INF (55178613-8aa0-4567-9db0-ee21741ee75b)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 57.6483ms
+[14:54:33:448 INF (0b47cf57-f9d2-4f4d-a46d-87081ad09a41)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:54:33:472 INF (0b47cf57-f9d2-4f4d-a46d-87081ad09a41)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 24.7023ms
+[14:54:33:549 INF (9a2424aa-d462-4b67-9713-8f2edaa964f3)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:54:33:549 INF (9f340564-f4bf-4aeb-a26c-3e7b8b3881c3)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:54:33:555 INF (9a2424aa-d462-4b67-9713-8f2edaa964f3)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 3.8542ms
+[14:54:33:612 INF (9f340564-f4bf-4aeb-a26c-3e7b8b3881c3)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 62.8146ms
+[14:54:33:835 INF (bd6d4cde-0377-488b-800e-1ffc5b21a106)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:54:33:897 INF (bd6d4cde-0377-488b-800e-1ffc5b21a106)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 61.9737ms
+[14:54:35:971 INF (59c13008-d2a0-46da-bf9e-71a7552941a7)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:54:35:989 INF (59c13008-d2a0-46da-bf9e-71a7552941a7)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 18.4016ms
+[14:54:36:042 INF (ead0213f-e1bc-40b5-bed1-ae936bb60137)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:54:36:043 INF (e77edb0c-8cd1-431a-86ce-e1f069c3d455)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:54:36:048 INF (e77edb0c-8cd1-431a-86ce-e1f069c3d455)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 5.3520ms
+[14:54:36:098 INF (ead0213f-e1bc-40b5-bed1-ae936bb60137)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.7285ms
+[14:54:36:274 INF (43902b8d-86f9-46b7-92f9-406b00453fdf)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:54:36:345 INF (43902b8d-86f9-46b7-92f9-406b00453fdf)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 71.5818ms
+[14:54:43:119 INF (4e23c18e-105d-4f9a-918e-f2b800925408)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:54:43:139 INF (4e23c18e-105d-4f9a-918e-f2b800925408)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 20.4477ms
+[14:54:43:187 INF (e63d8692-b2fc-4b0d-af10-d9da8a5e7f76)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:54:43:187 INF (598b284c-9676-4b40-804d-7ed4a9244feb)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:54:43:190 INF (e63d8692-b2fc-4b0d-af10-d9da8a5e7f76)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 3.3384ms
+[14:54:43:242 INF (598b284c-9676-4b40-804d-7ed4a9244feb)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 56.0181ms
+[14:54:43:403 INF (7f99bdc0-1b7b-4beb-ac51-44c80466aa99)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:54:43:476 INF (7f99bdc0-1b7b-4beb-ac51-44c80466aa99)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 72.3113ms
+[14:54:46:987 INF (20f60637-96e8-42e1-bc94-2910ff18dc14)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:54:47:012 INF (20f60637-96e8-42e1-bc94-2910ff18dc14)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 25.1314ms
+[14:54:47:053 INF (b585e3a2-1277-429a-91f6-a774c227b729)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:54:47:053 INF (ef0c70da-e454-4476-b3d4-e92f3d9e3291)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:54:47:056 INF (b585e3a2-1277-429a-91f6-a774c227b729)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 3.2268ms
+[14:54:47:112 INF (ef0c70da-e454-4476-b3d4-e92f3d9e3291)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.7914ms
+[14:54:47:330 INF (0f5408bf-295e-423a-9a67-4c4f6a007cd0)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:54:47:377 INF (0f5408bf-295e-423a-9a67-4c4f6a007cd0)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 46.3032ms
+[14:55:00:503 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[14:55:01:215 INF ()] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[14:55:01:274 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[14:55:01:296 INF ()] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[14:55:01:315 INF ()] No migrations were applied. The database is already up to date.
+[14:55:01:330 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14:55:07:615 INF (224a2d7e-264e-4ad1-be92-c280f5fc63be)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:55:08:116 INF (224a2d7e-264e-4ad1-be92-c280f5fc63be)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 501.4596ms
+[14:55:08:175 INF (a30713db-7434-41a3-83a6-9a1ed1b24f17)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:55:08:182 INF (223d39f8-2fde-4b5f-a790-c7021162665a)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:55:08:214 INF (223d39f8-2fde-4b5f-a790-c7021162665a)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 31.3635ms
+[14:55:08:271 INF (a30713db-7434-41a3-83a6-9a1ed1b24f17)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 95.3614ms
+[14:55:08:447 INF (62e3845a-175c-4eb3-880a-7e3fc97a5e03)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:55:08:765 INF (62e3845a-175c-4eb3-880a-7e3fc97a5e03)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 318.5408ms
+[14:56:01:211 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[14:56:01:985 INF ()] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[14:56:02:056 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[14:56:02:084 INF ()] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[14:56:02:111 INF ()] No migrations were applied. The database is already up to date.
+[14:56:02:130 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14:56:09:591 INF (3141028c-d056-4579-87e0-7c8c48c48e9a)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:56:10:065 INF (3141028c-d056-4579-87e0-7c8c48c48e9a)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 478.0402ms
+[14:56:10:105 INF (9d58b8e6-7f94-4240-968c-cc5e87e9e57f)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:56:10:106 INF (48ebde25-c865-4f05-8b90-04c3feca4543)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:56:10:129 INF (48ebde25-c865-4f05-8b90-04c3feca4543)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 20.3632ms
+[14:56:10:213 INF (9d58b8e6-7f94-4240-968c-cc5e87e9e57f)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 107.3722ms
+[14:56:10:401 INF (0ad95f0d-2570-4a4b-a428-284cd67bcae6)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:56:10:741 INF (0ad95f0d-2570-4a4b-a428-284cd67bcae6)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 339.3719ms
+[14:57:47:521 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[14:57:48:302 INF ()] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[14:57:48:364 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[14:57:48:391 INF ()] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[14:57:48:415 INF ()] No migrations were applied. The database is already up to date.
+[14:57:48:439 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14:57:55:216 INF (7edef7b9-9854-4c16-afd2-5e59c72decf9)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[14:57:55:765 INF (7edef7b9-9854-4c16-afd2-5e59c72decf9)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 551.4215ms
+[14:57:55:806 INF (7c1a6ec9-b465-422f-9bb2-7eb6f94b0296)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[14:57:55:806 INF (fe562eeb-f86a-4973-9df2-ef24baac283d)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[14:57:55:829 INF (fe562eeb-f86a-4973-9df2-ef24baac283d)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 23.4216ms
+[14:57:55:897 INF (7c1a6ec9-b465-422f-9bb2-7eb6f94b0296)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 91.2830ms
+[14:57:56:065 INF (d51aeb39-65a5-4029-8e9d-1dcc499f6d3e)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[14:57:56:492 INF (d51aeb39-65a5-4029-8e9d-1dcc499f6d3e)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 426.4467ms
+[15:00:03:035 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[15:00:03:818 INF ()] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:00:03:891 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:00:03:915 INF ()] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[15:00:03:938 INF ()] No migrations were applied. The database is already up to date.
+[15:00:03:958 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[15:03:44:508 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[15:03:45:381 INF ()] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:03:45:444 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:03:45:464 INF ()] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[15:03:45:481 INF ()] No migrations were applied. The database is already up to date.
+[15:03:45:497 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[15:03:50:947 INF (7569b05a-548d-4bc2-8a99-503d2df91cbb)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[15:03:51:663 INF (7569b05a-548d-4bc2-8a99-503d2df91cbb)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 721.2629ms
+[15:03:51:681 INF (ae5fe65b-fe96-4894-a9ef-08f3e974c9a5)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[15:03:51:702 INF (10a6b725-c767-4cd8-a972-ef886b5f0ccf)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[15:03:51:703 INF (ae5fe65b-fe96-4894-a9ef-08f3e974c9a5)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 22.2575ms
+[15:03:51:841 INF (10a6b725-c767-4cd8-a972-ef886b5f0ccf)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 138.8671ms
+[15:03:52:088 INF (43b89cd8-c867-4e8b-bd04-f23670133d46)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[15:03:52:656 INF (43b89cd8-c867-4e8b-bd04-f23670133d46)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 568.2682ms
+[15:05:19:303 INF (c752eacf-c4fd-4200-8793-fdd869b60c7c)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[15:05:19:333 INF (c752eacf-c4fd-4200-8793-fdd869b60c7c)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 29.5493ms
+[15:05:19:349 INF (94ab1263-6216-4be1-b9bf-0250392efb62)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[15:05:19:349 INF (cb64d0d3-7233-44aa-82a3-b6304519fd94)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[15:05:19:353 INF (cb64d0d3-7233-44aa-82a3-b6304519fd94)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 4.3022ms
+[15:05:19:403 INF (94ab1263-6216-4be1-b9bf-0250392efb62)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.5671ms
+[15:05:19:510 INF (b0a050a4-76b9-47d2-8a70-210a85c23db6)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[15:05:19:574 INF (b0a050a4-76b9-47d2-8a70-210a85c23db6)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 59.3882ms
+[15:05:28:599 INF (61ff535b-8a39-4ea9-b21e-75024e8912d5)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[15:05:28:633 INF (61ff535b-8a39-4ea9-b21e-75024e8912d5)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 33.6465ms
+[15:05:28:657 INF (9923a3b9-204b-45f8-882d-8684aacca714)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[15:05:28:658 INF (50359b7c-1b5d-485e-b74e-8deccaa0aa5d)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[15:05:28:664 INF (50359b7c-1b5d-485e-b74e-8deccaa0aa5d)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 6.3357ms
+[15:05:28:709 INF (9923a3b9-204b-45f8-882d-8684aacca714)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.3811ms
+[15:05:28:874 INF (f6d2a7db-c0f8-46b4-ab61-5838a2f86061)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[15:05:28:950 INF (f6d2a7db-c0f8-46b4-ab61-5838a2f86061)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 76.3667ms
+[15:05:41:873 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[15:05:42:587 INF ()] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:05:42:654 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:05:42:677 INF ()] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[15:05:42:699 INF ()] No migrations were applied. The database is already up to date.
+[15:05:42:723 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[15:06:03:351 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[15:06:04:073 INF ()] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:06:04:130 INF ()] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:06:04:152 INF ()] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[15:06:04:174 INF ()] No migrations were applied. The database is already up to date.
+[15:06:04:196 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[15:06:10:760 INF (f891719d-ad3e-42d3-8b8d-cc70c9858878)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[15:06:11:372 INF (f891719d-ad3e-42d3-8b8d-cc70c9858878)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 615.2744ms
+[15:06:11:411 INF (1798f13f-ff00-445a-b946-1a618ebcb429)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[15:06:11:411 INF (cf7d37af-e558-4b70-a2f6-90c7dc25cfa9)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[15:06:11:438 INF (cf7d37af-e558-4b70-a2f6-90c7dc25cfa9)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 26.8284ms
+[15:06:11:513 INF (1798f13f-ff00-445a-b946-1a618ebcb429)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 101.2512ms
+[15:06:11:677 INF (669a0bdf-66b1-4c86-942a-11c32aaa6f85)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[15:06:12:029 INF (669a0bdf-66b1-4c86-942a-11c32aaa6f85)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 351.8695ms
+[15:07:07:273 INF (9f427b76-4038-4c1b-bc39-58b336355812)] Request starting HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=yLYAgffqW4V7HWwjD4ZDwg-eJZCYYUvt7B_C4o__r3k&state=RnJpIEF1ZyAwNCAyMDIzIDE1OjA3OjAzIEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - -
+[15:07:07:312 INF (9f427b76-4038-4c1b-bc39-58b336355812)] Sending file. Request path: '/oauth2-redirect.html'. Physical path: 'N/A'
+[15:07:07:320 INF (9f427b76-4038-4c1b-bc39-58b336355812)] Request finished HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=yLYAgffqW4V7HWwjD4ZDwg-eJZCYYUvt7B_C4o__r3k&state=RnJpIEF1ZyAwNCAyMDIzIDE1OjA3OjAzIEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - - - 200 - text/html 44.8028ms
+[15:07:07:330 INF (edf91665-204e-4009-858c-b3161a88ed74)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[15:07:07:330 INF (d1c4aa29-09d1-4a44-9903-9cc86609e6fe)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[15:07:07:333 INF (edf91665-204e-4009-858c-b3161a88ed74)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 3.2024ms
+[15:07:07:345 INF (d1c4aa29-09d1-4a44-9903-9cc86609e6fe)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.7515ms
+[15:07:12:966 INF (d73f9883-bcbb-4c46-8b3b-295f6589d92b)] Request starting HTTP/2 GET https://localhost:7000/api/v1/GameAccounts/unverified - -
+[15:07:13:029 INF (d73f9883-bcbb-4c46-8b3b-295f6589d92b)] Start processing HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[15:07:13:039 INF (d73f9883-bcbb-4c46-8b3b-295f6589d92b)] Sending HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[15:07:13:127 INF (d73f9883-bcbb-4c46-8b3b-295f6589d92b)] Received HTTP response headers after 81.8016ms - 200
+[15:07:13:133 INF (d73f9883-bcbb-4c46-8b3b-295f6589d92b)] End processing HTTP request after 105.4587ms - 200
+[15:07:13:142 INF (d73f9883-bcbb-4c46-8b3b-295f6589d92b)] The configuration request was successfully sent to "https://localhost:8000/.well-known/openid-configuration": {}.
+[15:07:13:176 INF (d73f9883-bcbb-4c46-8b3b-295f6589d92b)] The configuration response returned by "https://localhost:8000/.well-known/openid-configuration" was successfully extracted: {
+  "issuer": "https://localhost:8000/",
+  "authorization_endpoint": "https://localhost:8000/connect/authorize",
+  "token_endpoint": "https://localhost:8000/connect/token",
+  "end_session_endpoint": "https://localhost:8000/connect/logout",
+  "userinfo_endpoint": "https://localhost:8000/connect/userinfo",
+  "jwks_uri": "https://localhost:8000/.well-known/jwks",
+  "grant_types_supported": [
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "code"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "access_for_user_account",
+    "access_for_messages",
+    "access_to_write_messages",
+    "access_to_write_feedbacks",
+    "access_to_write_gameaccounts",
+    "access_for_getting_unverified_game_accounts",
+    "access_for_account_confirmations",
+    "access_for_orders",
+    "email",
+    "profile",
+    "roles",
+    "offline_access"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "sub",
+    "profile",
+    "role",
+    "email"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "plain",
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false,
+  "authorization_response_iss_parameter_supported": true
+}.
+[15:07:13:191 INF (d73f9883-bcbb-4c46-8b3b-295f6589d92b)] Start processing HTTP request GET https://localhost:8000/.well-known/jwks
+[15:07:13:193 INF (d73f9883-bcbb-4c46-8b3b-295f6589d92b)] Sending HTTP request GET https://localhost:8000/.well-known/jwks
+[15:07:13:225 INF (d73f9883-bcbb-4c46-8b3b-295f6589d92b)] Received HTTP response headers after 30.0338ms - 200
+[15:07:13:228 INF (d73f9883-bcbb-4c46-8b3b-295f6589d92b)] End processing HTTP request after 36.8877ms - 200
+[15:07:13:231 INF (d73f9883-bcbb-4c46-8b3b-295f6589d92b)] The cryptography request was successfully sent to "https://localhost:8000/.well-known/jwks": {}.
+[15:07:13:237 INF (d73f9883-bcbb-4c46-8b3b-295f6589d92b)] The cryptography response returned by "https://localhost:8000/.well-known/jwks" was successfully extracted: {
+  "keys": [
+    {
+      "kid": "D111086AFBE5117F314BD91C0C4FCD173DF6888B",
+      "use": "sig",
+      "kty": "RSA",
+      "alg": "RS256",
+      "e": "AQAB",
+      "n": "zQAgM1IA_vUZxO4TiVR7gjF95-cOayQwpX73gaAMFBBAUAOEqLnjZCYNOXFev4xvCTF51thu6V2DkxIFKc6EZpSj3y2YTfjT7R4Z4RMit51mVClij2wJyM1vtJQWc9Pito3-O_Z_-rghslkfd8BJyReRSRoanOO-OnK7fXc2ol8ymVUdNPm1mTOpUCo5i1U1y9rY57cHfcYfrfYdZapTpemyhSpg8qnxpqYWHZSHz8251VB3Ub3O0AMKeKQrn4mFd5q13rvxIx7L47fNoV7QRL2iE7BCjQtBT3ywiF50xHGg5Abf_6tumoVXom2Rnc8U1dON13ODefsuQkPnc6RiAQ",
+      "x5t": "0REIavvlEX8xS9kcDE_NFz32iIs",
+      "x5c": [
+        "MIIC9DCCAdygAwIBAgIIKh9Stw1eUs8wDQYJKoZIhvcNAQELBQAwMDEuMCwGA1UEAxMlT3BlbklkZGljdCBTZXJ2ZXIgU2lnbmluZyBDZXJ0aWZpY2F0ZTAeFw0yMzA3MjgxNjA4MzNaFw0yNTA3MjgxNjA4MzNaMDAxLjAsBgNVBAMTJU9wZW5JZGRpY3QgU2VydmVyIFNpZ25pbmcgQ2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDNACAzUgD+9RnE7hOJVHuCMX3n5w5rJDClfveBoAwUEEBQA4SoueNkJg05cV6/jG8JMXnW2G7pXYOTEgUpzoRmlKPfLZhN+NPtHhnhEyK3nWZUKWKPbAnIzW+0lBZz0+K2jf479n/6uCGyWR93wEnJF5FJGhqc4746crt9dzaiXzKZVR00+bWZM6lQKjmLVTXL2tjntwd9xh+t9h1lqlOl6bKFKmDyqfGmphYdlIfPzbnVUHdRvc7QAwp4pCufiYV3mrXeu/EjHsvjt82hXtBEvaITsEKNC0FPfLCIXnTEcaDkBt//q26ahVeibZGdzxTV043Xc4N5+y5CQ+dzpGIBAgMBAAGjEjAQMA4GA1UdDwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAQEAqp/cKUxkQlCNhHOn/eeOOg6Rq/Ftb2M23c6ljSb9TuhqHBtTDBWwb6is9zNBhXH6xuBCfznponDkZX1G4q8p+FxM1yPPQjx/j2JEx0TVtnzHrghASJ9hLP44ouEalfZsqSpQD0LVUdOOFp3VVAxAdCjgDLSoP6sqGZ1pf32/TOyK05ZBL6xO1VV2ueML4HgpYKp7dky+K8Hs4Tn1HU4hItrO6Uyzvj3KrB13qhz5wWXm9kLIUvgnz/Tzn8x+U53bq6g6Hah0r4Nsfi1FgTDkznbivZ6xd8fzM/baTFa6MfR/AZvZ3qU3M4+WjfmKCYhkHJbK1YRJz3p0QFIq10pGJg=="
+      ]
+    }
+  ]
+}.
+[15:07:13:344 INF (d73f9883-bcbb-4c46-8b3b-295f6589d92b)] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=scope and Claim.Value is one of the following values: (access_for_getting_unverified_game_accounts)
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+[15:07:13:366 INF (d73f9883-bcbb-4c46-8b3b-295f6589d92b)] The response was successfully returned as a challenge response: {
+  "error": "insufficient_access",
+  "error_description": "The user represented by the token is not allowed to perform the requested action.",
+  "error_uri": "https://documentation.openiddict.com/errors/ID2095"
+}.
+[15:07:13:368 INF (d73f9883-bcbb-4c46-8b3b-295f6589d92b)] AuthenticationScheme: OpenIddict.Validation.AspNetCore was forbidden.
+[15:07:13:371 INF (d73f9883-bcbb-4c46-8b3b-295f6589d92b)] Request finished HTTP/2 GET https://localhost:7000/api/v1/GameAccounts/unverified - - - 403 0 - 404.8501ms
+[15:07:18:685 INF (ac61adde-6c22-4380-8f4e-d52c364c2bfe)] Request starting HTTP/2 GET https://localhost:7000/api/v1/Orders - -
+[15:07:18:693 INF (ac61adde-6c22-4380-8f4e-d52c364c2bfe)] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=scope and Claim.Value is one of the following values: (access_for_orders)
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+[15:07:18:697 INF (ac61adde-6c22-4380-8f4e-d52c364c2bfe)] The response was successfully returned as a challenge response: {
+  "error": "insufficient_access",
+  "error_description": "The user represented by the token is not allowed to perform the requested action.",
+  "error_uri": "https://documentation.openiddict.com/errors/ID2095"
+}.
+[15:07:18:698 INF (ac61adde-6c22-4380-8f4e-d52c364c2bfe)] AuthenticationScheme: OpenIddict.Validation.AspNetCore was forbidden.
+[15:07:18:701 INF (ac61adde-6c22-4380-8f4e-d52c364c2bfe)] Request finished HTTP/2 GET https://localhost:7000/api/v1/Orders - - - 403 0 - 15.6047ms
+[15:19:35:438 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[15:19:36:095 INF ()] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:19:36:143 INF ()] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:19:36:159 INF ()] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[15:19:36:176 INF ()] No migrations were applied. The database is already up to date.
+[15:19:36:194 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[15:19:39:002 INF (78d24992-6124-49d9-8bfb-444c18ab59f7)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[15:19:39:447 INF (78d24992-6124-49d9-8bfb-444c18ab59f7)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 448.9120ms
+[15:19:39:649 INF (0ab6d52a-cc34-467a-90f1-6fa31625fb25)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[15:19:39:649 INF (f0b30cba-c274-4c60-9a2e-ec654981c59a)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[15:19:39:669 INF (f0b30cba-c274-4c60-9a2e-ec654981c59a)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 19.7394ms
+[15:19:39:732 INF (0ab6d52a-cc34-467a-90f1-6fa31625fb25)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 82.5919ms
+[15:19:39:841 INF (86b57400-7038-49db-b4ed-50a80c1ddb3d)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[15:19:40:243 INF (86b57400-7038-49db-b4ed-50a80c1ddb3d)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 402.1386ms
+[15:19:50:918 INF (f47ab6dc-8e61-406b-80af-704ffe01dc17)] Request starting HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=8EHPA6IqaoxUFopBd_5i6ROdfz6dUlzqIQ_2nZfZnzA&state=RnJpIEF1ZyAwNCAyMDIzIDE1OjE5OjQ0IEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - -
+[15:19:50:950 INF (f47ab6dc-8e61-406b-80af-704ffe01dc17)] Sending file. Request path: '/oauth2-redirect.html'. Physical path: 'N/A'
+[15:19:50:954 INF (f47ab6dc-8e61-406b-80af-704ffe01dc17)] Request finished HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=8EHPA6IqaoxUFopBd_5i6ROdfz6dUlzqIQ_2nZfZnzA&state=RnJpIEF1ZyAwNCAyMDIzIDE1OjE5OjQ0IEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - - - 200 - text/html 36.0599ms
+[15:19:50:978 INF (5fe4a050-95e0-417c-a738-52034aaa7fc7)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[15:19:50:977 INF (c5461d33-b7fb-4ec7-8ff2-aad2a9194acb)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[15:19:50:980 INF (5fe4a050-95e0-417c-a738-52034aaa7fc7)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 3.1353ms
+[15:19:50:993 INF (c5461d33-b7fb-4ec7-8ff2-aad2a9194acb)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.7049ms
+[15:19:57:098 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] Request starting HTTP/2 GET https://localhost:7000/api/v1/GameAccounts/verified - -
+[15:19:57:228 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] Start processing HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[15:19:57:236 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] Sending HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[15:19:57:316 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] Received HTTP response headers after 76.3128ms - 200
+[15:19:57:322 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] End processing HTTP request after 96.5779ms - 200
+[15:19:57:331 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] The configuration request was successfully sent to "https://localhost:8000/.well-known/openid-configuration": {}.
+[15:19:57:368 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] The configuration response returned by "https://localhost:8000/.well-known/openid-configuration" was successfully extracted: {
+  "issuer": "https://localhost:8000/",
+  "authorization_endpoint": "https://localhost:8000/connect/authorize",
+  "token_endpoint": "https://localhost:8000/connect/token",
+  "end_session_endpoint": "https://localhost:8000/connect/logout",
+  "userinfo_endpoint": "https://localhost:8000/connect/userinfo",
+  "jwks_uri": "https://localhost:8000/.well-known/jwks",
+  "grant_types_supported": [
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "code"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "access_for_user_account",
+    "access_for_messages",
+    "access_to_write_messages",
+    "access_to_write_feedbacks",
+    "access_to_write_gameaccounts",
+    "access_for_getting_unverified_game_accounts",
+    "access_for_account_confirmations",
+    "access_for_orders",
+    "email",
+    "profile",
+    "roles",
+    "offline_access"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "sub",
+    "profile",
+    "role",
+    "email"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "plain",
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false,
+  "authorization_response_iss_parameter_supported": true
+}.
+[15:19:57:384 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] Start processing HTTP request GET https://localhost:8000/.well-known/jwks
+[15:19:57:387 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] Sending HTTP request GET https://localhost:8000/.well-known/jwks
+[15:19:57:413 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] Received HTTP response headers after 24.1267ms - 200
+[15:19:57:415 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] End processing HTTP request after 30.6824ms - 200
+[15:19:57:417 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] The cryptography request was successfully sent to "https://localhost:8000/.well-known/jwks": {}.
+[15:19:57:421 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] The cryptography response returned by "https://localhost:8000/.well-known/jwks" was successfully extracted: {
+  "keys": [
+    {
+      "kid": "D111086AFBE5117F314BD91C0C4FCD173DF6888B",
+      "use": "sig",
+      "kty": "RSA",
+      "alg": "RS256",
+      "e": "AQAB",
+      "n": "zQAgM1IA_vUZxO4TiVR7gjF95-cOayQwpX73gaAMFBBAUAOEqLnjZCYNOXFev4xvCTF51thu6V2DkxIFKc6EZpSj3y2YTfjT7R4Z4RMit51mVClij2wJyM1vtJQWc9Pito3-O_Z_-rghslkfd8BJyReRSRoanOO-OnK7fXc2ol8ymVUdNPm1mTOpUCo5i1U1y9rY57cHfcYfrfYdZapTpemyhSpg8qnxpqYWHZSHz8251VB3Ub3O0AMKeKQrn4mFd5q13rvxIx7L47fNoV7QRL2iE7BCjQtBT3ywiF50xHGg5Abf_6tumoVXom2Rnc8U1dON13ODefsuQkPnc6RiAQ",
+      "x5t": "0REIavvlEX8xS9kcDE_NFz32iIs",
+      "x5c": [
+        "MIIC9DCCAdygAwIBAgIIKh9Stw1eUs8wDQYJKoZIhvcNAQELBQAwMDEuMCwGA1UEAxMlT3BlbklkZGljdCBTZXJ2ZXIgU2lnbmluZyBDZXJ0aWZpY2F0ZTAeFw0yMzA3MjgxNjA4MzNaFw0yNTA3MjgxNjA4MzNaMDAxLjAsBgNVBAMTJU9wZW5JZGRpY3QgU2VydmVyIFNpZ25pbmcgQ2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDNACAzUgD+9RnE7hOJVHuCMX3n5w5rJDClfveBoAwUEEBQA4SoueNkJg05cV6/jG8JMXnW2G7pXYOTEgUpzoRmlKPfLZhN+NPtHhnhEyK3nWZUKWKPbAnIzW+0lBZz0+K2jf479n/6uCGyWR93wEnJF5FJGhqc4746crt9dzaiXzKZVR00+bWZM6lQKjmLVTXL2tjntwd9xh+t9h1lqlOl6bKFKmDyqfGmphYdlIfPzbnVUHdRvc7QAwp4pCufiYV3mrXeu/EjHsvjt82hXtBEvaITsEKNC0FPfLCIXnTEcaDkBt//q26ahVeibZGdzxTV043Xc4N5+y5CQ+dzpGIBAgMBAAGjEjAQMA4GA1UdDwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAQEAqp/cKUxkQlCNhHOn/eeOOg6Rq/Ftb2M23c6ljSb9TuhqHBtTDBWwb6is9zNBhXH6xuBCfznponDkZX1G4q8p+FxM1yPPQjx/j2JEx0TVtnzHrghASJ9hLP44ouEalfZsqSpQD0LVUdOOFp3VVAxAdCjgDLSoP6sqGZ1pf32/TOyK05ZBL6xO1VV2ueML4HgpYKp7dky+K8Hs4Tn1HU4hItrO6Uyzvj3KrB13qhz5wWXm9kLIUvgnz/Tzn8x+U53bq6g6Hah0r4Nsfi1FgTDkznbivZ6xd8fzM/baTFa6MfR/AZvZ3qU3M4+WjfmKCYhkHJbK1YRJz3p0QFIq10pGJg=="
+      ]
+    }
+  ]
+}.
+[15:19:57:521 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] Executing endpoint 'BoostProject.Api.Controllers.GameAccounts.GameAccountsController.GetVerifiedGameAccounts (BoostProject.Api)'
+[15:19:57:539 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] Route matched with {action = "GetVerifiedGameAccounts", controller = "GameAccounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[BoostProject.Services.GameAccountService.Models.GameAccountResponse]] GetVerifiedGameAccounts() on controller BoostProject.Api.Controllers.GameAccounts.GameAccountsController (BoostProject.Api).
+[15:19:58:217 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] Returning verified game accounts..
+[15:19:58:226 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] Returning game accounts from database..
+[15:19:58:552 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] Executed DbCommand (16ms) [Parameters=[@__isVerified_0='True'], CommandType='"Text"', CommandTimeout='600']
+SELECT g."Id", g."Cost", g."CreationDateTime", g."Discount", g."Game", g."GameHours", g."GameRank", g."IsPrime", g."IsSmurf", g."IsVerified", g."Label", g."ModificationDateTime", g."SellerId"
+FROM "GameAccounts" AS g
+WHERE g."IsVerified" = @__isVerified_0
+[15:19:58:566 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] All game accounts were returned successfully. Amount: 0
+[15:19:58:573 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] Executing ObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[BoostProject.Data.Entities.GameAccounts.GameAccount, BoostProject.Data.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[BoostProject.Services.GameAccountService.Models.GameAccountResponse, BoostProject.Services.GameAccountService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[15:19:58:590 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] Executed action BoostProject.Api.Controllers.GameAccounts.GameAccountsController.GetVerifiedGameAccounts (BoostProject.Api) in 1045.2637ms
+[15:19:58:592 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] Executed endpoint 'BoostProject.Api.Controllers.GameAccounts.GameAccountsController.GetVerifiedGameAccounts (BoostProject.Api)'
+[15:19:58:594 INF (7f5634fc-781e-4c0c-90ea-8260586962c5)] Request finished HTTP/2 GET https://localhost:7000/api/v1/GameAccounts/verified - - - 200 - application/json;+charset=utf-8 1496.0663ms
+[15:20:02:237 INF (c37ed833-8278-41cc-856e-f7de4583846b)] Request starting HTTP/2 GET https://localhost:7000/api/v1/GameAccounts/unverified - -
+[15:20:02:249 INF (c37ed833-8278-41cc-856e-f7de4583846b)] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=scope and Claim.Value is one of the following values: (access_for_getting_unverified_game_accounts)
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+[15:20:02:268 INF (c37ed833-8278-41cc-856e-f7de4583846b)] The response was successfully returned as a challenge response: {
+  "error": "insufficient_access",
+  "error_description": "The user represented by the token is not allowed to perform the requested action.",
+  "error_uri": "https://documentation.openiddict.com/errors/ID2095"
+}.
+[15:20:02:271 INF (c37ed833-8278-41cc-856e-f7de4583846b)] AuthenticationScheme: OpenIddict.Validation.AspNetCore was forbidden.
+[15:20:02:272 INF (c37ed833-8278-41cc-856e-f7de4583846b)] Request finished HTTP/2 GET https://localhost:7000/api/v1/GameAccounts/unverified - - - 403 0 - 35.8095ms
+[15:20:11:834 INF (dfdc0051-b7e3-46dc-b122-a35f21c0e09f)] Request starting HTTP/2 GET https://localhost:7000/api/v1/Orders - -
+[15:20:11:840 INF (dfdc0051-b7e3-46dc-b122-a35f21c0e09f)] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=scope and Claim.Value is one of the following values: (access_for_orders)
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+[15:20:11:844 INF (dfdc0051-b7e3-46dc-b122-a35f21c0e09f)] The response was successfully returned as a challenge response: {
+  "error": "insufficient_access",
+  "error_description": "The user represented by the token is not allowed to perform the requested action.",
+  "error_uri": "https://documentation.openiddict.com/errors/ID2095"
+}.
+[15:20:11:846 INF (dfdc0051-b7e3-46dc-b122-a35f21c0e09f)] AuthenticationScheme: OpenIddict.Validation.AspNetCore was forbidden.
+[15:20:11:848 INF (dfdc0051-b7e3-46dc-b122-a35f21c0e09f)] Request finished HTTP/2 GET https://localhost:7000/api/v1/Orders - - - 403 0 - 13.8448ms
+[15:29:34:359 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[15:29:35:100 INF ()] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:29:35:156 INF ()] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:29:35:175 INF ()] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[15:29:35:195 INF ()] No migrations were applied. The database is already up to date.
+[15:29:35:214 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[15:29:41:618 INF (6743ddf8-6108-4903-ab53-587f4db0e05a)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[15:29:42:238 INF (6743ddf8-6108-4903-ab53-587f4db0e05a)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 623.3916ms
+[15:29:42:300 INF (935da925-e960-4d1e-9599-91254d73dde5)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[15:29:42:300 INF (57d2b367-af04-4eb9-b23e-38b5473dcce8)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[15:29:42:325 INF (935da925-e960-4d1e-9599-91254d73dde5)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 22.4139ms
+[15:29:42:405 INF (57d2b367-af04-4eb9-b23e-38b5473dcce8)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 105.8055ms
+[15:29:42:530 INF (ca22ea61-a3dd-47ed-b2df-fd431f64846f)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[15:29:43:018 INF (ca22ea61-a3dd-47ed-b2df-fd431f64846f)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 488.2011ms
+[15:32:10:233 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[15:32:11:073 INF ()] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:32:11:144 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:32:11:163 INF ()] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[15:32:11:186 INF ()] No migrations were applied. The database is already up to date.
+[15:32:11:203 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[15:35:31:953 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[15:35:32:706 INF ()] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:35:32:786 INF ()] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:35:32:815 INF ()] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[15:35:32:838 INF ()] No migrations were applied. The database is already up to date.
+[15:35:32:859 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[15:35:39:490 INF (21211901-95f4-4fca-8e15-a8aa3f8c17bb)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[15:35:40:218 INF (21211901-95f4-4fca-8e15-a8aa3f8c17bb)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 732.8961ms
+[15:35:40:269 INF (ac535dd8-38bf-4013-9595-31c56efd402b)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[15:35:40:269 INF (bc40b26e-1d18-4704-9836-ecee0d4113fb)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[15:35:40:286 INF (ac535dd8-38bf-4013-9595-31c56efd402b)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 16.7476ms
+[15:35:40:437 INF (bc40b26e-1d18-4704-9836-ecee0d4113fb)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 167.2866ms
+[15:35:40:595 INF (6847ab11-f4db-4d22-ba8f-9b07af7ce2ab)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[15:35:41:155 INF (6847ab11-f4db-4d22-ba8f-9b07af7ce2ab)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 560.2489ms
+[15:36:54:276 INF (5e1d63c7-137d-4179-b941-743e59a5bd4c)] Request starting HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=1s-2SIlFbK57gP7VBSuIdirwE5l792bHFW-TFG5Htik&state=RnJpIEF1ZyAwNCAyMDIzIDE1OjM2OjUxIEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - -
+[15:36:54:412 INF (5e1d63c7-137d-4179-b941-743e59a5bd4c)] Sending file. Request path: '/oauth2-redirect.html'. Physical path: 'N/A'
+[15:36:54:421 INF (5e1d63c7-137d-4179-b941-743e59a5bd4c)] Request finished HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=1s-2SIlFbK57gP7VBSuIdirwE5l792bHFW-TFG5Htik&state=RnJpIEF1ZyAwNCAyMDIzIDE1OjM2OjUxIEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - - - 200 - text/html 145.9132ms
+[15:36:54:426 INF (1b5d3e4f-0f5e-4101-8784-ca0d60f43f05)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[15:36:54:426 INF (f855fccf-c12c-40c7-9fdc-c01e8b4daf07)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[15:36:54:431 INF (f855fccf-c12c-40c7-9fdc-c01e8b4daf07)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 4.9032ms
+[15:36:54:449 INF (1b5d3e4f-0f5e-4101-8784-ca0d60f43f05)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.4860ms
+[15:37:00:635 INF (c560d85c-0429-48b3-a5b4-db7388358bf8)] Request starting HTTP/2 GET https://localhost:7000/api/v1/Orders - -
+[15:37:00:701 INF (c560d85c-0429-48b3-a5b4-db7388358bf8)] Start processing HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[15:37:00:710 INF (c560d85c-0429-48b3-a5b4-db7388358bf8)] Sending HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[15:37:00:772 INF (c560d85c-0429-48b3-a5b4-db7388358bf8)] Received HTTP response headers after 56.0299ms - 200
+[15:37:00:777 INF (c560d85c-0429-48b3-a5b4-db7388358bf8)] End processing HTTP request after 78.0177ms - 200
+[15:37:00:786 INF (c560d85c-0429-48b3-a5b4-db7388358bf8)] The configuration request was successfully sent to "https://localhost:8000/.well-known/openid-configuration": {}.
+[15:37:00:818 INF (c560d85c-0429-48b3-a5b4-db7388358bf8)] The configuration response returned by "https://localhost:8000/.well-known/openid-configuration" was successfully extracted: {
+  "issuer": "https://localhost:8000/",
+  "authorization_endpoint": "https://localhost:8000/connect/authorize",
+  "token_endpoint": "https://localhost:8000/connect/token",
+  "end_session_endpoint": "https://localhost:8000/connect/logout",
+  "userinfo_endpoint": "https://localhost:8000/connect/userinfo",
+  "jwks_uri": "https://localhost:8000/.well-known/jwks",
+  "grant_types_supported": [
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "code"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "access_for_user_account",
+    "access_for_messages",
+    "access_to_write_messages",
+    "access_to_write_feedbacks",
+    "access_to_write_gameaccounts",
+    "access_for_getting_unverified_game_accounts",
+    "access_for_account_confirmations",
+    "access_for_orders",
+    "email",
+    "profile",
+    "roles",
+    "offline_access"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "sub",
+    "profile",
+    "role",
+    "email"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "plain",
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false,
+  "authorization_response_iss_parameter_supported": true
+}.
+[15:37:00:831 INF (c560d85c-0429-48b3-a5b4-db7388358bf8)] Start processing HTTP request GET https://localhost:8000/.well-known/jwks
+[15:37:00:835 INF (c560d85c-0429-48b3-a5b4-db7388358bf8)] Sending HTTP request GET https://localhost:8000/.well-known/jwks
+[15:37:00:848 INF (c560d85c-0429-48b3-a5b4-db7388358bf8)] Received HTTP response headers after 11.6948ms - 200
+[15:37:00:851 INF (c560d85c-0429-48b3-a5b4-db7388358bf8)] End processing HTTP request after 19.6372ms - 200
+[15:37:00:855 INF (c560d85c-0429-48b3-a5b4-db7388358bf8)] The cryptography request was successfully sent to "https://localhost:8000/.well-known/jwks": {}.
+[15:37:00:859 INF (c560d85c-0429-48b3-a5b4-db7388358bf8)] The cryptography response returned by "https://localhost:8000/.well-known/jwks" was successfully extracted: {
+  "keys": [
+    {
+      "kid": "D111086AFBE5117F314BD91C0C4FCD173DF6888B",
+      "use": "sig",
+      "kty": "RSA",
+      "alg": "RS256",
+      "e": "AQAB",
+      "n": "zQAgM1IA_vUZxO4TiVR7gjF95-cOayQwpX73gaAMFBBAUAOEqLnjZCYNOXFev4xvCTF51thu6V2DkxIFKc6EZpSj3y2YTfjT7R4Z4RMit51mVClij2wJyM1vtJQWc9Pito3-O_Z_-rghslkfd8BJyReRSRoanOO-OnK7fXc2ol8ymVUdNPm1mTOpUCo5i1U1y9rY57cHfcYfrfYdZapTpemyhSpg8qnxpqYWHZSHz8251VB3Ub3O0AMKeKQrn4mFd5q13rvxIx7L47fNoV7QRL2iE7BCjQtBT3ywiF50xHGg5Abf_6tumoVXom2Rnc8U1dON13ODefsuQkPnc6RiAQ",
+      "x5t": "0REIavvlEX8xS9kcDE_NFz32iIs",
+      "x5c": [
+        "MIIC9DCCAdygAwIBAgIIKh9Stw1eUs8wDQYJKoZIhvcNAQELBQAwMDEuMCwGA1UEAxMlT3BlbklkZGljdCBTZXJ2ZXIgU2lnbmluZyBDZXJ0aWZpY2F0ZTAeFw0yMzA3MjgxNjA4MzNaFw0yNTA3MjgxNjA4MzNaMDAxLjAsBgNVBAMTJU9wZW5JZGRpY3QgU2VydmVyIFNpZ25pbmcgQ2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDNACAzUgD+9RnE7hOJVHuCMX3n5w5rJDClfveBoAwUEEBQA4SoueNkJg05cV6/jG8JMXnW2G7pXYOTEgUpzoRmlKPfLZhN+NPtHhnhEyK3nWZUKWKPbAnIzW+0lBZz0+K2jf479n/6uCGyWR93wEnJF5FJGhqc4746crt9dzaiXzKZVR00+bWZM6lQKjmLVTXL2tjntwd9xh+t9h1lqlOl6bKFKmDyqfGmphYdlIfPzbnVUHdRvc7QAwp4pCufiYV3mrXeu/EjHsvjt82hXtBEvaITsEKNC0FPfLCIXnTEcaDkBt//q26ahVeibZGdzxTV043Xc4N5+y5CQ+dzpGIBAgMBAAGjEjAQMA4GA1UdDwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAQEAqp/cKUxkQlCNhHOn/eeOOg6Rq/Ftb2M23c6ljSb9TuhqHBtTDBWwb6is9zNBhXH6xuBCfznponDkZX1G4q8p+FxM1yPPQjx/j2JEx0TVtnzHrghASJ9hLP44ouEalfZsqSpQD0LVUdOOFp3VVAxAdCjgDLSoP6sqGZ1pf32/TOyK05ZBL6xO1VV2ueML4HgpYKp7dky+K8Hs4Tn1HU4hItrO6Uyzvj3KrB13qhz5wWXm9kLIUvgnz/Tzn8x+U53bq6g6Hah0r4Nsfi1FgTDkznbivZ6xd8fzM/baTFa6MfR/AZvZ3qU3M4+WjfmKCYhkHJbK1YRJz3p0QFIq10pGJg=="
+      ]
+    }
+  ]
+}.
+[15:37:00:958 INF (c560d85c-0429-48b3-a5b4-db7388358bf8)] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=scope and Claim.Value is one of the following values: (access_for_orders)
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+[15:37:00:979 INF (c560d85c-0429-48b3-a5b4-db7388358bf8)] The response was successfully returned as a challenge response: {
+  "error": "insufficient_access",
+  "error_description": "The user represented by the token is not allowed to perform the requested action.",
+  "error_uri": "https://documentation.openiddict.com/errors/ID2095"
+}.
+[15:37:00:981 INF (c560d85c-0429-48b3-a5b4-db7388358bf8)] AuthenticationScheme: OpenIddict.Validation.AspNetCore was forbidden.
+[15:37:00:983 INF (c560d85c-0429-48b3-a5b4-db7388358bf8)] Request finished HTTP/2 GET https://localhost:7000/api/v1/Orders - - - 403 0 - 348.2228ms
+[15:37:42:466 INF (bbcee97a-ed72-4803-99b9-ec137062c796)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[15:37:42:495 INF (bbcee97a-ed72-4803-99b9-ec137062c796)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 29.0979ms
+[15:37:42:504 INF (3a5ec2cb-4274-4ba3-aab2-b41cc5a45a42)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[15:37:42:520 INF (3a5ec2cb-4274-4ba3-aab2-b41cc5a45a42)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 16.3508ms
+[15:37:42:549 INF (7884a279-3f59-408a-b884-0f45816fc80d)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[15:37:42:550 INF (64646524-6f76-4142-bbe5-d33a780ff8c8)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[15:37:42:555 INF (64646524-6f76-4142-bbe5-d33a780ff8c8)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 5.0961ms
+[15:37:42:619 INF (7884a279-3f59-408a-b884-0f45816fc80d)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 69.7249ms
+[15:37:42:764 INF (3cc730bb-866e-49ac-932c-99d4f04a5cbf)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[15:37:42:851 INF (3cc730bb-866e-49ac-932c-99d4f04a5cbf)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 86.9224ms
+[15:37:54:313 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[15:37:54:980 INF ()] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:37:55:048 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:37:55:069 INF ()] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[15:37:55:088 INF ()] No migrations were applied. The database is already up to date.
+[15:37:55:108 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[15:38:02:298 INF (fe18e07c-265c-4d08-a065-4c36f450555e)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[15:38:03:108 INF (fe18e07c-265c-4d08-a065-4c36f450555e)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 816.1271ms
+[15:38:03:185 INF (11ec0542-2764-40e7-86fd-a7184b79982a)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[15:38:03:185 INF (ac663b9d-98bd-426d-9816-81882c3e32c8)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[15:38:03:203 INF (11ec0542-2764-40e7-86fd-a7184b79982a)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 17.5325ms
+[15:38:03:292 INF (ac663b9d-98bd-426d-9816-81882c3e32c8)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 107.1373ms
+[15:38:03:622 INF (66f5df16-073d-4ad6-9d9c-262fa200b3dd)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[15:38:04:034 INF (66f5df16-073d-4ad6-9d9c-262fa200b3dd)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 412.2813ms
+[15:38:12:385 INF (e423f9be-a26e-4072-a2a7-1e0b670ce544)] Request starting HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=UutYVTP9EwE7dPyaCeGXciqLOAYqElJNBAxqA9XlT0A&state=RnJpIEF1ZyAwNCAyMDIzIDE1OjM4OjExIEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - -
+[15:38:12:413 INF (e423f9be-a26e-4072-a2a7-1e0b670ce544)] Sending file. Request path: '/oauth2-redirect.html'. Physical path: 'N/A'
+[15:38:12:417 INF (e423f9be-a26e-4072-a2a7-1e0b670ce544)] Request finished HTTP/2 GET https://localhost:7000/oauth2-redirect.html?code=UutYVTP9EwE7dPyaCeGXciqLOAYqElJNBAxqA9XlT0A&state=RnJpIEF1ZyAwNCAyMDIzIDE1OjM4OjExIEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D&iss=https%3A%2F%2Flocalhost%3A8000%2F - - - 200 - text/html 31.6846ms
+[15:38:12:440 INF (ac0a10cf-61d5-43a5-8389-0469e22d23db)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[15:38:12:440 INF (842e27e5-6552-432e-a1ed-0da023212e7c)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[15:38:12:445 INF (842e27e5-6552-432e-a1ed-0da023212e7c)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 3.9473ms
+[15:38:12:453 INF (ac0a10cf-61d5-43a5-8389-0469e22d23db)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.6454ms
+[15:38:19:458 INF (2c729e04-5341-45f2-835b-665398251af0)] Request starting HTTP/2 GET https://localhost:7000/api/v1/Orders - -
+[15:38:19:525 INF (2c729e04-5341-45f2-835b-665398251af0)] Start processing HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[15:38:19:533 INF (2c729e04-5341-45f2-835b-665398251af0)] Sending HTTP request GET https://localhost:8000/.well-known/openid-configuration
+[15:38:19:619 INF (2c729e04-5341-45f2-835b-665398251af0)] Received HTTP response headers after 82.4105ms - 200
+[15:38:19:627 INF (2c729e04-5341-45f2-835b-665398251af0)] End processing HTTP request after 104.6992ms - 200
+[15:38:19:635 INF (2c729e04-5341-45f2-835b-665398251af0)] The configuration request was successfully sent to "https://localhost:8000/.well-known/openid-configuration": {}.
+[15:38:19:670 INF (2c729e04-5341-45f2-835b-665398251af0)] The configuration response returned by "https://localhost:8000/.well-known/openid-configuration" was successfully extracted: {
+  "issuer": "https://localhost:8000/",
+  "authorization_endpoint": "https://localhost:8000/connect/authorize",
+  "token_endpoint": "https://localhost:8000/connect/token",
+  "end_session_endpoint": "https://localhost:8000/connect/logout",
+  "userinfo_endpoint": "https://localhost:8000/connect/userinfo",
+  "jwks_uri": "https://localhost:8000/.well-known/jwks",
+  "grant_types_supported": [
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "code"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "access_for_user_account",
+    "access_for_messages",
+    "access_to_write_messages",
+    "access_to_write_feedbacks",
+    "access_to_write_gameaccounts",
+    "access_for_getting_unverified_game_accounts",
+    "access_for_account_confirmations",
+    "access_for_orders",
+    "email",
+    "profile",
+    "roles",
+    "offline_access"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "sub",
+    "profile",
+    "role",
+    "email"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "plain",
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false,
+  "authorization_response_iss_parameter_supported": true
+}.
+[15:38:19:686 INF (2c729e04-5341-45f2-835b-665398251af0)] Start processing HTTP request GET https://localhost:8000/.well-known/jwks
+[15:38:19:688 INF (2c729e04-5341-45f2-835b-665398251af0)] Sending HTTP request GET https://localhost:8000/.well-known/jwks
+[15:38:19:716 INF (2c729e04-5341-45f2-835b-665398251af0)] Received HTTP response headers after 25.1132ms - 200
+[15:38:19:718 INF (2c729e04-5341-45f2-835b-665398251af0)] End processing HTTP request after 31.9171ms - 200
+[15:38:19:721 INF (2c729e04-5341-45f2-835b-665398251af0)] The cryptography request was successfully sent to "https://localhost:8000/.well-known/jwks": {}.
+[15:38:19:727 INF (2c729e04-5341-45f2-835b-665398251af0)] The cryptography response returned by "https://localhost:8000/.well-known/jwks" was successfully extracted: {
+  "keys": [
+    {
+      "kid": "D111086AFBE5117F314BD91C0C4FCD173DF6888B",
+      "use": "sig",
+      "kty": "RSA",
+      "alg": "RS256",
+      "e": "AQAB",
+      "n": "zQAgM1IA_vUZxO4TiVR7gjF95-cOayQwpX73gaAMFBBAUAOEqLnjZCYNOXFev4xvCTF51thu6V2DkxIFKc6EZpSj3y2YTfjT7R4Z4RMit51mVClij2wJyM1vtJQWc9Pito3-O_Z_-rghslkfd8BJyReRSRoanOO-OnK7fXc2ol8ymVUdNPm1mTOpUCo5i1U1y9rY57cHfcYfrfYdZapTpemyhSpg8qnxpqYWHZSHz8251VB3Ub3O0AMKeKQrn4mFd5q13rvxIx7L47fNoV7QRL2iE7BCjQtBT3ywiF50xHGg5Abf_6tumoVXom2Rnc8U1dON13ODefsuQkPnc6RiAQ",
+      "x5t": "0REIavvlEX8xS9kcDE_NFz32iIs",
+      "x5c": [
+        "MIIC9DCCAdygAwIBAgIIKh9Stw1eUs8wDQYJKoZIhvcNAQELBQAwMDEuMCwGA1UEAxMlT3BlbklkZGljdCBTZXJ2ZXIgU2lnbmluZyBDZXJ0aWZpY2F0ZTAeFw0yMzA3MjgxNjA4MzNaFw0yNTA3MjgxNjA4MzNaMDAxLjAsBgNVBAMTJU9wZW5JZGRpY3QgU2VydmVyIFNpZ25pbmcgQ2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDNACAzUgD+9RnE7hOJVHuCMX3n5w5rJDClfveBoAwUEEBQA4SoueNkJg05cV6/jG8JMXnW2G7pXYOTEgUpzoRmlKPfLZhN+NPtHhnhEyK3nWZUKWKPbAnIzW+0lBZz0+K2jf479n/6uCGyWR93wEnJF5FJGhqc4746crt9dzaiXzKZVR00+bWZM6lQKjmLVTXL2tjntwd9xh+t9h1lqlOl6bKFKmDyqfGmphYdlIfPzbnVUHdRvc7QAwp4pCufiYV3mrXeu/EjHsvjt82hXtBEvaITsEKNC0FPfLCIXnTEcaDkBt//q26ahVeibZGdzxTV043Xc4N5+y5CQ+dzpGIBAgMBAAGjEjAQMA4GA1UdDwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAQEAqp/cKUxkQlCNhHOn/eeOOg6Rq/Ftb2M23c6ljSb9TuhqHBtTDBWwb6is9zNBhXH6xuBCfznponDkZX1G4q8p+FxM1yPPQjx/j2JEx0TVtnzHrghASJ9hLP44ouEalfZsqSpQD0LVUdOOFp3VVAxAdCjgDLSoP6sqGZ1pf32/TOyK05ZBL6xO1VV2ueML4HgpYKp7dky+K8Hs4Tn1HU4hItrO6Uyzvj3KrB13qhz5wWXm9kLIUvgnz/Tzn8x+U53bq6g6Hah0r4Nsfi1FgTDkznbivZ6xd8fzM/baTFa6MfR/AZvZ3qU3M4+WjfmKCYhkHJbK1YRJz3p0QFIq10pGJg=="
+      ]
+    }
+  ]
+}.
+[15:38:19:846 INF (2c729e04-5341-45f2-835b-665398251af0)] Authorization failed. These requirements were not met:
+ClaimsAuthorizationRequirement:Claim.Type=scope and Claim.Value is one of the following values: (access_for_orders)
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+[15:38:19:871 INF (2c729e04-5341-45f2-835b-665398251af0)] The response was successfully returned as a challenge response: {
+  "error": "insufficient_access",
+  "error_description": "The user represented by the token is not allowed to perform the requested action.",
+  "error_uri": "https://documentation.openiddict.com/errors/ID2095"
+}.
+[15:38:19:875 INF (2c729e04-5341-45f2-835b-665398251af0)] AuthenticationScheme: OpenIddict.Validation.AspNetCore was forbidden.
+[15:38:19:877 INF (2c729e04-5341-45f2-835b-665398251af0)] Request finished HTTP/2 GET https://localhost:7000/api/v1/Orders - - - 403 0 - 419.1424ms
+[15:39:18:235 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[15:39:19:282 INF ()] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:39:19:363 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:39:19:398 INF ()] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[15:39:19:431 INF ()] No migrations were applied. The database is already up to date.
+[15:39:19:463 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[15:39:29:692 INF (0dbf75c1-ac96-4aef-a6c8-799a2b7776d7)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[15:39:30:296 INF (0dbf75c1-ac96-4aef-a6c8-799a2b7776d7)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 607.1370ms
+[15:39:30:360 INF (0564ffde-c37b-4c08-833b-e2c8c5e98003)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[15:39:30:392 INF (1f7b9f59-8788-4f1d-a3a8-2713fc8f53d8)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[15:39:30:421 INF (1f7b9f59-8788-4f1d-a3a8-2713fc8f53d8)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 28.6918ms
+[15:39:30:477 INF (0564ffde-c37b-4c08-833b-e2c8c5e98003)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 117.5103ms
+[15:39:30:795 INF (52c35d44-4ff5-4d93-b622-6f966f0afb42)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[15:39:31:294 INF (52c35d44-4ff5-4d93-b622-6f966f0afb42)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 498.9974ms
+[15:48:59:027 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[15:48:59:751 INF ()] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:48:59:814 INF ()] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:48:59:831 INF ()] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[15:48:59:849 INF ()] No migrations were applied. The database is already up to date.
+[15:48:59:864 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[15:49:04:037 INF (73b4135e-56a1-412b-8063-4662b5c05d41)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[15:49:04:694 INF (73b4135e-56a1-412b-8063-4662b5c05d41)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 659.1937ms
+[15:49:04:738 INF (9a80a569-5b4f-4b91-a61f-a8bafd46cf28)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[15:49:04:738 INF (98b21e4c-81c8-4409-93ef-1c1018ffbafd)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[15:49:04:756 INF (98b21e4c-81c8-4409-93ef-1c1018ffbafd)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 18.2768ms
+[15:49:04:840 INF (9a80a569-5b4f-4b91-a61f-a8bafd46cf28)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 101.6416ms
+[15:49:04:975 INF (4193fdf9-2289-44c3-8f6a-25dc8d8b5b5a)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[15:49:05:602 INF (4193fdf9-2289-44c3-8f6a-25dc8d8b5b5a)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 626.9522ms
+[15:49:24:385 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[15:49:25:186 INF ()] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:49:25:255 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:49:25:274 INF ()] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[15:49:25:296 INF ()] No migrations were applied. The database is already up to date.
+[15:49:25:312 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[15:49:36:099 INF (a4e70a03-01bd-49a4-919c-e84007a720c8)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[15:49:36:742 INF (a4e70a03-01bd-49a4-919c-e84007a720c8)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 647.3936ms
+[15:49:36:822 INF (aa3105af-3761-4cef-9389-b382f4e38f79)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[15:49:36:834 INF (d165ae8c-4e58-48f7-8078-35ca94fe7887)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[15:49:36:854 INF (d165ae8c-4e58-48f7-8078-35ca94fe7887)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 19.8690ms
+[15:49:36:953 INF (aa3105af-3761-4cef-9389-b382f4e38f79)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 131.0968ms
+[15:49:37:287 INF (3f2dc771-a9f5-440d-bc95-bdf9c9262f35)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[15:49:37:737 INF (3f2dc771-a9f5-440d-bc95-bdf9c9262f35)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 449.9747ms
+[15:50:21:694 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[15:50:22:537 INF ()] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:50:22:597 INF ()] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public' AND c.relname='EFMigrationHistory');
+[15:50:22:622 INF ()] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='600']
+SELECT "MigrationId", "ProductVersion"
+FROM public."EFMigrationHistory"
+ORDER BY "MigrationId";
+[15:50:22:639 INF ()] No migrations were applied. The database is already up to date.
+[15:50:22:659 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[15:50:33:327 INF (504941a6-ccc4-4568-b00e-938455c09542)] Request starting HTTP/2 GET https://localhost:7000/index.html - -
+[15:50:33:916 INF (504941a6-ccc4-4568-b00e-938455c09542)] Request finished HTTP/2 GET https://localhost:7000/index.html - - - 200 - text/html;charset=utf-8 591.2494ms
+[15:50:34:007 INF (f00bb844-4413-4210-a069-ceb24f89978c)] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+[15:50:34:008 INF (bddb6e1c-a86c-4e3c-a55a-fee0d2b8d091)] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+[15:50:34:040 INF (bddb6e1c-a86c-4e3c-a55a-fee0d2b8d091)] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 32.3968ms
+[15:50:34:157 INF (f00bb844-4413-4210-a069-ceb24f89978c)] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 150.2522ms
+[15:50:34:339 INF (3c4fb10d-da34-42db-b5b9-3a5f66612a81)] Request starting HTTP/2 GET https://localhost:7000/v1/api.yaml - -
+[15:50:34:968 INF (3c4fb10d-da34-42db-b5b9-3a5f66612a81)] Request finished HTTP/2 GET https://localhost:7000/v1/api.yaml - - - 200 - text/yaml;charset=utf-8 629.6720ms

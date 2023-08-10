@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BoostProject.Api</name>
+    </assembly>
+    <members>
+        <member name="T:BoostProject.Api.Bootstrapper">
+            <summary>
+            Loads all services
+            </summary>
+        </member>
+        <member name="M:BoostProject.Api.Bootstrapper.RegisterAppServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers all services to application
+            </summary>
+        </member>
+        <member name="T:BoostProject.Api.Configuration.ControllersConfiguration">
+            <summary>
+            Controllers and Views Configuration
+            </summary>
+        </member>
+        <member name="M:BoostProject.Api.Configuration.ControllersConfiguration.AddAppControllers(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds controller and views setup
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:BoostProject.Api.Configuration.ControllersConfiguration.UseControllers(Microsoft.AspNetCore.Builder.WebApplication)">
+            <summary>
+            Adds controller and views setup
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="T:BoostProject.Api.Configuration.CorsConfiguration">
+            <summary>
+            CORS configuration
+            </summary>
+        </member>
+        <member name="M:BoostProject.Api.Configuration.CorsConfiguration.AddAppCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds CORS to application 
+            </summary>
+            <param name="services">Services collection</param>
+        </member>
+        <member name="M:BoostProject.Api.Configuration.CorsConfiguration.UseAppCors(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Adds CORS using to application
+            </summary>
+            <param name="app">Application</param>
+        </member>
+        <member name="T:BoostProject.Api.Configuration.HealthCheckConfiguration">
+            <summary>
+            HealthCheck Configuration
+            </summary>
+        </member>
+        <member name="M:BoostProject.Api.Configuration.HealthCheckConfiguration.AddAppHealthChecks(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds healthchecks settings
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:BoostProject.Api.Configuration.HealthCheckConfiguration.UseHealthChecks(Microsoft.AspNetCore.Builder.WebApplication)">
+            <summary>
+            Adds healthchecks endpoints 
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="T:BoostProject.Api.Configuration.HealthChecks.HealthCheck">
+            <summary>
+            Health check, which can be used to check the status of a component in the application, such as a backend service, database or some internal
+            </summary>
+        </member>
+        <member name="M:BoostProject.Api.Configuration.HealthChecks.HealthCheck.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)">
+            <summary>
+            Checks the BoostProject.Api component on health
+            </summary>
+            <param name="context"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BoostProject.Api.Configuration.LoggerConfiguration">
+            <summary>
+            Logger configuration
+            </summary>
+        </member>
+        <member name="M:BoostProject.Api.Configuration.LoggerConfiguration.AddLogger(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>
+            Adds Serilog logger to application
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:BoostProject.Api.Configuration.SwaggerConfiguration.AddAppSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection,BoostProject.Settings.Interfaces.IAppSettings)">
+            <summary>
+            Add OpenAPI for API
+            </summary>  
+            <param name="services">Services collection</param>
+            <param name="settings">App settings</param>
+        </member>
+        <member name="M:BoostProject.Api.Configuration.SwaggerConfiguration.UseAppSwagger(Microsoft.AspNetCore.Builder.WebApplication,BoostProject.Settings.Interfaces.IAppSettings)">
+            <summary>
+            Start OpenAPI UI
+            </summary>
+            <param name="app">Web application</param>
+        </member>
+        <member name="T:BoostProject.Api.Controllers.Accounts.AccountsController">
+            <summary>
+            Controller to manage account
+            </summary>
+            <response code="401">Unauthorized</response>
+        </member>
+        <member name="M:BoostProject.Api.Controllers.Accounts.AccountsController.Register(BoostProject.Api.Controllers.Accounts.RegisterUserAccountRequest)">
+            <summary>
+            Creates new user account and send email
+            </summary>
+        </member>
+        <member name="M:BoostProject.Api.Controllers.Accounts.AccountsController.Login(BoostProject.Api.Controllers.Accounts.LoginUserAccountRequest)">
+            <summary>
+            Performs login for the user with the specified email
+            </summary>
+            <param name="request">Contains user email and password</param>
+        </member>
+        <member name="M:BoostProject.Api.Controllers.Accounts.AccountsController.SendConfirmEmail(BoostProject.Api.Controllers.Accounts.Models.SendConfirmationEmailRequest)">
+            <summary>
+            Sending a message has been sent with which the user can confirm his mail
+            </summary>
+            <param name="request">Contains email and token for confirmation</param>
+        </member>
+        <member name="M:BoostProject.Api.Controllers.Accounts.AccountsController.ConfirmEmail(BoostProject.Api.Controllers.Accounts.ConfirmationEmailRequest)">
+            <summary>
+            Confirm email with token that was given on account registration and send to user email
+            </summary>
+            <param name="request">Contains email and token for confirmation</param>
+        </member>
+        <member name="M:BoostProject.Api.Controllers.Accounts.AccountsController.SendRecoverPassword(BoostProject.Api.Controllers.Accounts.SendPasswordRecoveryRequest)">
+            <summary>
+            Sending password recovery mail on user email that specified in <paramref name="request" />
+            </summary>
+            <param name="request">Contains user email to send the mail to</param>
+        </member>
+        <member name="M:BoostProject.Api.Controllers.Accounts.AccountsController.RecoverPassword(BoostProject.Api.Controllers.Accounts.PasswordRecoveryRequest)">
+            <summary>
+            Recover password on new password from request to user with given email.
+            </summary>
+            <param name="request">Contains email on what password will be recovered, token from mail and new password</param>
+        </member>
+        <member name="M:BoostProject.Api.Controllers.Accounts.AccountsController.ChangePassword(BoostProject.Api.Controllers.Accounts.ChangePasswordRequest)">
+            <summary>
+            Changes user with given email old password on new password.
+            </summary>
+            <param name="request">Contains user credentials for password changing</param>
+        </member>
+    </members>
+</doc>

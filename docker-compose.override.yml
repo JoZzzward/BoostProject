@@ -1,0 +1,79 @@
+version: '3.4'
+
+services:
+
+  boostproject_postgres:
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Passw0rd 
+    ports:
+      - "5432:5432"
+    networks:
+      - boostproject_network
+    volumes:      
+      - ~/.docker-conf/postgresql/data/:/var/lib/postgresql/data
+      
+  boostproject_rabbitmq:
+    ports:
+      - "5672:5672"
+      - "5673:5673"
+      - "15672:15672" 
+    networks:
+      - boostproject_network
+    volumes:      
+        - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+        - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+
+  boostproject_api:
+    ports:
+      - "7000:443"
+      - "7500:80"
+    networks:
+      - boostproject_network
+    env_file:
+      - env.api
+
+  boostproject_chatsapi:
+    ports:
+      - "7001:443"
+      - "7501:80"
+    networks:
+      - boostproject_network
+    env_file:
+      - env.chatsapi
+
+  boostproject_emailworker:
+    ports:
+      - "9000:443"
+      - "9500:80"
+    networks:
+      - boostproject_network
+    env_file:
+      - env.emailworker
+
+  boostproject_authorizationserver:
+    ports:
+      - "8000:443"
+      - "8500:80"
+    networks:
+      - boostproject_network
+    env_file:
+      - env.authorizationserver
+
+  boostproject_resourceserver:
+    ports:
+      - "8001:443"
+      - "8501:80"
+    networks:
+      - boostproject_network
+    env_file:
+      - env.resourceserver
+
+networks:
+  boostproject_network:
+    name: boostproject
+    driver: bridge
+
+
+

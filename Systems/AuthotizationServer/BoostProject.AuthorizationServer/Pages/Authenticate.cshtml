@@ -1,0 +1,17 @@
+﻿@page
+@model BoostProject.AuthorizationServer.Pages.AuthenticateModel
+
+@{
+}
+
+Authenticate
+
+<div>@Model.AuthStatus</div>
+<div>Return url: @Model.ReturnUrl</div>
+
+<form method="post">
+    <input name="login" />
+    <input name="password" />
+
+    <input type="submit"/>
+</form>

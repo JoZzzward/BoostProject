@@ -1,0 +1,5 @@
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.MessagesService\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.MessagesService.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.MessagesService\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.MessagesService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.MessagesService\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.MessagesService.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.MessagesService\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.MessagesService.AssemblyInfo.cs
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.MessagesService\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.MessagesService.csproj.CoreCompileInputs.cache

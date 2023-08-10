@@ -1,0 +1,5 @@
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.Shared\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.Shared.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.Shared\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.Shared\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.Shared.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.Shared\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.Shared.AssemblyInfo.cs
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.Shared\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.Shared.csproj.CoreCompileInputs.cache

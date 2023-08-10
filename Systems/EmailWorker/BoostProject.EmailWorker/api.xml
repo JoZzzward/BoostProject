@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BoostProject.EmailWorker</name>
+    </assembly>
+    <members>
+        <member name="T:BoostProject.Api.Configuration.ValidatorConfiguration">
+            <summary>
+            Validator Configuration
+            </summary>
+        </member>
+        <member name="M:BoostProject.Api.Configuration.ValidatorConfiguration.AddValidator(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds Fluent Validation to project services
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

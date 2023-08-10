@@ -1,0 +1,17 @@
+C:\Users\admin\source\repos\BoostProject\Data\BoostProject.Data.Entities\bin\Debug\net7.0\BoostProject.Data.Entities.deps.json
+C:\Users\admin\source\repos\BoostProject\Data\BoostProject.Data.Entities\bin\Debug\net7.0\BoostProject.Data.Entities.dll
+C:\Users\admin\source\repos\BoostProject\Data\BoostProject.Data.Entities\bin\Debug\net7.0\BoostProject.Data.Entities.pdb
+C:\Users\admin\source\repos\BoostProject\Data\BoostProject.Data.Entities\bin\Debug\net7.0\BoostProject.Common.dll
+C:\Users\admin\source\repos\BoostProject\Data\BoostProject.Data.Entities\bin\Debug\net7.0\BoostProject.Settings.dll
+C:\Users\admin\source\repos\BoostProject\Data\BoostProject.Data.Entities\bin\Debug\net7.0\BoostProject.Common.pdb
+C:\Users\admin\source\repos\BoostProject\Data\BoostProject.Data.Entities\bin\Debug\net7.0\BoostProject.Settings.pdb
+C:\Users\admin\source\repos\BoostProject\Data\BoostProject.Data.Entities\obj\Debug\net7.0\BoostProject.Data.Entities.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\BoostProject\Data\BoostProject.Data.Entities\obj\Debug\net7.0\BoostProject.Data.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\BoostProject\Data\BoostProject.Data.Entities\obj\Debug\net7.0\BoostProject.Data.Entities.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\BoostProject\Data\BoostProject.Data.Entities\obj\Debug\net7.0\BoostProject.Data.Entities.AssemblyInfo.cs
+C:\Users\admin\source\repos\BoostProject\Data\BoostProject.Data.Entities\obj\Debug\net7.0\BoostProject.Data.Entities.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\BoostProject\Data\BoostProject.Data.Entities\obj\Debug\net7.0\BoostProject.Data.Entities.csproj.CopyComplete
+C:\Users\admin\source\repos\BoostProject\Data\BoostProject.Data.Entities\obj\Debug\net7.0\BoostProject.Data.Entities.dll
+C:\Users\admin\source\repos\BoostProject\Data\BoostProject.Data.Entities\obj\Debug\net7.0\refint\BoostProject.Data.Entities.dll
+C:\Users\admin\source\repos\BoostProject\Data\BoostProject.Data.Entities\obj\Debug\net7.0\BoostProject.Data.Entities.pdb
+C:\Users\admin\source\repos\BoostProject\Data\BoostProject.Data.Entities\obj\Debug\net7.0\ref\BoostProject.Data.Entities.dll

@@ -1,0 +1,889 @@
+[17:42:26:361 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[17:42:27:674 INF ()] Executed DbCommand (43ms) [Parameters=[@__identifier_0='frontend'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ClientId", o."ClientSecret", o."ConcurrencyToken", o."ConsentType", o."DisplayName", o."DisplayNames", o."Permissions", o."PostLogoutRedirectUris", o."Properties", o."RedirectUris", o."Requirements", o."Type"
+FROM "OpenIddictApplications" AS o
+WHERE o."ClientId" = @__identifier_0
+LIMIT 1
+[17:42:28:354 INF ()] Executed DbCommand (18ms) [Parameters=[@__application_Id_0='e61b72b0-da8b-429e-b7ec-15fdd4f1069b'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ApplicationId", o."ConcurrencyToken", o."CreationDate", o."Properties", o."Scopes", o."Status", o."Subject", o."Type", o0."Id", o1."Id", o2."Id", o2."ApplicationId", o2."AuthorizationId", o2."ConcurrencyToken", o2."CreationDate", o2."ExpirationDate", o2."Payload", o2."Properties", o2."RedemptionDate", o2."ReferenceId", o2."Status", o2."Subject", o2."Type"
+FROM "OpenIddictAuthorizations" AS o
+LEFT JOIN "OpenIddictApplications" AS o0 ON o."ApplicationId" = o0."Id"
+INNER JOIN "OpenIddictApplications" AS o1 ON o0."Id" = o1."Id"
+LEFT JOIN "OpenIddictTokens" AS o2 ON o."Id" = o2."AuthorizationId"
+WHERE o1."Id" = @__application_Id_0
+ORDER BY o."Id", o0."Id", o1."Id"
+[17:42:28:609 INF ()] Executed DbCommand (2ms) [Parameters=[@__application_Id_0='e61b72b0-da8b-429e-b7ec-15fdd4f1069b'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ApplicationId", o."AuthorizationId", o."ConcurrencyToken", o."CreationDate", o."ExpirationDate", o."Payload", o."Properties", o."RedemptionDate", o."ReferenceId", o."Status", o."Subject", o."Type"
+FROM "OpenIddictTokens" AS o
+LEFT JOIN "OpenIddictAuthorizations" AS o0 ON o."AuthorizationId" = o0."Id"
+LEFT JOIN "OpenIddictApplications" AS o1 ON o."ApplicationId" = o1."Id"
+INNER JOIN "OpenIddictApplications" AS o2 ON o1."Id" = o2."Id"
+WHERE (o0."Id" IS NULL) AND o2."Id" = @__application_Id_0
+[17:42:28:721 INF ()] Executed DbCommand (10ms) [Parameters=[@p0='2f76eb4c-5378-4485-b0e8-437e7e67a38d', @p1='eaea9a67-ba08-4adc-8682-b678bb7b8de3', @p2='d629ce35-7455-48ad-9a3f-c5a701958332', @p3='d4f29f2a-4ffc-4a2c-90cd-ddbfece236be', @p4='16b30eb8-ff09-4f32-9bb2-ff0b60572e9b', @p5='b6251b41-505b-4b2c-8625-37c42d6847a9', @p6='e61b72b0-da8b-429e-b7ec-15fdd4f1069b', @p7='e7c30008-3107-44fb-ab9d-51a55bfaa769'], CommandType='"Text"', CommandTimeout='600']
+DELETE FROM "OpenIddictTokens"
+WHERE "Id" = @p0 AND "ConcurrencyToken" = @p1;
+DELETE FROM "OpenIddictTokens"
+WHERE "Id" = @p2 AND "ConcurrencyToken" = @p3;
+DELETE FROM "OpenIddictAuthorizations"
+WHERE "Id" = @p4 AND "ConcurrencyToken" = @p5;
+DELETE FROM "OpenIddictApplications"
+WHERE "Id" = @p6 AND "ConcurrencyToken" = @p7;
+[17:42:28:852 INF ()] Executed DbCommand (6ms) [Parameters=[@__identifier_0='frontend'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ClientId", o."ClientSecret", o."ConcurrencyToken", o."ConsentType", o."DisplayName", o."DisplayNames", o."Permissions", o."PostLogoutRedirectUris", o."Properties", o."RedirectUris", o."Requirements", o."Type"
+FROM "OpenIddictApplications" AS o
+WHERE o."ClientId" = @__identifier_0
+LIMIT 1
+[17:42:28:914 INF ()] Executed DbCommand (10ms) [Parameters=[@p0='331245eb-ca4e-48b6-ac59-64a3a9464783', @p1='frontend', @p2='AQAAAAEAACcQAAAAEJTVjKhUFwqVJ+6SKH4tEm39L+2WDeXf3k+7F7ZaGyytbUO1yUlT0Vqk97yuCSPmZg==', @p3='a0818f5a-3c12-41a5-ad97-c14ed246b0e4', @p4='explicit', @p5='Web-client', @p6=NULL, @p7='["ept:authorization","ept:token","ept:logout","gt:authorization_code","rst:code","scp:email","scp:profile","scp:roles","scp:access_to_write_gameaccounts","scp:access_for_getting_unverified_game_accounts","scp:access_for_account_confirmations","scp:access_to_write_feedbacks","scp:access_for_messages","scp:access_to_write_messages","scp:access_for_orders","scp:access_for_user_account","scp:boost_project_api"]', @p8='["https://localhost:8001/resources"]', @p9=NULL, @p10='["https://localhost:8001/swagger/oauth2-redirect.html"]', @p11=NULL, @p12='confidential'], CommandType='"Text"', CommandTimeout='600']
+INSERT INTO "OpenIddictApplications" ("Id", "ClientId", "ClientSecret", "ConcurrencyToken", "ConsentType", "DisplayName", "DisplayNames", "Permissions", "PostLogoutRedirectUris", "Properties", "RedirectUris", "Requirements", "Type")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+[17:42:29:191 INF ()] Executed DbCommand (4ms) [Parameters=[@__name_0='access_for_user_account'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:42:29:223 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_messages'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:42:29:229 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_to_write_messages'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:42:29:234 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_to_write_feedbacks'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:42:29:239 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_to_write_gameaccounts'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:42:29:244 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_getting_unverified_game_accounts'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:42:29:250 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_account_confirmations'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:42:29:254 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_orders'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:42:29:373 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[17:42:29:746 INF ()] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+[17:42:29:748 INF ()] Quartz Scheduler created
+[17:42:29:750 INF ()] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+[17:42:29:752 INF ()] RAMJobStore initialized.
+[17:42:29:754 INF ()] Quartz Scheduler 3.6.3.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+[17:42:29:756 INF ()] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+[17:42:29:758 INF ()] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+[17:42:29:769 INF ()] Adding 1 jobs, 1 triggers.
+[17:42:29:774 INF ()] Adding job: OpenIddict/Quartz.NET integration.OpenIddict job
+[17:42:29:865 INF ()] Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+[17:42:55:439 INF (e569c39a-6bde-461d-af75-125cc5952a8e)] Request starting HTTP/1.1 GET http://localhost:8000/connect/authorize?response_type=code&client_id=frontend&redirect_uri=http%3A%2F%2Flocalhost%3A7000%2Foauth2-redirect.html&scope=access_for_user_account%20access_for_messages%20access_to_write_messages%20access_to_write_feedbacks%20access_to_write_gameaccounts%20access_for_getting_unverified_game_accounts%20access_for_account_confirmations%20access_for_orders&state=V2VkIEF1ZyAwMiAyMDIzIDE3OjQyOjU1IEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D - -
+[17:42:55:477 WRN (e569c39a-6bde-461d-af75-125cc5952a8e)] Failed to determine the https port for redirect.
+[17:42:55:677 INF (e569c39a-6bde-461d-af75-125cc5952a8e)] The request URI matched a server endpoint: "Authorization".
+[17:42:55:708 INF (e569c39a-6bde-461d-af75-125cc5952a8e)] The response was successfully returned as a plain-text document: {
+  "error": "invalid_request",
+  "error_description": "This server only accepts HTTPS requests.",
+  "error_uri": "https://documentation.openiddict.com/errors/ID2083"
+}.
+[17:42:55:722 INF (e569c39a-6bde-461d-af75-125cc5952a8e)] HTTP GET /connect/authorize responded 400 in 209.2820 ms
+[17:42:55:729 INF (e569c39a-6bde-461d-af75-125cc5952a8e)] Request finished HTTP/1.1 GET http://localhost:8000/connect/authorize?response_type=code&client_id=frontend&redirect_uri=http%3A%2F%2Flocalhost%3A7000%2Foauth2-redirect.html&scope=access_for_user_account%20access_for_messages%20access_to_write_messages%20access_to_write_feedbacks%20access_to_write_gameaccounts%20access_for_getting_unverified_game_accounts%20access_for_account_confirmations%20access_for_orders&state=V2VkIEF1ZyAwMiAyMDIzIDE3OjQyOjU1IEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D - - - 400 145 text/plain;charset=UTF-8 291.9662ms
+[17:43:20:756 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[17:43:21:761 INF ()] Executed DbCommand (30ms) [Parameters=[@__identifier_0='frontend'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ClientId", o."ClientSecret", o."ConcurrencyToken", o."ConsentType", o."DisplayName", o."DisplayNames", o."Permissions", o."PostLogoutRedirectUris", o."Properties", o."RedirectUris", o."Requirements", o."Type"
+FROM "OpenIddictApplications" AS o
+WHERE o."ClientId" = @__identifier_0
+LIMIT 1
+[17:43:22:185 INF ()] Executed DbCommand (11ms) [Parameters=[@__application_Id_0='331245eb-ca4e-48b6-ac59-64a3a9464783'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ApplicationId", o."ConcurrencyToken", o."CreationDate", o."Properties", o."Scopes", o."Status", o."Subject", o."Type", o0."Id", o1."Id", o2."Id", o2."ApplicationId", o2."AuthorizationId", o2."ConcurrencyToken", o2."CreationDate", o2."ExpirationDate", o2."Payload", o2."Properties", o2."RedemptionDate", o2."ReferenceId", o2."Status", o2."Subject", o2."Type"
+FROM "OpenIddictAuthorizations" AS o
+LEFT JOIN "OpenIddictApplications" AS o0 ON o."ApplicationId" = o0."Id"
+INNER JOIN "OpenIddictApplications" AS o1 ON o0."Id" = o1."Id"
+LEFT JOIN "OpenIddictTokens" AS o2 ON o."Id" = o2."AuthorizationId"
+WHERE o1."Id" = @__application_Id_0
+ORDER BY o."Id", o0."Id", o1."Id"
+[17:43:22:211 INF ()] Executed DbCommand (2ms) [Parameters=[@__application_Id_0='331245eb-ca4e-48b6-ac59-64a3a9464783'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ApplicationId", o."AuthorizationId", o."ConcurrencyToken", o."CreationDate", o."ExpirationDate", o."Payload", o."Properties", o."RedemptionDate", o."ReferenceId", o."Status", o."Subject", o."Type"
+FROM "OpenIddictTokens" AS o
+LEFT JOIN "OpenIddictAuthorizations" AS o0 ON o."AuthorizationId" = o0."Id"
+LEFT JOIN "OpenIddictApplications" AS o1 ON o."ApplicationId" = o1."Id"
+INNER JOIN "OpenIddictApplications" AS o2 ON o1."Id" = o2."Id"
+WHERE (o0."Id" IS NULL) AND o2."Id" = @__application_Id_0
+[17:43:22:315 INF ()] Executed DbCommand (3ms) [Parameters=[@p0='331245eb-ca4e-48b6-ac59-64a3a9464783', @p1='a0818f5a-3c12-41a5-ad97-c14ed246b0e4'], CommandType='"Text"', CommandTimeout='600']
+DELETE FROM "OpenIddictApplications"
+WHERE "Id" = @p0 AND "ConcurrencyToken" = @p1;
+[17:43:22:387 INF ()] Executed DbCommand (1ms) [Parameters=[@__identifier_0='frontend'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ClientId", o."ClientSecret", o."ConcurrencyToken", o."ConsentType", o."DisplayName", o."DisplayNames", o."Permissions", o."PostLogoutRedirectUris", o."Properties", o."RedirectUris", o."Requirements", o."Type"
+FROM "OpenIddictApplications" AS o
+WHERE o."ClientId" = @__identifier_0
+LIMIT 1
+[17:43:22:424 INF ()] Executed DbCommand (3ms) [Parameters=[@p0='22c21b64-c11f-4cf8-8225-298c179dd102', @p1='frontend', @p2='AQAAAAEAACcQAAAAENNs793Qqu3w4yAmlvXCa8ZbHn4S3764g/Zna7zy4BYqk7o53Y53e63nTuDeewTw4A==', @p3='62b41eb9-7b64-4959-9760-f19509009ed1', @p4='explicit', @p5='Web-client', @p6=NULL, @p7='["ept:authorization","ept:token","ept:logout","gt:authorization_code","rst:code","scp:email","scp:profile","scp:roles","scp:access_to_write_gameaccounts","scp:access_for_getting_unverified_game_accounts","scp:access_for_account_confirmations","scp:access_to_write_feedbacks","scp:access_for_messages","scp:access_to_write_messages","scp:access_for_orders","scp:access_for_user_account","scp:boost_project_api"]', @p8='["https://localhost:8001/resources"]', @p9=NULL, @p10='["https://localhost:8001/swagger/oauth2-redirect.html"]', @p11=NULL, @p12='confidential'], CommandType='"Text"', CommandTimeout='600']
+INSERT INTO "OpenIddictApplications" ("Id", "ClientId", "ClientSecret", "ConcurrencyToken", "ConsentType", "DisplayName", "DisplayNames", "Permissions", "PostLogoutRedirectUris", "Properties", "RedirectUris", "Requirements", "Type")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+[17:43:22:581 INF ()] Executed DbCommand (3ms) [Parameters=[@__name_0='access_for_user_account'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:43:22:615 INF ()] Executed DbCommand (2ms) [Parameters=[@__name_0='access_for_messages'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:43:22:621 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_to_write_messages'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:43:22:628 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_to_write_feedbacks'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:43:22:635 INF ()] Executed DbCommand (3ms) [Parameters=[@__name_0='access_to_write_gameaccounts'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:43:22:644 INF ()] Executed DbCommand (2ms) [Parameters=[@__name_0='access_for_getting_unverified_game_accounts'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:43:22:649 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_account_confirmations'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:43:22:654 INF ()] Executed DbCommand (2ms) [Parameters=[@__name_0='access_for_orders'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:43:22:748 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[17:43:22:916 INF ()] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+[17:43:22:918 INF ()] Quartz Scheduler created
+[17:43:22:919 INF ()] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+[17:43:22:921 INF ()] RAMJobStore initialized.
+[17:43:22:923 INF ()] Quartz Scheduler 3.6.3.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+[17:43:22:925 INF ()] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+[17:43:22:926 INF ()] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+[17:43:22:937 INF ()] Adding 1 jobs, 1 triggers.
+[17:43:22:940 INF ()] Adding job: OpenIddict/Quartz.NET integration.OpenIddict job
+[17:43:23:016 INF ()] Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+[17:46:35:280 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[17:46:36:265 INF ()] Executed DbCommand (36ms) [Parameters=[@__identifier_0='frontend'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ClientId", o."ClientSecret", o."ConcurrencyToken", o."ConsentType", o."DisplayName", o."DisplayNames", o."Permissions", o."PostLogoutRedirectUris", o."Properties", o."RedirectUris", o."Requirements", o."Type"
+FROM "OpenIddictApplications" AS o
+WHERE o."ClientId" = @__identifier_0
+LIMIT 1
+[17:46:36:784 INF ()] Executed DbCommand (23ms) [Parameters=[@__application_Id_0='22c21b64-c11f-4cf8-8225-298c179dd102'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ApplicationId", o."ConcurrencyToken", o."CreationDate", o."Properties", o."Scopes", o."Status", o."Subject", o."Type", o0."Id", o1."Id", o2."Id", o2."ApplicationId", o2."AuthorizationId", o2."ConcurrencyToken", o2."CreationDate", o2."ExpirationDate", o2."Payload", o2."Properties", o2."RedemptionDate", o2."ReferenceId", o2."Status", o2."Subject", o2."Type"
+FROM "OpenIddictAuthorizations" AS o
+LEFT JOIN "OpenIddictApplications" AS o0 ON o."ApplicationId" = o0."Id"
+INNER JOIN "OpenIddictApplications" AS o1 ON o0."Id" = o1."Id"
+LEFT JOIN "OpenIddictTokens" AS o2 ON o."Id" = o2."AuthorizationId"
+WHERE o1."Id" = @__application_Id_0
+ORDER BY o."Id", o0."Id", o1."Id"
+[17:46:36:832 INF ()] Executed DbCommand (2ms) [Parameters=[@__application_Id_0='22c21b64-c11f-4cf8-8225-298c179dd102'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ApplicationId", o."AuthorizationId", o."ConcurrencyToken", o."CreationDate", o."ExpirationDate", o."Payload", o."Properties", o."RedemptionDate", o."ReferenceId", o."Status", o."Subject", o."Type"
+FROM "OpenIddictTokens" AS o
+LEFT JOIN "OpenIddictAuthorizations" AS o0 ON o."AuthorizationId" = o0."Id"
+LEFT JOIN "OpenIddictApplications" AS o1 ON o."ApplicationId" = o1."Id"
+INNER JOIN "OpenIddictApplications" AS o2 ON o1."Id" = o2."Id"
+WHERE (o0."Id" IS NULL) AND o2."Id" = @__application_Id_0
+[17:46:36:973 INF ()] Executed DbCommand (4ms) [Parameters=[@p0='22c21b64-c11f-4cf8-8225-298c179dd102', @p1='62b41eb9-7b64-4959-9760-f19509009ed1'], CommandType='"Text"', CommandTimeout='600']
+DELETE FROM "OpenIddictApplications"
+WHERE "Id" = @p0 AND "ConcurrencyToken" = @p1;
+[17:46:37:085 INF ()] Executed DbCommand (2ms) [Parameters=[@__identifier_0='frontend'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ClientId", o."ClientSecret", o."ConcurrencyToken", o."ConsentType", o."DisplayName", o."DisplayNames", o."Permissions", o."PostLogoutRedirectUris", o."Properties", o."RedirectUris", o."Requirements", o."Type"
+FROM "OpenIddictApplications" AS o
+WHERE o."ClientId" = @__identifier_0
+LIMIT 1
+[17:46:37:189 INF ()] Executed DbCommand (10ms) [Parameters=[@p0='0fca033a-6b14-4fbf-936a-02cd5b0b6532', @p1='frontend', @p2='AQAAAAEAACcQAAAAELut0rJRqV0dtF9fv7jLILOlwM3QenQvPGsFlWeqiXIYwb2R1g2HbmOYyF4iCloQ1Q==', @p3='37476709-b7a7-4be6-a399-8c503553c1ce', @p4='explicit', @p5='Web-client', @p6=NULL, @p7='["ept:authorization","ept:token","ept:logout","gt:authorization_code","rst:code","scp:email","scp:profile","scp:roles","scp:access_to_write_gameaccounts","scp:access_for_getting_unverified_game_accounts","scp:access_for_account_confirmations","scp:access_to_write_feedbacks","scp:access_for_messages","scp:access_to_write_messages","scp:access_for_orders","scp:access_for_user_account","scp:boost_project_api"]', @p8='["https://localhost:8001/resources"]', @p9=NULL, @p10='["https://localhost:8001/swagger/oauth2-redirect.html"]', @p11=NULL, @p12='confidential'], CommandType='"Text"', CommandTimeout='600']
+INSERT INTO "OpenIddictApplications" ("Id", "ClientId", "ClientSecret", "ConcurrencyToken", "ConsentType", "DisplayName", "DisplayNames", "Permissions", "PostLogoutRedirectUris", "Properties", "RedirectUris", "Requirements", "Type")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+[17:46:37:592 INF ()] Executed DbCommand (6ms) [Parameters=[@__name_0='access_for_user_account'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:46:37:708 INF ()] Executed DbCommand (5ms) [Parameters=[@__name_0='access_for_messages'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:46:37:726 INF ()] Executed DbCommand (4ms) [Parameters=[@__name_0='access_to_write_messages'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:46:37:743 INF ()] Executed DbCommand (3ms) [Parameters=[@__name_0='access_to_write_feedbacks'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:46:37:752 INF ()] Executed DbCommand (2ms) [Parameters=[@__name_0='access_to_write_gameaccounts'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:46:37:758 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_getting_unverified_game_accounts'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:46:37:768 INF ()] Executed DbCommand (3ms) [Parameters=[@__name_0='access_for_account_confirmations'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:46:37:777 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_orders'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:46:38:065 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[17:46:38:500 INF ()] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+[17:46:38:504 INF ()] Quartz Scheduler created
+[17:46:38:508 INF ()] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+[17:46:38:511 INF ()] RAMJobStore initialized.
+[17:46:38:517 INF ()] Quartz Scheduler 3.6.3.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+[17:46:38:521 INF ()] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+[17:46:38:524 INF ()] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+[17:46:38:552 INF ()] Adding 1 jobs, 1 triggers.
+[17:46:38:561 INF ()] Adding job: OpenIddict/Quartz.NET integration.OpenIddict job
+[17:46:38:727 INF ()] Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+[17:47:50:861 INF (318643e2-eb03-476a-acca-a1eb4e06312c)] Request starting HTTP/1.1 GET http://localhost:8000/ - -
+[17:47:50:893 WRN (318643e2-eb03-476a-acca-a1eb4e06312c)] Failed to determine the https port for redirect.
+[17:47:51:003 INF (318643e2-eb03-476a-acca-a1eb4e06312c)] HTTP GET / responded 404 in 83.0028 ms
+[17:47:51:012 INF (318643e2-eb03-476a-acca-a1eb4e06312c)] Request finished HTTP/1.1 GET http://localhost:8000/ - - - 404 0 - 153.2926ms
+[17:47:51:727 INF (95dc0200-4fc0-4950-bb1d-fcdfc07aa121)] Request starting HTTP/1.1 GET http://localhost:8000/ - -
+[17:47:51:736 INF (95dc0200-4fc0-4950-bb1d-fcdfc07aa121)] HTTP GET / responded 404 in 5.6990 ms
+[17:47:51:739 INF (95dc0200-4fc0-4950-bb1d-fcdfc07aa121)] Request finished HTTP/1.1 GET http://localhost:8000/ - - - 404 0 - 12.4120ms
+[17:50:54:449 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[17:50:55:868 INF ()] Executed DbCommand (30ms) [Parameters=[@__identifier_0='frontend'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ClientId", o."ClientSecret", o."ConcurrencyToken", o."ConsentType", o."DisplayName", o."DisplayNames", o."Permissions", o."PostLogoutRedirectUris", o."Properties", o."RedirectUris", o."Requirements", o."Type"
+FROM "OpenIddictApplications" AS o
+WHERE o."ClientId" = @__identifier_0
+LIMIT 1
+[17:50:56:268 INF ()] Executed DbCommand (9ms) [Parameters=[@__application_Id_0='0fca033a-6b14-4fbf-936a-02cd5b0b6532'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ApplicationId", o."ConcurrencyToken", o."CreationDate", o."Properties", o."Scopes", o."Status", o."Subject", o."Type", o0."Id", o1."Id", o2."Id", o2."ApplicationId", o2."AuthorizationId", o2."ConcurrencyToken", o2."CreationDate", o2."ExpirationDate", o2."Payload", o2."Properties", o2."RedemptionDate", o2."ReferenceId", o2."Status", o2."Subject", o2."Type"
+FROM "OpenIddictAuthorizations" AS o
+LEFT JOIN "OpenIddictApplications" AS o0 ON o."ApplicationId" = o0."Id"
+INNER JOIN "OpenIddictApplications" AS o1 ON o0."Id" = o1."Id"
+LEFT JOIN "OpenIddictTokens" AS o2 ON o."Id" = o2."AuthorizationId"
+WHERE o1."Id" = @__application_Id_0
+ORDER BY o."Id", o0."Id", o1."Id"
+[17:50:56:290 INF ()] Executed DbCommand (1ms) [Parameters=[@__application_Id_0='0fca033a-6b14-4fbf-936a-02cd5b0b6532'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ApplicationId", o."AuthorizationId", o."ConcurrencyToken", o."CreationDate", o."ExpirationDate", o."Payload", o."Properties", o."RedemptionDate", o."ReferenceId", o."Status", o."Subject", o."Type"
+FROM "OpenIddictTokens" AS o
+LEFT JOIN "OpenIddictAuthorizations" AS o0 ON o."AuthorizationId" = o0."Id"
+LEFT JOIN "OpenIddictApplications" AS o1 ON o."ApplicationId" = o1."Id"
+INNER JOIN "OpenIddictApplications" AS o2 ON o1."Id" = o2."Id"
+WHERE (o0."Id" IS NULL) AND o2."Id" = @__application_Id_0
+[17:50:56:385 INF ()] Executed DbCommand (2ms) [Parameters=[@p0='0fca033a-6b14-4fbf-936a-02cd5b0b6532', @p1='37476709-b7a7-4be6-a399-8c503553c1ce'], CommandType='"Text"', CommandTimeout='600']
+DELETE FROM "OpenIddictApplications"
+WHERE "Id" = @p0 AND "ConcurrencyToken" = @p1;
+[17:50:56:459 INF ()] Executed DbCommand (2ms) [Parameters=[@__identifier_0='frontend'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ClientId", o."ClientSecret", o."ConcurrencyToken", o."ConsentType", o."DisplayName", o."DisplayNames", o."Permissions", o."PostLogoutRedirectUris", o."Properties", o."RedirectUris", o."Requirements", o."Type"
+FROM "OpenIddictApplications" AS o
+WHERE o."ClientId" = @__identifier_0
+LIMIT 1
+[17:50:56:488 INF ()] Executed DbCommand (2ms) [Parameters=[@p0='f9a619ae-811f-4c77-8102-be11624962aa', @p1='frontend', @p2='AQAAAAEAACcQAAAAEMvRFijTMvEZ4hKC7GvFB7RJI2COQEOgMNNhCT2wt/ZXPk9fNcDbTrOJmviF5V0wuQ==', @p3='aae86261-de41-47f6-943f-e4410db73dab', @p4='explicit', @p5='Web-client', @p6=NULL, @p7='["ept:authorization","ept:token","ept:logout","gt:authorization_code","rst:code","scp:email","scp:profile","scp:roles","scp:access_to_write_gameaccounts","scp:access_for_getting_unverified_game_accounts","scp:access_for_account_confirmations","scp:access_to_write_feedbacks","scp:access_for_messages","scp:access_to_write_messages","scp:access_for_orders","scp:access_for_user_account","scp:boost_project_api"]', @p8='["https://localhost:8001/resources"]', @p9=NULL, @p10='["https://localhost:8001/swagger/oauth2-redirect.html"]', @p11=NULL, @p12='confidential'], CommandType='"Text"', CommandTimeout='600']
+INSERT INTO "OpenIddictApplications" ("Id", "ClientId", "ClientSecret", "ConcurrencyToken", "ConsentType", "DisplayName", "DisplayNames", "Permissions", "PostLogoutRedirectUris", "Properties", "RedirectUris", "Requirements", "Type")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+[17:50:56:618 INF ()] Executed DbCommand (4ms) [Parameters=[@__name_0='access_for_user_account'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:50:56:648 INF ()] Executed DbCommand (2ms) [Parameters=[@__name_0='access_for_messages'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:50:56:654 INF ()] Executed DbCommand (2ms) [Parameters=[@__name_0='access_to_write_messages'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:50:56:659 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_to_write_feedbacks'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:50:56:665 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_to_write_gameaccounts'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:50:56:670 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_getting_unverified_game_accounts'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:50:56:674 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_account_confirmations'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:50:56:679 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_orders'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:50:56:802 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[17:50:56:946 INF ()] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+[17:50:56:948 INF ()] Quartz Scheduler created
+[17:50:56:949 INF ()] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+[17:50:56:951 INF ()] RAMJobStore initialized.
+[17:50:56:952 INF ()] Quartz Scheduler 3.6.3.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+[17:50:56:954 INF ()] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+[17:50:56:955 INF ()] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+[17:50:56:965 INF ()] Adding 1 jobs, 1 triggers.
+[17:50:56:968 INF ()] Adding job: OpenIddict/Quartz.NET integration.OpenIddict job
+[17:50:57:078 INF ()] Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+[17:52:14:962 INF (d17ab36e-76f1-4b6b-8812-8b95a06ce3a1)] Request starting HTTP/2 GET https://localhost:8000/ - -
+[17:52:15:092 INF (d17ab36e-76f1-4b6b-8812-8b95a06ce3a1)] HTTP GET / responded 404 in 60.1574 ms
+[17:52:15:103 INF (d17ab36e-76f1-4b6b-8812-8b95a06ce3a1)] Request finished HTTP/2 GET https://localhost:8000/ - - - 404 0 - 144.1698ms
+[17:52:39:787 INF (e02b8946-b456-4cda-9185-fb9cf0651dd6)] Request starting HTTP/2 GET https://localhost:8000/authenticate - -
+[17:52:39:804 INF (e02b8946-b456-4cda-9185-fb9cf0651dd6)] Executing endpoint '/Authenticate'
+[17:52:39:857 INF (e02b8946-b456-4cda-9185-fb9cf0651dd6)] Route matched with {page = "/Authenticate", action = "", controller = ""}. Executing page /Authenticate
+[17:52:39:896 INF (e02b8946-b456-4cda-9185-fb9cf0651dd6)] Executing handler method BoostProject.AuthorizationServer.Pages.AuthenticateModel.OnGet - ModelState is "Invalid"
+[17:52:39:899 INF (e02b8946-b456-4cda-9185-fb9cf0651dd6)] Executed handler method OnGet, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+[17:52:40:105 INF (e02b8946-b456-4cda-9185-fb9cf0651dd6)] Executed page /Authenticate in 242.8752ms
+[17:52:40:108 INF (e02b8946-b456-4cda-9185-fb9cf0651dd6)] Executed endpoint '/Authenticate'
+[17:52:40:111 INF (e02b8946-b456-4cda-9185-fb9cf0651dd6)] HTTP GET /authenticate responded 200 in 315.7575 ms
+[17:52:40:134 INF (e02b8946-b456-4cda-9185-fb9cf0651dd6)] Request finished HTTP/2 GET https://localhost:8000/authenticate - - - 200 - text/html;+charset=utf-8 346.7719ms
+[17:52:40:138 INF (ddc70947-ef62-49cf-abe8-b53d056e3fa1)] Request starting HTTP/2 GET https://localhost:8000/lib/bootstrap/dist/css/bootstrap.min.css - -
+[17:52:40:139 INF (c061226e-b405-445b-8868-d4927ce1da20)] Request starting HTTP/2 GET https://localhost:8000/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[17:52:40:139 INF (0d4a1991-8526-41bc-905c-fced0a3fa77e)] Request starting HTTP/2 GET https://localhost:8000/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - -
+[17:52:40:153 INF (22f7def3-4a7e-4136-b21c-b4196a0efb2e)] Request starting HTTP/2 GET https://localhost:8000/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+[17:52:40:139 INF (563814c4-bceb-41f7-adfd-61f5d7a77790)] Request starting HTTP/2 GET https://localhost:8000/BoostProject.AuthorizationServer.styles.css?v=NbLjLrlt1spIe14ZcD_Wj2SFjcuthnht82PhwPDGrn4 - -
+[17:52:40:147 INF (ab47bfe5-5b7b-4b6e-9dfd-0ce0db48561b)] Request starting HTTP/2 GET https://localhost:8000/lib/jquery/dist/jquery.min.js - -
+[17:52:40:156 INF (1739793b-f4f8-4374-b77b-99894fde8efe)] Request starting HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - -
+[17:52:40:188 INF (c061226e-b405-445b-8868-d4927ce1da20)] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+[17:52:40:188 INF (ddc70947-ef62-49cf-abe8-b53d056e3fa1)] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+[17:52:40:205 INF (c061226e-b405-445b-8868-d4927ce1da20)] Request finished HTTP/2 GET https://localhost:8000/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - text/javascript 66.1616ms
+[17:52:40:209 INF (ddc70947-ef62-49cf-abe8-b53d056e3fa1)] Request finished HTTP/2 GET https://localhost:8000/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 70.3869ms
+[17:52:40:188 INF (0d4a1991-8526-41bc-905c-fced0a3fa77e)] The file /css/site.css was not modified
+[17:52:40:188 INF (22f7def3-4a7e-4136-b21c-b4196a0efb2e)] The file /js/site.js was not modified
+[17:52:40:191 INF (ab47bfe5-5b7b-4b6e-9dfd-0ce0db48561b)] The file /lib/jquery/dist/jquery.min.js was not modified
+[17:52:40:220 INF (0d4a1991-8526-41bc-905c-fced0a3fa77e)] Request finished HTTP/2 GET https://localhost:8000/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - - - 304 - text/css 80.9301ms
+[17:52:40:220 INF (563814c4-bceb-41f7-adfd-61f5d7a77790)] Sending file. Request path: '/BoostProject.AuthorizationServer.styles.css'. Physical path: 'C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.AuthorizationServer\obj\Debug\net7.0\scopedcss\bundle\BoostProject.AuthorizationServer.styles.css'
+[17:52:40:222 INF (22f7def3-4a7e-4136-b21c-b4196a0efb2e)] Request finished HTTP/2 GET https://localhost:8000/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 304 - text/javascript 72.7416ms
+[17:52:40:223 INF (ab47bfe5-5b7b-4b6e-9dfd-0ce0db48561b)] Request finished HTTP/2 GET https://localhost:8000/lib/jquery/dist/jquery.min.js - - - 304 - text/javascript 75.9397ms
+[17:52:40:194 INF (b29b49d3-5484-49bb-951d-26847fb2520d)] Request starting HTTP/2 GET https://localhost:8000/_vs/browserLink - -
+[17:52:40:228 INF (563814c4-bceb-41f7-adfd-61f5d7a77790)] Request finished HTTP/2 GET https://localhost:8000/BoostProject.AuthorizationServer.styles.css?v=NbLjLrlt1spIe14ZcD_Wj2SFjcuthnht82PhwPDGrn4 - - - 200 1149 text/css 88.5307ms
+[17:52:40:229 INF (1739793b-f4f8-4374-b77b-99894fde8efe)] Request finished HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - - - 200 12034 application/javascript;+charset=utf-8 73.3262ms
+[17:52:40:317 INF (b29b49d3-5484-49bb-951d-26847fb2520d)] Request finished HTTP/2 GET https://localhost:8000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 124.3008ms
+[17:52:43:713 INF (674a2318-2e54-47a4-92a1-6d9243f51030)] Request starting HTTP/2 GET https://localhost:8000/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - -
+[17:52:43:740 INF (9a90bbc9-0cab-4340-beb6-342ea6dd21a6)] Request starting HTTP/2 GET https://localhost:8000/lib/bootstrap/dist/css/bootstrap.min.css.map - -
+[17:52:43:755 INF (674a2318-2e54-47a4-92a1-6d9243f51030)] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.AuthorizationServer\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map'
+[17:52:43:758 INF (674a2318-2e54-47a4-92a1-6d9243f51030)] Request finished HTTP/2 GET https://localhost:8000/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 327261 text/plain 44.2504ms
+[17:52:43:794 INF (9a90bbc9-0cab-4340-beb6-342ea6dd21a6)] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.AuthorizationServer\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map'
+[17:52:43:797 INF (9a90bbc9-0cab-4340-beb6-342ea6dd21a6)] Request finished HTTP/2 GET https://localhost:8000/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 449111 text/plain 57.3709ms
+[17:52:53:470 INF (35f2b34b-7388-4cab-b53b-dd891b750c84)] Request starting HTTP/2 GET https://localhost:8000/authenticate - -
+[17:52:53:476 INF (35f2b34b-7388-4cab-b53b-dd891b750c84)] Executing endpoint '/Authenticate'
+[17:52:53:478 INF (35f2b34b-7388-4cab-b53b-dd891b750c84)] Route matched with {page = "/Authenticate", action = "", controller = ""}. Executing page /Authenticate
+[17:52:53:481 INF (35f2b34b-7388-4cab-b53b-dd891b750c84)] Executing handler method BoostProject.AuthorizationServer.Pages.AuthenticateModel.OnGet - ModelState is "Invalid"
+[17:52:53:483 INF (35f2b34b-7388-4cab-b53b-dd891b750c84)] Executed handler method OnGet, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+[17:52:53:503 INF (35f2b34b-7388-4cab-b53b-dd891b750c84)] Executed page /Authenticate in 22.7214ms
+[17:52:53:505 INF (35f2b34b-7388-4cab-b53b-dd891b750c84)] Executed endpoint '/Authenticate'
+[17:52:53:508 INF (35f2b34b-7388-4cab-b53b-dd891b750c84)] HTTP GET /authenticate responded 200 in 33.8608 ms
+[17:52:53:513 INF (35f2b34b-7388-4cab-b53b-dd891b750c84)] Request finished HTTP/2 GET https://localhost:8000/authenticate - - - 200 - text/html;+charset=utf-8 43.2355ms
+[17:52:53:528 INF (f5e4449b-a265-4759-a672-e22ea4703aa1)] Request starting HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - -
+[17:52:53:528 INF (43e3757e-6ed7-4d0d-bcdd-febe2cd048c9)] Request starting HTTP/2 GET https://localhost:8000/_vs/browserLink - -
+[17:52:53:531 INF (f5e4449b-a265-4759-a672-e22ea4703aa1)] Request finished HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - - - 200 12034 application/javascript;+charset=utf-8 3.0271ms
+[17:52:53:585 INF (43e3757e-6ed7-4d0d-bcdd-febe2cd048c9)] Request finished HTTP/2 GET https://localhost:8000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 57.0645ms
+[17:52:53:652 INF (d6847ad9-0125-4dd7-9acd-ddf8cdb42045)] Request starting HTTP/2 GET https://localhost:8000/favicon.ico - -
+[17:52:53:654 INF (d6847ad9-0125-4dd7-9acd-ddf8cdb42045)] The file /favicon.ico was not modified
+[17:52:53:655 INF (d6847ad9-0125-4dd7-9acd-ddf8cdb42045)] Request finished HTTP/2 GET https://localhost:8000/favicon.ico - - - 304 - image/x-icon 3.7905ms
+[17:54:29:745 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[17:54:30:795 INF ()] Executed DbCommand (32ms) [Parameters=[@__identifier_0='frontend'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ClientId", o."ClientSecret", o."ConcurrencyToken", o."ConsentType", o."DisplayName", o."DisplayNames", o."Permissions", o."PostLogoutRedirectUris", o."Properties", o."RedirectUris", o."Requirements", o."Type"
+FROM "OpenIddictApplications" AS o
+WHERE o."ClientId" = @__identifier_0
+LIMIT 1
+[17:54:31:188 INF ()] Executed DbCommand (10ms) [Parameters=[@__application_Id_0='f9a619ae-811f-4c77-8102-be11624962aa'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ApplicationId", o."ConcurrencyToken", o."CreationDate", o."Properties", o."Scopes", o."Status", o."Subject", o."Type", o0."Id", o1."Id", o2."Id", o2."ApplicationId", o2."AuthorizationId", o2."ConcurrencyToken", o2."CreationDate", o2."ExpirationDate", o2."Payload", o2."Properties", o2."RedemptionDate", o2."ReferenceId", o2."Status", o2."Subject", o2."Type"
+FROM "OpenIddictAuthorizations" AS o
+LEFT JOIN "OpenIddictApplications" AS o0 ON o."ApplicationId" = o0."Id"
+INNER JOIN "OpenIddictApplications" AS o1 ON o0."Id" = o1."Id"
+LEFT JOIN "OpenIddictTokens" AS o2 ON o."Id" = o2."AuthorizationId"
+WHERE o1."Id" = @__application_Id_0
+ORDER BY o."Id", o0."Id", o1."Id"
+[17:54:31:212 INF ()] Executed DbCommand (2ms) [Parameters=[@__application_Id_0='f9a619ae-811f-4c77-8102-be11624962aa'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ApplicationId", o."AuthorizationId", o."ConcurrencyToken", o."CreationDate", o."ExpirationDate", o."Payload", o."Properties", o."RedemptionDate", o."ReferenceId", o."Status", o."Subject", o."Type"
+FROM "OpenIddictTokens" AS o
+LEFT JOIN "OpenIddictAuthorizations" AS o0 ON o."AuthorizationId" = o0."Id"
+LEFT JOIN "OpenIddictApplications" AS o1 ON o."ApplicationId" = o1."Id"
+INNER JOIN "OpenIddictApplications" AS o2 ON o1."Id" = o2."Id"
+WHERE (o0."Id" IS NULL) AND o2."Id" = @__application_Id_0
+[17:54:31:317 INF ()] Executed DbCommand (5ms) [Parameters=[@p0='f9a619ae-811f-4c77-8102-be11624962aa', @p1='aae86261-de41-47f6-943f-e4410db73dab'], CommandType='"Text"', CommandTimeout='600']
+DELETE FROM "OpenIddictApplications"
+WHERE "Id" = @p0 AND "ConcurrencyToken" = @p1;
+[17:54:31:389 INF ()] Executed DbCommand (2ms) [Parameters=[@__identifier_0='frontend'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ClientId", o."ClientSecret", o."ConcurrencyToken", o."ConsentType", o."DisplayName", o."DisplayNames", o."Permissions", o."PostLogoutRedirectUris", o."Properties", o."RedirectUris", o."Requirements", o."Type"
+FROM "OpenIddictApplications" AS o
+WHERE o."ClientId" = @__identifier_0
+LIMIT 1
+[17:54:31:422 INF ()] Executed DbCommand (3ms) [Parameters=[@p0='b2f57ce9-89bf-426c-be58-9393f02ef077', @p1='frontend', @p2='AQAAAAEAACcQAAAAELz3EXoo5Irw1AjN/f/eOEd3tRW+6zdLBU6MOWf2OG6397DsX34YjNuAg6zqVAhbBQ==', @p3='c3e9e100-ceb1-4665-8f52-31cb9f8145e9', @p4='explicit', @p5='Web-client', @p6=NULL, @p7='["ept:authorization","ept:token","ept:logout","gt:authorization_code","rst:code","scp:email","scp:profile","scp:roles","scp:access_to_write_gameaccounts","scp:access_for_getting_unverified_game_accounts","scp:access_for_account_confirmations","scp:access_to_write_feedbacks","scp:access_for_messages","scp:access_to_write_messages","scp:access_for_orders","scp:access_for_user_account","scp:boost_project_api"]', @p8='["https://localhost:8001/resources"]', @p9=NULL, @p10='["https://localhost:8001/swagger/oauth2-redirect.html"]', @p11=NULL, @p12='confidential'], CommandType='"Text"', CommandTimeout='600']
+INSERT INTO "OpenIddictApplications" ("Id", "ClientId", "ClientSecret", "ConcurrencyToken", "ConsentType", "DisplayName", "DisplayNames", "Permissions", "PostLogoutRedirectUris", "Properties", "RedirectUris", "Requirements", "Type")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+[17:54:31:592 INF ()] Executed DbCommand (5ms) [Parameters=[@__name_0='access_for_user_account'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:54:31:628 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_messages'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:54:31:633 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_to_write_messages'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:54:31:639 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_to_write_feedbacks'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:54:31:645 INF ()] Executed DbCommand (2ms) [Parameters=[@__name_0='access_to_write_gameaccounts'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:54:31:651 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_getting_unverified_game_accounts'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:54:31:657 INF ()] Executed DbCommand (2ms) [Parameters=[@__name_0='access_for_account_confirmations'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:54:31:662 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_orders'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[17:54:32:141 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[17:54:32:538 INF ()] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+[17:54:32:540 INF ()] Quartz Scheduler created
+[17:54:32:542 INF ()] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+[17:54:32:544 INF ()] RAMJobStore initialized.
+[17:54:32:547 INF ()] Quartz Scheduler 3.6.3.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+[17:54:32:549 INF ()] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+[17:54:32:551 INF ()] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+[17:54:32:566 INF ()] Adding 1 jobs, 1 triggers.
+[17:54:32:569 INF ()] Adding job: OpenIddict/Quartz.NET integration.OpenIddict job
+[17:54:32:714 INF ()] Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+[17:54:38:686 INF (facd234b-7ac1-4c77-9ad3-ef4bb5135512)] Request starting HTTP/2 GET https://localhost:8000/connect/authorize?response_type=code&client_id=frontend&redirect_uri=https%3A%2F%2Flocalhost%3A8001%2Fswagger%2Foauth2-redirect.html&scope=access_for_user_account%20access_for_messages%20access_to_write_messages%20access_to_write_feedbacks%20access_to_write_gameaccounts%20access_for_getting_unverified_game_accounts%20access_for_account_confirmations%20access_for_orders&state=V2VkIEF1ZyAwMiAyMDIzIDE3OjU0OjM4IEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D - -
+[17:54:38:801 INF (facd234b-7ac1-4c77-9ad3-ef4bb5135512)] The request URI matched a server endpoint: "Authorization".
+[17:54:38:833 INF (facd234b-7ac1-4c77-9ad3-ef4bb5135512)] The authorization request was successfully extracted: {
+  "response_type": "code",
+  "client_id": "frontend",
+  "redirect_uri": "https://localhost:8001/swagger/oauth2-redirect.html",
+  "scope": "access_for_user_account access_for_messages access_to_write_messages access_to_write_feedbacks access_to_write_gameaccounts access_for_getting_unverified_game_accounts access_for_account_confirmations access_for_orders",
+  "state": "V2VkIEF1ZyAwMiAyMDIzIDE3OjU0OjM4IEdNVCswMzAwICjQnNC+0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC+0LUg0LLRgNC10LzRjyk="
+}.
+[17:54:38:862 INF (facd234b-7ac1-4c77-9ad3-ef4bb5135512)] Executed DbCommand (2ms) [Parameters=[@__identifier_0='frontend'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ClientId", o."ClientSecret", o."ConcurrencyToken", o."ConsentType", o."DisplayName", o."DisplayNames", o."Permissions", o."PostLogoutRedirectUris", o."Properties", o."RedirectUris", o."Requirements", o."Type"
+FROM "OpenIddictApplications" AS o
+WHERE o."ClientId" = @__identifier_0
+LIMIT 1
+[17:54:38:901 INF (facd234b-7ac1-4c77-9ad3-ef4bb5135512)] The authorization request was successfully validated.
+[17:54:38:917 INF (facd234b-7ac1-4c77-9ad3-ef4bb5135512)] Executing endpoint 'BoostProject.AuthorizationServer.Controllers.AuthorizationController.Authorize (BoostProject.AuthorizationServer)'
+[17:54:38:935 INF (facd234b-7ac1-4c77-9ad3-ef4bb5135512)] Route matched with {action = "Authorize", controller = "Authorization", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authorize() on controller BoostProject.AuthorizationServer.Controllers.AuthorizationController (BoostProject.AuthorizationServer).
+[17:54:44:220 INF (facd234b-7ac1-4c77-9ad3-ef4bb5135512)] Executing ChallengeResult with authentication schemes (["Cookies"]).
+[17:54:44:228 INF (facd234b-7ac1-4c77-9ad3-ef4bb5135512)] AuthenticationScheme: Cookies was challenged.
+[17:54:44:235 INF (facd234b-7ac1-4c77-9ad3-ef4bb5135512)] Executed action BoostProject.AuthorizationServer.Controllers.AuthorizationController.Authorize (BoostProject.AuthorizationServer) in 5294.1639ms
+[17:54:44:238 INF (facd234b-7ac1-4c77-9ad3-ef4bb5135512)] Executed endpoint 'BoostProject.AuthorizationServer.Controllers.AuthorizationController.Authorize (BoostProject.AuthorizationServer)'
+[17:54:44:244 INF (facd234b-7ac1-4c77-9ad3-ef4bb5135512)] HTTP GET /connect/authorize responded 302 in 5488.0911 ms
+[17:54:44:260 INF (facd234b-7ac1-4c77-9ad3-ef4bb5135512)] Request finished HTTP/2 GET https://localhost:8000/connect/authorize?response_type=code&client_id=frontend&redirect_uri=https%3A%2F%2Flocalhost%3A8001%2Fswagger%2Foauth2-redirect.html&scope=access_for_user_account%20access_for_messages%20access_to_write_messages%20access_to_write_feedbacks%20access_to_write_gameaccounts%20access_for_getting_unverified_game_accounts%20access_for_account_confirmations%20access_for_orders&state=V2VkIEF1ZyAwMiAyMDIzIDE3OjU0OjM4IEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D - - - 302 0 - 5575.7262ms
+[17:54:44:279 INF (a68fc626-96e7-4b04-857e-5083e6662b1a)] Request starting HTTP/2 GET https://localhost:8000/Authenticate?ReturnUrl=%2Fconnect%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dfrontend%26redirect_uri%3Dhttps%253A%252F%252Flocalhost%253A8001%252Fswagger%252Foauth2-redirect.html%26scope%3Daccess_for_user_account%2520access_for_messages%2520access_to_write_messages%2520access_to_write_feedbacks%2520access_to_write_gameaccounts%2520access_for_getting_unverified_game_accounts%2520access_for_account_confirmations%2520access_for_orders%26state%3DV2VkIEF1ZyAwMiAyMDIzIDE3OjU0OjM4IEdNVCswMzAwICjQnNC%252B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%252B0LUg0LLRgNC10LzRjyk%253D - -
+[17:54:44:287 INF (a68fc626-96e7-4b04-857e-5083e6662b1a)] Executing endpoint '/Authenticate'
+[17:54:44:317 INF (a68fc626-96e7-4b04-857e-5083e6662b1a)] Route matched with {page = "/Authenticate", action = "", controller = ""}. Executing page /Authenticate
+[17:54:44:363 INF (a68fc626-96e7-4b04-857e-5083e6662b1a)] Executing handler method BoostProject.AuthorizationServer.Pages.AuthenticateModel.OnGet - ModelState is "Valid"
+[17:54:44:365 INF (a68fc626-96e7-4b04-857e-5083e6662b1a)] Executed handler method OnGet, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+[17:54:44:653 INF (a68fc626-96e7-4b04-857e-5083e6662b1a)] Executed page /Authenticate in 333.0187ms
+[17:54:44:656 INF (a68fc626-96e7-4b04-857e-5083e6662b1a)] Executed endpoint '/Authenticate'
+[17:54:44:658 INF (a68fc626-96e7-4b04-857e-5083e6662b1a)] HTTP GET /Authenticate responded 200 in 373.8232 ms
+[17:54:44:671 INF (a68fc626-96e7-4b04-857e-5083e6662b1a)] Request finished HTTP/2 GET https://localhost:8000/Authenticate?ReturnUrl=%2Fconnect%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dfrontend%26redirect_uri%3Dhttps%253A%252F%252Flocalhost%253A8001%252Fswagger%252Foauth2-redirect.html%26scope%3Daccess_for_user_account%2520access_for_messages%2520access_to_write_messages%2520access_to_write_feedbacks%2520access_to_write_gameaccounts%2520access_for_getting_unverified_game_accounts%2520access_for_account_confirmations%2520access_for_orders%26state%3DV2VkIEF1ZyAwMiAyMDIzIDE3OjU0OjM4IEdNVCswMzAwICjQnNC%252B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%252B0LUg0LLRgNC10LzRjyk%253D - - - 200 - text/html;+charset=utf-8 392.7613ms
+[17:54:44:678 INF (bab9a1e1-3f2e-48fc-9cc5-5562bcafb9de)] Request starting HTTP/2 GET https://localhost:8000/BoostProject.AuthorizationServer.styles.css?v=NbLjLrlt1spIe14ZcD_Wj2SFjcuthnht82PhwPDGrn4 - -
+[17:54:44:679 INF (61be00db-ba59-404c-a1d0-62333eb3abaf)] Request starting HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - -
+[17:54:44:690 INF (203713aa-d22e-4377-9f8b-d0378d5ad0bc)] Request starting HTTP/2 GET https://localhost:8000/_vs/browserLink - -
+[17:54:44:691 INF (bab9a1e1-3f2e-48fc-9cc5-5562bcafb9de)] The file /BoostProject.AuthorizationServer.styles.css was not modified
+[17:54:44:695 INF (bab9a1e1-3f2e-48fc-9cc5-5562bcafb9de)] Request finished HTTP/2 GET https://localhost:8000/BoostProject.AuthorizationServer.styles.css?v=NbLjLrlt1spIe14ZcD_Wj2SFjcuthnht82PhwPDGrn4 - - - 304 - text/css 17.0007ms
+[17:54:44:706 INF (61be00db-ba59-404c-a1d0-62333eb3abaf)] Request finished HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - - - 200 12034 application/javascript;+charset=utf-8 27.5849ms
+[17:54:44:780 INF (203713aa-d22e-4377-9f8b-d0378d5ad0bc)] Request finished HTTP/2 GET https://localhost:8000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 89.5954ms
+[17:54:49:178 INF (e791d820-5c6f-4ce5-a39d-e5ab41eb5591)] Request starting HTTP/2 POST https://localhost:8000/Authenticate?ReturnUrl=%2Fconnect%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dfrontend%26redirect_uri%3Dhttps%253A%252F%252Flocalhost%253A8001%252Fswagger%252Foauth2-redirect.html%26scope%3Daccess_for_user_account%2520access_for_messages%2520access_to_write_messages%2520access_to_write_feedbacks%2520access_to_write_gameaccounts%2520access_for_getting_unverified_game_accounts%2520access_for_account_confirmations%2520access_for_orders%26state%3DV2VkIEF1ZyAwMiAyMDIzIDE3OjU0OjM4IEdNVCswMzAwICjQnNC%252B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%252B0LUg0LLRgNC10LzRjyk%253D application/x-www-form-urlencoded 220
+[17:54:49:183 INF (e791d820-5c6f-4ce5-a39d-e5ab41eb5591)] CORS policy execution failed.
+[17:54:49:185 INF (e791d820-5c6f-4ce5-a39d-e5ab41eb5591)] Request origin https://localhost:8000 does not have permission to access the resource.
+[17:54:49:190 INF (e791d820-5c6f-4ce5-a39d-e5ab41eb5591)] Executing endpoint '/Authenticate'
+[17:54:49:192 INF (e791d820-5c6f-4ce5-a39d-e5ab41eb5591)] Route matched with {page = "/Authenticate", action = "", controller = ""}. Executing page /Authenticate
+[17:54:49:209 INF (e791d820-5c6f-4ce5-a39d-e5ab41eb5591)] Executing handler method BoostProject.AuthorizationServer.Pages.AuthenticateModel.OnPostAsync - ModelState is "Invalid"
+[17:54:49:301 INF (e791d820-5c6f-4ce5-a39d-e5ab41eb5591)] Start processing HTTP request POST http://localhost:7000/api/v1/accounts/login
+[17:54:49:304 INF (e791d820-5c6f-4ce5-a39d-e5ab41eb5591)] Sending HTTP request POST http://localhost:7000/api/v1/accounts/login
+[17:54:54:430 INF (e791d820-5c6f-4ce5-a39d-e5ab41eb5591)] Executed page /Authenticate in 5235.67ms
+[17:54:54:761 INF (e791d820-5c6f-4ce5-a39d-e5ab41eb5591)] Executed endpoint '/Authenticate'
+[17:54:54:965 ERR (e791d820-5c6f-4ce5-a39d-e5ab41eb5591)] HTTP POST /Authenticate responded 500 in 5777.1504 ms
+System.Net.Http.HttpRequestException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. (localhost:7000)
+ ---> System.Net.Sockets.SocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at BoostProject.AuthorizationServer.Pages.AuthenticateModel.OnPostAsync(String login, String password) in C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.AuthorizationServer\Pages\Authenticate.cshtml.cs:line 37
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[17:54:55:174 ERR (e791d820-5c6f-4ce5-a39d-e5ab41eb5591)] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. (localhost:7000)
+ ---> System.Net.Sockets.SocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at BoostProject.AuthorizationServer.Pages.AuthenticateModel.OnPostAsync(String login, String password) in C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.AuthorizationServer\Pages\Authenticate.cshtml.cs:line 37
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[17:54:55:249 INF (fe71bf25-a65c-4d38-a330-90ebaac42e60)] Request starting HTTP/2 POST https://localhost:8000/Authenticate?ReturnUrl=%2Fconnect%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dfrontend%26redirect_uri%3Dhttps%253A%252F%252Flocalhost%253A8001%252Fswagger%252Foauth2-redirect.html%26scope%3Daccess_for_user_account%2520access_for_messages%2520access_to_write_messages%2520access_to_write_feedbacks%2520access_to_write_gameaccounts%2520access_for_getting_unverified_game_accounts%2520access_for_account_confirmations%2520access_for_orders%26state%3DV2VkIEF1ZyAwMiAyMDIzIDE3OjU0OjM4IEdNVCswMzAwICjQnNC%252B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%252B0LUg0LLRgNC10LzRjyk%253D application/x-www-form-urlencoded 228
+[17:54:55:251 INF (e791d820-5c6f-4ce5-a39d-e5ab41eb5591)] Request finished HTTP/2 POST https://localhost:8000/Authenticate?ReturnUrl=%2Fconnect%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dfrontend%26redirect_uri%3Dhttps%253A%252F%252Flocalhost%253A8001%252Fswagger%252Foauth2-redirect.html%26scope%3Daccess_for_user_account%2520access_for_messages%2520access_to_write_messages%2520access_to_write_feedbacks%2520access_to_write_gameaccounts%2520access_for_getting_unverified_game_accounts%2520access_for_account_confirmations%2520access_for_orders%26state%3DV2VkIEF1ZyAwMiAyMDIzIDE3OjU0OjM4IEdNVCswMzAwICjQnNC%252B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%252B0LUg0LLRgNC10LzRjyk%253D application/x-www-form-urlencoded 220 - 500 - text/html;+charset=utf-8 6073.6955ms
+[17:54:55:253 INF (fe71bf25-a65c-4d38-a330-90ebaac42e60)] CORS policy execution failed.
+[17:54:55:254 INF (fe71bf25-a65c-4d38-a330-90ebaac42e60)] Request origin https://localhost:8000 does not have permission to access the resource.
+[17:54:55:257 INF (fe71bf25-a65c-4d38-a330-90ebaac42e60)] Executing endpoint '/Authenticate'
+[17:54:55:258 INF (fe71bf25-a65c-4d38-a330-90ebaac42e60)] Route matched with {page = "/Authenticate", action = "", controller = ""}. Executing page /Authenticate
+[17:54:55:261 INF (fe71bf25-a65c-4d38-a330-90ebaac42e60)] Executing handler method BoostProject.AuthorizationServer.Pages.AuthenticateModel.OnPostAsync - ModelState is "Valid"
+[17:54:55:263 INF (fe71bf25-a65c-4d38-a330-90ebaac42e60)] Start processing HTTP request POST http://localhost:7000/api/v1/accounts/login
+[17:54:55:265 INF (fe71bf25-a65c-4d38-a330-90ebaac42e60)] Sending HTTP request POST http://localhost:7000/api/v1/accounts/login
+[17:55:00:132 INF (fe71bf25-a65c-4d38-a330-90ebaac42e60)] Executed page /Authenticate in 4872.311ms
+[17:55:00:243 INF (fe71bf25-a65c-4d38-a330-90ebaac42e60)] Executed endpoint '/Authenticate'
+[17:55:00:385 ERR (fe71bf25-a65c-4d38-a330-90ebaac42e60)] HTTP POST /Authenticate responded 500 in 5128.5902 ms
+System.Net.Http.HttpRequestException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. (localhost:7000)
+ ---> System.Net.Sockets.SocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at BoostProject.AuthorizationServer.Pages.AuthenticateModel.OnPostAsync(String login, String password) in C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.AuthorizationServer\Pages\Authenticate.cshtml.cs:line 37
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[17:55:00:482 ERR (fe71bf25-a65c-4d38-a330-90ebaac42e60)] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. (localhost:7000)
+ ---> System.Net.Sockets.SocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at BoostProject.AuthorizationServer.Pages.AuthenticateModel.OnPostAsync(String login, String password) in C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.AuthorizationServer\Pages\Authenticate.cshtml.cs:line 37
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[17:55:00:530 INF (fe71bf25-a65c-4d38-a330-90ebaac42e60)] Request finished HTTP/2 POST https://localhost:8000/Authenticate?ReturnUrl=%2Fconnect%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dfrontend%26redirect_uri%3Dhttps%253A%252F%252Flocalhost%253A8001%252Fswagger%252Foauth2-redirect.html%26scope%3Daccess_for_user_account%2520access_for_messages%2520access_to_write_messages%2520access_to_write_feedbacks%2520access_to_write_gameaccounts%2520access_for_getting_unverified_game_accounts%2520access_for_account_confirmations%2520access_for_orders%26state%3DV2VkIEF1ZyAwMiAyMDIzIDE3OjU0OjM4IEdNVCswMzAwICjQnNC%252B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%252B0LUg0LLRgNC10LzRjyk%253D application/x-www-form-urlencoded 228 - 500 - text/html;+charset=utf-8 5280.7017ms
+[17:55:00:558 INF (a31fa02a-cdfc-4521-af44-66729ced4dd2)] Request starting HTTP/2 GET https://localhost:8000/_vs/browserLink - -
+[17:55:00:560 INF (0025d102-f600-495b-b561-d0d94b6304e0)] Request starting HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - -
+[17:55:00:563 INF (0025d102-f600-495b-b561-d0d94b6304e0)] Request finished HTTP/2 GET https://localhost:8000/_framework/aspnetcore-browser-refresh.js - - - 200 12034 application/javascript;+charset=utf-8 3.1592ms
+[17:55:00:621 INF (a31fa02a-cdfc-4521-af44-66729ced4dd2)] Request finished HTTP/2 GET https://localhost:8000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.3208ms
+[18:45:42:607 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[18:45:44:298 INF ()] Executed DbCommand (38ms) [Parameters=[@__identifier_0='frontend'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ClientId", o."ClientSecret", o."ConcurrencyToken", o."ConsentType", o."DisplayName", o."DisplayNames", o."Permissions", o."PostLogoutRedirectUris", o."Properties", o."RedirectUris", o."Requirements", o."Type"
+FROM "OpenIddictApplications" AS o
+WHERE o."ClientId" = @__identifier_0
+LIMIT 1
+[18:45:45:966 INF ()] Executed DbCommand (21ms) [Parameters=[@__application_Id_0='05d83ae1-f745-4cb1-9720-9a5d36d70a53'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ApplicationId", o."ConcurrencyToken", o."CreationDate", o."Properties", o."Scopes", o."Status", o."Subject", o."Type", o0."Id", o1."Id", o2."Id", o2."ApplicationId", o2."AuthorizationId", o2."ConcurrencyToken", o2."CreationDate", o2."ExpirationDate", o2."Payload", o2."Properties", o2."RedemptionDate", o2."ReferenceId", o2."Status", o2."Subject", o2."Type"
+FROM "OpenIddictAuthorizations" AS o
+LEFT JOIN "OpenIddictApplications" AS o0 ON o."ApplicationId" = o0."Id"
+INNER JOIN "OpenIddictApplications" AS o1 ON o0."Id" = o1."Id"
+LEFT JOIN "OpenIddictTokens" AS o2 ON o."Id" = o2."AuthorizationId"
+WHERE o1."Id" = @__application_Id_0
+ORDER BY o."Id", o0."Id", o1."Id"
+[18:45:46:016 INF ()] Executed DbCommand (4ms) [Parameters=[@__application_Id_0='05d83ae1-f745-4cb1-9720-9a5d36d70a53'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ApplicationId", o."AuthorizationId", o."ConcurrencyToken", o."CreationDate", o."ExpirationDate", o."Payload", o."Properties", o."RedemptionDate", o."ReferenceId", o."Status", o."Subject", o."Type"
+FROM "OpenIddictTokens" AS o
+LEFT JOIN "OpenIddictAuthorizations" AS o0 ON o."AuthorizationId" = o0."Id"
+LEFT JOIN "OpenIddictApplications" AS o1 ON o."ApplicationId" = o1."Id"
+INNER JOIN "OpenIddictApplications" AS o2 ON o1."Id" = o2."Id"
+WHERE (o0."Id" IS NULL) AND o2."Id" = @__application_Id_0
+[18:45:46:323 INF ()] Executed DbCommand (11ms) [Parameters=[@p0='05d83ae1-f745-4cb1-9720-9a5d36d70a53', @p1='95f54214-f9a4-4b57-b8d4-e3d7acb14259'], CommandType='"Text"', CommandTimeout='600']
+DELETE FROM "OpenIddictApplications"
+WHERE "Id" = @p0 AND "ConcurrencyToken" = @p1;
+[18:45:46:509 INF ()] Executed DbCommand (8ms) [Parameters=[@__identifier_0='frontend'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ClientId", o."ClientSecret", o."ConcurrencyToken", o."ConsentType", o."DisplayName", o."DisplayNames", o."Permissions", o."PostLogoutRedirectUris", o."Properties", o."RedirectUris", o."Requirements", o."Type"
+FROM "OpenIddictApplications" AS o
+WHERE o."ClientId" = @__identifier_0
+LIMIT 1
+[18:45:46:648 INF ()] Executed DbCommand (6ms) [Parameters=[@p0='2671f5ad-5501-4fe9-a01e-b098b4cf948e', @p1='frontend', @p2='AQAAAAEAACcQAAAAED/X/fsmCj0mCQvr6gcCpU62ImrXVp4KNNbOU9AeCTO0O/0PG0YnPqkvNIv8MxyYqw==', @p3='b1c5809d-f1e4-40d9-8619-aaf27908d9d4', @p4='explicit', @p5='Web-client', @p6=NULL, @p7='["ept:authorization","ept:token","ept:logout","gt:authorization_code","rst:code","scp:email","scp:profile","scp:roles","scp:access_to_write_gameaccounts","scp:access_for_getting_unverified_game_accounts","scp:access_for_account_confirmations","scp:access_to_write_feedbacks","scp:access_for_messages","scp:access_to_write_messages","scp:access_for_orders","scp:access_for_user_account","scp:boost_project_api"]', @p8='["https://localhost:8001/resources"]', @p9=NULL, @p10='["https://localhost:8001/swagger/oauth2-redirect.html"]', @p11=NULL, @p12='confidential'], CommandType='"Text"', CommandTimeout='600']
+INSERT INTO "OpenIddictApplications" ("Id", "ClientId", "ClientSecret", "ConcurrencyToken", "ConsentType", "DisplayName", "DisplayNames", "Permissions", "PostLogoutRedirectUris", "Properties", "RedirectUris", "Requirements", "Type")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+[18:45:46:900 INF ()] Executed DbCommand (4ms) [Parameters=[@__name_0='access_for_user_account'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[18:45:47:010 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_messages'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[18:45:47:020 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_to_write_messages'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[18:45:47:030 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_to_write_feedbacks'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[18:45:47:037 INF ()] Executed DbCommand (3ms) [Parameters=[@__name_0='access_to_write_gameaccounts'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[18:45:47:043 INF ()] Executed DbCommand (2ms) [Parameters=[@__name_0='access_for_getting_unverified_game_accounts'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[18:45:47:049 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_account_confirmations'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[18:45:47:056 INF ()] Executed DbCommand (2ms) [Parameters=[@__name_0='access_for_orders'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[18:45:47:179 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[18:45:47:439 INF ()] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+[18:45:47:441 INF ()] Quartz Scheduler created
+[18:45:47:443 INF ()] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+[18:45:47:445 INF ()] RAMJobStore initialized.
+[18:45:47:448 INF ()] Quartz Scheduler 3.6.3.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+[18:45:47:452 INF ()] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+[18:45:47:454 INF ()] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+[18:45:47:471 INF ()] Adding 1 jobs, 1 triggers.
+[18:45:47:476 INF ()] Adding job: OpenIddict/Quartz.NET integration.OpenIddict job
+[18:45:47:651 INF ()] Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+[18:59:18:845 WRN ()] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[18:59:20:445 INF ()] Executed DbCommand (32ms) [Parameters=[@__identifier_0='frontend'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ClientId", o."ClientSecret", o."ConcurrencyToken", o."ConsentType", o."DisplayName", o."DisplayNames", o."Permissions", o."PostLogoutRedirectUris", o."Properties", o."RedirectUris", o."Requirements", o."Type"
+FROM "OpenIddictApplications" AS o
+WHERE o."ClientId" = @__identifier_0
+LIMIT 1
+[18:59:20:957 INF ()] Executed DbCommand (19ms) [Parameters=[@__application_Id_0='d32754ce-b180-413b-9cd8-94ac490b6f44'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ApplicationId", o."ConcurrencyToken", o."CreationDate", o."Properties", o."Scopes", o."Status", o."Subject", o."Type", o0."Id", o1."Id", o2."Id", o2."ApplicationId", o2."AuthorizationId", o2."ConcurrencyToken", o2."CreationDate", o2."ExpirationDate", o2."Payload", o2."Properties", o2."RedemptionDate", o2."ReferenceId", o2."Status", o2."Subject", o2."Type"
+FROM "OpenIddictAuthorizations" AS o
+LEFT JOIN "OpenIddictApplications" AS o0 ON o."ApplicationId" = o0."Id"
+INNER JOIN "OpenIddictApplications" AS o1 ON o0."Id" = o1."Id"
+LEFT JOIN "OpenIddictTokens" AS o2 ON o."Id" = o2."AuthorizationId"
+WHERE o1."Id" = @__application_Id_0
+ORDER BY o."Id", o0."Id", o1."Id"
+[18:59:20:981 INF ()] Executed DbCommand (2ms) [Parameters=[@__application_Id_0='d32754ce-b180-413b-9cd8-94ac490b6f44'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ApplicationId", o."AuthorizationId", o."ConcurrencyToken", o."CreationDate", o."ExpirationDate", o."Payload", o."Properties", o."RedemptionDate", o."ReferenceId", o."Status", o."Subject", o."Type"
+FROM "OpenIddictTokens" AS o
+LEFT JOIN "OpenIddictAuthorizations" AS o0 ON o."AuthorizationId" = o0."Id"
+LEFT JOIN "OpenIddictApplications" AS o1 ON o."ApplicationId" = o1."Id"
+INNER JOIN "OpenIddictApplications" AS o2 ON o1."Id" = o2."Id"
+WHERE (o0."Id" IS NULL) AND o2."Id" = @__application_Id_0
+[18:59:21:209 INF ()] Executed DbCommand (8ms) [Parameters=[@p0='d32754ce-b180-413b-9cd8-94ac490b6f44', @p1='c455dd9e-c425-449c-a51b-9bfdafdc930c'], CommandType='"Text"', CommandTimeout='600']
+DELETE FROM "OpenIddictApplications"
+WHERE "Id" = @p0 AND "ConcurrencyToken" = @p1;
+[18:59:21:324 INF ()] Executed DbCommand (2ms) [Parameters=[@__identifier_0='frontend'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ClientId", o."ClientSecret", o."ConcurrencyToken", o."ConsentType", o."DisplayName", o."DisplayNames", o."Permissions", o."PostLogoutRedirectUris", o."Properties", o."RedirectUris", o."Requirements", o."Type"
+FROM "OpenIddictApplications" AS o
+WHERE o."ClientId" = @__identifier_0
+LIMIT 1
+[18:59:21:390 INF ()] Executed DbCommand (35ms) [Parameters=[@p0='26661f1d-5225-4ad3-aabe-c38de3351769', @p1='frontend', @p2='AQAAAAEAACcQAAAAEMRWbHKSj8JVNhwGTyjYhIJRnacPW0XDZPdPopbAsxnX3RJrV2/+GtjBtQPD7Nvz6w==', @p3='707a2479-5757-4bbe-83f5-69368063dfd5', @p4='explicit', @p5='Web-client', @p6=NULL, @p7='["ept:authorization","ept:token","ept:logout","gt:authorization_code","rst:code","scp:email","scp:profile","scp:roles","scp:access_to_write_gameaccounts","scp:access_for_getting_unverified_game_accounts","scp:access_for_account_confirmations","scp:access_to_write_feedbacks","scp:access_for_messages","scp:access_to_write_messages","scp:access_for_orders","scp:access_for_user_account","scp:boost_project_api"]', @p8='["https://localhost:8001/resources"]', @p9=NULL, @p10='["https://localhost:8001/swagger/oauth2-redirect.html"]', @p11=NULL, @p12='confidential'], CommandType='"Text"', CommandTimeout='600']
+INSERT INTO "OpenIddictApplications" ("Id", "ClientId", "ClientSecret", "ConcurrencyToken", "ConsentType", "DisplayName", "DisplayNames", "Permissions", "PostLogoutRedirectUris", "Properties", "RedirectUris", "Requirements", "Type")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+[18:59:21:586 INF ()] Executed DbCommand (52ms) [Parameters=[@__name_0='access_for_user_account'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[18:59:21:634 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_messages'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[18:59:21:640 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_to_write_messages'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[18:59:21:645 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_to_write_feedbacks'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[18:59:21:651 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_to_write_gameaccounts'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[18:59:21:656 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_getting_unverified_game_accounts'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[18:59:21:661 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_account_confirmations'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[18:59:21:671 INF ()] Executed DbCommand (1ms) [Parameters=[@__name_0='access_for_orders'], CommandType='"Text"', CommandTimeout='600']
+SELECT o."Id", o."ConcurrencyToken", o."Description", o."Descriptions", o."DisplayName", o."DisplayNames", o."Name", o."Properties", o."Resources"
+FROM "OpenIddictScopes" AS o
+WHERE o."Name" = @__name_0
+LIMIT 1
+[18:59:21:805 INF ()] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[18:59:22:022 INF ()] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+[18:59:22:024 INF ()] Quartz Scheduler created
+[18:59:22:025 INF ()] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory
+[18:59:22:027 INF ()] RAMJobStore initialized.
+[18:59:22:029 INF ()] Quartz Scheduler 3.6.3.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized
+[18:59:22:030 INF ()] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10
+[18:59:22:032 INF ()] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False
+[18:59:22:043 INF ()] Adding 1 jobs, 1 triggers.
+[18:59:22:048 INF ()] Adding job: OpenIddict/Quartz.NET integration.OpenIddict job
+[18:59:22:147 INF ()] Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+[18:59:43:119 INF (3eecff5b-a4f5-4d41-9abf-d7590aebed87)] Request starting HTTP/1.1 GET http://localhost:8000/connect/authorize?response_type=code&client_id=frontend&redirect_uri=http%3A%2F%2Flocalhost%3A8002%2Fswagger%2Foauth2-redirect.html&scope=access_for_user_account%20access_for_messages%20access_to_write_messages%20access_to_write_feedbacks%20access_to_write_gameaccounts%20access_for_getting_unverified_game_accounts%20access_for_account_confirmations%20access_for_orders&state=V2VkIEF1ZyAwMiAyMDIzIDE4OjU2OjQyIEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D - -
+[18:59:43:157 WRN (3eecff5b-a4f5-4d41-9abf-d7590aebed87)] Failed to determine the https port for redirect.
+[18:59:43:294 INF (3eecff5b-a4f5-4d41-9abf-d7590aebed87)] The request URI matched a server endpoint: "Authorization".
+[18:59:43:336 INF (3eecff5b-a4f5-4d41-9abf-d7590aebed87)] The response was successfully returned as a plain-text document: {
+  "error": "invalid_request",
+  "error_description": "This server only accepts HTTPS requests.",
+  "error_uri": "https://documentation.openiddict.com/errors/ID2083"
+}.
+[18:59:43:353 INF (3eecff5b-a4f5-4d41-9abf-d7590aebed87)] HTTP GET /connect/authorize responded 400 in 140.4654 ms
+[18:59:43:364 INF (3eecff5b-a4f5-4d41-9abf-d7590aebed87)] Request finished HTTP/1.1 GET http://localhost:8000/connect/authorize?response_type=code&client_id=frontend&redirect_uri=http%3A%2F%2Flocalhost%3A8002%2Fswagger%2Foauth2-redirect.html&scope=access_for_user_account%20access_for_messages%20access_to_write_messages%20access_to_write_feedbacks%20access_to_write_gameaccounts%20access_for_getting_unverified_game_accounts%20access_for_account_confirmations%20access_for_orders&state=V2VkIEF1ZyAwMiAyMDIzIDE4OjU2OjQyIEdNVCswMzAwICjQnNC%2B0YHQutCy0LAsINGB0YLQsNC90LTQsNGA0YLQvdC%2B0LUg0LLRgNC10LzRjyk%3D - - - 400 145 text/plain;charset=UTF-8 248.8918ms

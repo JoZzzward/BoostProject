@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QvaDArkKmsbxQLEeEhwCSniBpLBG4TP+kM9PEIpfi6C0uSaamAJYpT1V+ykSuTbRdNIKvP/MMjf+KpXxwdLYNw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\source\\repos\\BoostProject\\Shared\\BoostProject.Errors\\BoostProject.Errors.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\7.0.9\\microsoft.extensions.localization.abstractions.7.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

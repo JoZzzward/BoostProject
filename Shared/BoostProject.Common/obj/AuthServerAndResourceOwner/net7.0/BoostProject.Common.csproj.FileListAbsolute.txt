@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\BoostProject\Shared\BoostProject.Common\bin\AuthServerAndResourceOwner\net7.0\BoostProject.Common.deps.json
+C:\Users\admin\source\repos\BoostProject\Shared\BoostProject.Common\bin\AuthServerAndResourceOwner\net7.0\BoostProject.Common.dll
+C:\Users\admin\source\repos\BoostProject\Shared\BoostProject.Common\bin\AuthServerAndResourceOwner\net7.0\BoostProject.Common.pdb
+C:\Users\admin\source\repos\BoostProject\Shared\BoostProject.Common\bin\AuthServerAndResourceOwner\net7.0\BoostProject.Settings.dll
+C:\Users\admin\source\repos\BoostProject\Shared\BoostProject.Common\bin\AuthServerAndResourceOwner\net7.0\BoostProject.Settings.pdb
+C:\Users\admin\source\repos\BoostProject\Shared\BoostProject.Common\obj\AuthServerAndResourceOwner\net7.0\BoostProject.Common.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\BoostProject\Shared\BoostProject.Common\obj\AuthServerAndResourceOwner\net7.0\BoostProject.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\BoostProject\Shared\BoostProject.Common\obj\AuthServerAndResourceOwner\net7.0\BoostProject.Common.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\BoostProject\Shared\BoostProject.Common\obj\AuthServerAndResourceOwner\net7.0\BoostProject.Common.AssemblyInfo.cs
+C:\Users\admin\source\repos\BoostProject\Shared\BoostProject.Common\obj\AuthServerAndResourceOwner\net7.0\BoostProject.Common.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\BoostProject\Shared\BoostProject.Common\obj\AuthServerAndResourceOwner\net7.0\BoostProject.Common.csproj.CopyComplete
+C:\Users\admin\source\repos\BoostProject\Shared\BoostProject.Common\obj\AuthServerAndResourceOwner\net7.0\BoostProject.Common.dll
+C:\Users\admin\source\repos\BoostProject\Shared\BoostProject.Common\obj\AuthServerAndResourceOwner\net7.0\refint\BoostProject.Common.dll
+C:\Users\admin\source\repos\BoostProject\Shared\BoostProject.Common\obj\AuthServerAndResourceOwner\net7.0\BoostProject.Common.pdb
+C:\Users\admin\source\repos\BoostProject\Shared\BoostProject.Common\obj\AuthServerAndResourceOwner\net7.0\ref\BoostProject.Common.dll

@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "boostproject.api": "StartDebugging",
+        "boostproject.chatsapi": "StartDebugging",
+        "boostproject.emailworker": "StartDebugging",
+        "boostproject.identityserver": "StartDebugging",
+        "boostproject.authorizationserver": "StartDebugging",
+        "boostproject.resourceserver": "StartDebugging"
+      }
+    }
+  }
+}

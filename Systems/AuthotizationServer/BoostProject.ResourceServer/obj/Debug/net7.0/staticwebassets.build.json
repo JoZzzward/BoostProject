@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "YS0p+BKs5YQuxTmRfVF/rqN5iU4uLodhUD74Hcj0uWA=",
+  "Source": "BoostProject.ResourceServer",
+  "BasePath": "_content/BoostProject.ResourceServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

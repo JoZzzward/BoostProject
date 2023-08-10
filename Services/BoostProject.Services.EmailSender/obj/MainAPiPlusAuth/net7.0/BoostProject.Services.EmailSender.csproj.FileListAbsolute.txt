@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.EmailSender\bin\MainAPiPlusAuth\net7.0\BoostProject.Services.EmailSender.deps.json
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.EmailSender\bin\MainAPiPlusAuth\net7.0\BoostProject.Services.EmailSender.dll
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.EmailSender\bin\MainAPiPlusAuth\net7.0\BoostProject.Services.EmailSender.pdb
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.EmailSender\bin\MainAPiPlusAuth\net7.0\BoostProject.Settings.dll
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.EmailSender\bin\MainAPiPlusAuth\net7.0\BoostProject.Settings.pdb
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.EmailSender\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.EmailSender.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.EmailSender\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.EmailSender.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.EmailSender\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.EmailSender.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.EmailSender\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.EmailSender.AssemblyInfo.cs
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.EmailSender\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.EmailSender.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.EmailSender\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.EmailSender.csproj.CopyComplete
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.EmailSender\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.EmailSender.dll
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.EmailSender\obj\MainAPiPlusAuth\net7.0\refint\BoostProject.Services.EmailSender.dll
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.EmailSender\obj\MainAPiPlusAuth\net7.0\BoostProject.Services.EmailSender.pdb
+C:\Users\admin\source\repos\BoostProject\Services\BoostProject.Services.EmailSender\obj\MainAPiPlusAuth\net7.0\ref\BoostProject.Services.EmailSender.dll
