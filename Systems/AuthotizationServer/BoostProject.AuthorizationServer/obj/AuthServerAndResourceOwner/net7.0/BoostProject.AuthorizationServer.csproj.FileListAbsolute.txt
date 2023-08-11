@@ -1,8 +1,0 @@
-C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.AuthorizationServer\obj\AuthServerAndResourceOwner\net7.0\BoostProject.AuthorizationServer.csproj.AssemblyReference.cache
-C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.AuthorizationServer\obj\AuthServerAndResourceOwner\net7.0\BoostProject.AuthorizationServer.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.AuthorizationServer\obj\AuthServerAndResourceOwner\net7.0\BoostProject.AuthorizationServer.AssemblyInfoInputs.cache
-C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.AuthorizationServer\obj\AuthServerAndResourceOwner\net7.0\BoostProject.AuthorizationServer.AssemblyInfo.cs
-C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.AuthorizationServer\obj\AuthServerAndResourceOwner\net7.0\BoostProject.AuthorizationServer.csproj.CoreCompileInputs.cache
-C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.AuthorizationServer\obj\AuthServerAndResourceOwner\net7.0\BoostProject.AuthorizationServer.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.AuthorizationServer\obj\AuthServerAndResourceOwner\net7.0\BoostProject.AuthorizationServer.RazorAssemblyInfo.cache
-C:\Users\admin\source\repos\BoostProject\Systems\AuthotizationServer\BoostProject.AuthorizationServer\obj\AuthServerAndResourceOwner\net7.0\BoostProject.AuthorizationServer.RazorAssemblyInfo.cs
